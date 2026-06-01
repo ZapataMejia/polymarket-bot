@@ -19,6 +19,17 @@ from pathlib import Path
 _REPO = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(_REPO))
 
+# --- Fix DNS en Windows --------------------------------------------------
+# aiodns (c-ares, dependencia de ccxt) a veces no detecta los servidores DNS
+# en Windows y lanza "Could not contact DNS servers". Forzamos el
+# ThreadedResolver de aiohttp, que usa getaddrinfo del sistema operativo
+# (el mismo DNS que ya funciona para git/pip/navegador).
+import aiohttp.connector as _aiohttp_connector
+from aiohttp.resolver import ThreadedResolver as _ThreadedResolver
+
+_aiohttp_connector.DefaultResolver = _ThreadedResolver
+# -------------------------------------------------------------------------
+
 from src.core.config import Config
 from src.core.logger import setup_logger
 from src.data.exchange import ExchangeClient
