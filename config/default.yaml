@@ -1,0 +1,48 @@
+exchange:
+  name: binance
+  sandbox: false
+  rate_limit: 1200
+  timeout: 30000
+
+symbols:
+  - BTC/USDT
+  - ETH/USDT
+
+timeframes:
+  - 1h
+  - 4h
+
+data:
+  storage_path: data/raw
+  processed_path: data/processed
+  format: parquet
+  history_days: 90
+  # Para TSMOM con lookbacks 63/126/252 en diario, conviene history_days >= 400
+
+tsmom:
+  rebalance_rule: W-FRI
+  target_ann_vol: 0.12
+  vol_lookback: 20
+  max_leverage: 1.0
+  # min_votes: 2   # opcional; si se omite, se elige solo (2 de 3 lookbacks cuando hay 3)
+
+risk:
+  max_risk_per_trade: 0.02
+  max_daily_loss: 0.05
+  max_drawdown: 0.15
+  max_open_positions: 5
+  max_correlation: 0.8
+  circuit_breaker_cooldown_minutes: 60
+
+logging:
+  level: INFO
+  file: logs/trading.log
+  format: "%(asctime)s | %(levelname)-8s | %(name)s | %(message)s"
+
+database:
+  url: "sqlite+aiosqlite:///data/trades.db"
+
+notifications:
+  telegram:
+    enabled: true
+    # token and chat_id come from .env

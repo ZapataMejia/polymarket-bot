@@ -1,0 +1,184 @@
+1
+00:00:00,500 --> 00:00:04,320
+ Bienvenido o bienvenida en este programa formativo de HobbyCode.
+
+2
+00:00:04,420 --> 00:00:07,420
+ Primero de todo, darte las gracias por haber confiado en nosotros.
+
+3
+00:00:07,740 --> 00:00:12,880
+ Y lo segundo que te quiero decir es que has tomado la mejor decisión que puedas haber tomado
+
+4
+00:00:12,880 --> 00:00:16,580
+ porque este camino es un camino en el cual está demostrado,
+
+5
+00:00:17,140 --> 00:00:21,280
+ en el cual tenemos grandes posibilidades para poder ser rentables en los mercados financieros
+
+6
+00:00:21,280 --> 00:00:26,280
+ y lo más importante, estás aquí porque has decidido automatizar tu trading.
+
+7
+00:00:26,380 --> 00:00:29,900
+ No solo tu trading, que el cual ya estás haciendo ya o a lo mejor no,
+
+8
+00:00:30,000 --> 00:00:35,200
+ sino el hecho de querer encontrar nuevas estrategias y que esas estrategias puedan operar en los mercados
+
+9
+00:00:35,200 --> 00:00:40,000
+ de forma automatizada por nosotros, compatibilizar el trading con tu trabajo
+
+10
+00:00:40,000 --> 00:00:44,500
+ o cualquier motivo que tengas para haber entrado con nosotros,
+
+11
+00:00:45,120 --> 00:00:50,200
+ estás en el sitio correcto para aprender a crear nuevas estrategias de trading totalmente automatizadas.
+
+12
+00:00:50,660 --> 00:00:58,620
+ A partir de ahora empieza un tiempecito para ti en el cual vas a tener que dedicarle cierta dedicación semanal
+
+13
+00:00:58,620 --> 00:01:02,700
+ para poder aprender todos los conceptos que te voy a ir enseñando,
+
+14
+00:01:02,820 --> 00:01:06,440
+ tanto yo como el equipo, acerca de nuestro trading algonímico,
+
+15
+00:01:06,540 --> 00:01:08,620
+ acerca de nuestra metodología de 12 pasos.
+
+16
+00:01:09,020 --> 00:01:12,480
+ Verás que la metodología de 12 pasos es el core en el cual nos basamos
+
+17
+00:01:12,480 --> 00:01:18,480
+ para poder crear sistemas que puedan tener altas probabilidades de ser rentables de cara al futuro.
+
+18
+00:01:18,780 --> 00:01:26,600
+ Pero no solo eso, sino que aquí encontrarás formación secundaria o digamos extratroncal de lo que es el programa formativo
+
+19
+00:01:27,140 --> 00:01:34,400
+ para que complemente de la mejor forma posible todos los conocimientos que necesitas para entender la formación troncal.
+
+20
+00:01:34,940 --> 00:01:40,040
+ Verás que iremos paso a paso, verás que primero enseñaremos las herramientas a utilizar,
+
+21
+00:01:40,580 --> 00:01:46,600
+ primero aprenderás los conceptos que necesitamos tener claros para luego aprender la metodología de 12 pasos.
+
+22
+00:01:46,600 --> 00:01:53,920
+ Está estructurado de tal forma para que si ves todo el contenido de forma secuencial,
+
+23
+00:01:54,420 --> 00:01:59,080
+ tengas los conocimientos necesarios antes de entender lo que viene después.
+
+24
+00:01:59,720 --> 00:02:05,220
+ Así que nada, te deseo lo mejor ánimo y esfuerzo posible que puedas tener a partir de ahora.
+
+25
+00:02:05,720 --> 00:02:09,800
+ Seguro que si el mundo del trading y sobre todo el triángulo anímico te gusta y te apasiona,
+
+26
+00:02:10,320 --> 00:02:12,820
+ esto va a ser muy fácil de aprender para ti.
+
+27
+00:02:13,820 --> 00:02:16,380
+ Pero simplemente un mensaje que te quiero dar.
+
+28
+00:02:16,920 --> 00:02:21,460
+ No lo dejes de lado, intenta dedicar semana a semana un tiempo por parte tuya
+
+29
+00:02:21,460 --> 00:02:25,620
+ porque el hecho de estar conectado a semana a semana va a ser que sea mucho más fácil
+
+30
+00:02:25,620 --> 00:02:32,300
+ el aprendizaje de todos los conceptos que te vamos a enseñar en las próximas semanas que vienen.
+
+31
+00:02:32,400 --> 00:02:36,540
+ Que sepas que esto es un contenido un poco distinto a lo que sueles ver en las redes sociales
+
+32
+00:02:36,540 --> 00:02:39,040
+ de una estrategia, la implementas y ya está.
+
+33
+00:02:39,640 --> 00:02:44,160
+ Esto es un nivel más, no de complejidad, sino que es otros conceptos.
+
+34
+00:02:44,580 --> 00:02:47,840
+ El hecho de poder operar de forma automatizada los mercados financieros,
+
+35
+00:02:48,440 --> 00:02:52,800
+ pero está preparado para que cualquier persona que tenga unas mínimas bases de trading
+
+36
+00:02:52,800 --> 00:02:57,120
+ pueda absorber de forma correcta en el tiempo que nosotros hemos estimado
+
+37
+00:02:57,120 --> 00:02:59,460
+ todo este conocimiento que tenemos preparado para ti.
+
+38
+00:03:00,120 --> 00:03:03,500
+ Así que a partir de ahora empieza un camino muy emocionante
+
+39
+00:03:03,500 --> 00:03:07,320
+ y seguro, seguro, seguro que en un tiempo, en cuestión de meses,
+
+40
+00:03:07,540 --> 00:03:11,400
+ podrás operar ya de forma automatizada en una de tus cuentas reales
+
+41
+00:03:11,400 --> 00:03:16,440
+ y puedas saborear el hecho de qué es esto de que un robot me abra una operación
+
+42
+00:03:16,440 --> 00:03:20,680
+ de forma automatizada mientras yo estoy trabajando, durmiendo o estoy haciendo otras cosas.
+
+43
+00:03:21,140 --> 00:03:25,380
+ Pronto te va a llegar esa situación, pero lo primero de todo es centrarte en tu aprendizaje,
+
+44
+00:03:25,940 --> 00:03:28,600
+ esfuerzo y, lo más importante, actitud.
+
+45
+00:03:29,300 --> 00:03:36,040
+ Que tengas mucho esfuerzo, suerte no es necesario que te la dé porque estás en el sitio correcto,
+
+46
+00:03:36,480 --> 00:03:40,460
+ pero sí mucha actitud y verás que pronto podrás operar de forma automatizada.
+

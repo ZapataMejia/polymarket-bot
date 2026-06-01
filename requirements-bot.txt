@@ -1,0 +1,15 @@
+# Dependencias mínimas para correr el paper trader de Polymarket (V1 + V2B) en el VPS.
+# Instalar con:  python -m pip install -r requirements-bot.txt
+ccxt>=4.4
+pandas>=2.2
+numpy>=2.0
+pyarrow>=18.0
+pyyaml>=6.0
+python-dotenv>=1.0
+aiohttp>=3.10
+websockets>=13.0
+rich>=13.9
+sqlalchemy>=2.0
+aiosqlite>=0.20
+greenlet>=3.0
+certifi>=2024.0

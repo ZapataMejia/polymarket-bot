@@ -1,0 +1,22 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+data/raw/
+data/processed/
+data/models/
+data/*.db
+data/paper_trading/
+data/paper_trading_v2b/
+logs/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.ruff_cache/
+notebooks/.ipynb_checkpoints/
+
+# Transcripcion de videos (Whisper)
+tools/whisper-models/
+transcripts/*.wav
+Curso Trading Algoritmico/

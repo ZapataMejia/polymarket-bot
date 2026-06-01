@@ -1,0 +1,141 @@
+"""Entrypoint for the live Polymarket paper-trading daemon.
+
+Usage (local):
+    python scripts/run_paper_trader.py
+    python scripts/run_paper_trader.py --bankroll 100 --position-size 2 --threshold 0.05
+
+Stops gracefully on SIGINT/SIGTERM (Ctrl-C). State is persisted in
+data/paper_trading/state.json on every event.
+"""
+from __future__ import annotations
+
+import argparse
+import asyncio
+import logging
+import signal
+import sys
+from pathlib import Path
+
+_REPO = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(_REPO))
+
+from src.core.config import Config
+from src.core.logger import setup_logger
+from src.data.exchange import ExchangeClient
+from src.polymarket.binance_klines import BinanceKlineCache
+from src.polymarket.paper_trader import PaperConfig, PaperTrader
+
+
+async def amain() -> None:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--config", default="config/default.yaml")
+    ap.add_argument("--bankroll", type=float, default=100.0)
+    ap.add_argument("--sizing-mode", choices=("fixed", "kelly"), default="kelly")
+    ap.add_argument("--position-size", type=float, default=2.0,
+                    help="Tamaño fijo por trade (solo si sizing-mode=fixed)")
+    ap.add_argument("--kelly-fraction", type=float, default=0.25,
+                    help="Fracción de Kelly (0.25 = quarter Kelly)")
+    ap.add_argument("--max-pct-per-trade", type=float, default=0.10,
+                    help="Cap por trade como fracción del bankroll")
+    ap.add_argument("--max-concurrent", type=int, default=4,
+                    help="Máximo de posiciones abiertas en simultáneo")
+    ap.add_argument("--bankroll-floor", type=float, default=30.0,
+                    help="Si el bankroll cae por debajo, pausa entradas")
+    ap.add_argument("--threshold", type=float, default=0.05)
+    ap.add_argument("--half-spread-cents", type=float, default=1.5)
+    ap.add_argument("--fee-rate-pct", type=float, default=2.0)
+    ap.add_argument("--poll-sec", type=int, default=30)
+    ap.add_argument(
+        "--series",
+        nargs="+",
+        default=[
+            "btc-up-or-down-hourly",
+            "eth-up-or-down-hourly",
+            "solana-up-or-down-hourly",
+            "xrp-up-or-down-hourly",
+        ],
+    )
+    ap.add_argument(
+        "--state-path",
+        default="data/paper_trading/state.json",
+    )
+    # ---- V2-style filters (off by default; live V1 keeps current behavior) ----
+    ap.add_argument("--skip-hours-utc", nargs="*", type=int, default=[],
+                    help="Skip entries on these UTC hours, e.g. --skip-hours-utc 21 23")
+    ap.add_argument("--skip-weekdays", nargs="*", default=[],
+                    help="Skip entries on these weekdays, e.g. --skip-weekdays Saturday")
+    ap.add_argument("--min-volume", type=float, default=0.0,
+                    help="Skip markets with volume below this USD (e.g. 5000)")
+    ap.add_argument("--instance-label", default="V1",
+                    help="Tag for logs and Telegram messages (e.g. V1, V2B)")
+    # ---- Telegram override (use a different bot for this instance) ----
+    ap.add_argument("--telegram-token", default=None,
+                    help="Override TELEGRAM_BOT_TOKEN from config (use a separate bot for V2)")
+    ap.add_argument("--telegram-chat-id", default=None,
+                    help="Override TELEGRAM_CHAT_ID from config")
+    ap.add_argument("--log-file", default="logs/paper_trader.log")
+    args = ap.parse_args()
+
+    cfg = Config.from_yaml(args.config)
+    setup_logger("trading", cfg.log_level, args.log_file)
+    log = logging.getLogger("trading.polymarket.paper")
+    log.info("[%s] starting paper trader, bankroll=$%.2f", args.instance_label, args.bankroll)
+
+    paper_cfg = PaperConfig(
+        initial_bankroll_usd=args.bankroll,
+        sizing_mode=args.sizing_mode,
+        position_size_usd=args.position_size,
+        kelly_fraction=args.kelly_fraction,
+        max_pct_per_trade=args.max_pct_per_trade,
+        max_concurrent_positions=args.max_concurrent,
+        bankroll_floor_usd=args.bankroll_floor,
+        entry_threshold=args.threshold,
+        half_spread_cents=args.half_spread_cents,
+        fee_rate_pct=args.fee_rate_pct,
+        poll_interval_sec=args.poll_sec,
+        series_slugs=tuple(args.series),
+        state_path=args.state_path,
+        skip_hours_utc=tuple(args.skip_hours_utc),
+        skip_weekdays=tuple(args.skip_weekdays),
+        min_volume_usd=args.min_volume,
+        instance_label=args.instance_label,
+    )
+
+    telegram_token = args.telegram_token or cfg.telegram_token
+    telegram_chat_id = args.telegram_chat_id or cfg.telegram_chat_id
+
+    client = ExchangeClient(cfg.exchange)
+    cache = BinanceKlineCache(client, cache_dir="data/poly_klines_live")
+    trader = PaperTrader(
+        config=paper_cfg,
+        binance_cache=cache,
+        telegram_token=telegram_token,
+        telegram_chat_id=telegram_chat_id,
+    )
+
+    stop_event = asyncio.Event()
+
+    def _signal(*_: object) -> None:
+        log.info("signal received, stopping...")
+        trader.stop()
+        stop_event.set()
+
+    loop = asyncio.get_running_loop()
+    for sig in (signal.SIGINT, signal.SIGTERM):
+        try:
+            loop.add_signal_handler(sig, _signal)
+        except NotImplementedError:
+            pass
+
+    try:
+        await trader.run()
+    finally:
+        await client.close()
+        log.info("paper trader stopped")
+
+
+if __name__ == "__main__":
+    try:
+        asyncio.run(amain())
+    except KeyboardInterrupt:
+        pass

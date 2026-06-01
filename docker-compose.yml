@@ -1,0 +1,27 @@
+services:
+  paper-trader:
+    build: .
+    container_name: polymarket-paper-trader
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      - TZ=UTC
+    volumes:
+      - ./data/paper_trading:/app/data/paper_trading
+      - ./data/poly_klines_live:/app/data/poly_klines_live
+      - ./logs:/app/logs
+    command: >
+      python main.py paper-trade-poly
+      --bankroll 100
+      --position-size 2
+      --threshold 0.05
+      --half-spread-cents 1.5
+      --fee-rate-pct 2.0
+      --poll-sec 30
+    healthcheck:
+      test: ["CMD", "test", "-f", "/app/data/paper_trading/state.json"]
+      interval: 1m
+      timeout: 10s
+      retries: 5
+      start_period: 30s

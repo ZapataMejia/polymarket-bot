@@ -1,0 +1,10220 @@
+1
+00:00:00,000 --> 00:00:04,460
+ Eso en grupos piramidales.
+
+2
+00:00:06,240 --> 00:00:12,140
+ Bueno, muchachos, como les dije conmigo, o se enamoran mucho de esa profesión,
+
+3
+00:00:14,060 --> 00:00:15,620
+ o tienen la toda ya, ¿por qué?
+
+4
+00:00:17,860 --> 00:00:19,980
+ Esa para mí es la mejor profesión del mundo.
+
+5
+00:00:21,560 --> 00:00:23,820
+ Para mí esa es, por algo lo enseñamos,
+
+6
+00:00:24,620 --> 00:00:28,400
+ lo enseñamos y no solamente lo enseñamos, sino que también
+
+7
+00:00:28,400 --> 00:00:33,680
+ lo operamos, practicamos, son todos los que hacemos parte de TFT,
+
+8
+00:00:34,960 --> 00:00:36,340
+ operamos todas las mañanas.
+
+9
+00:00:36,600 --> 00:00:39,780
+ A mí me gusta mucho operar la bolsa europea a las 2 de la mañana
+
+10
+00:00:39,780 --> 00:00:43,920
+ y mi trade empieza desde las 2 de la mañana.
+
+11
+00:00:47,400 --> 00:00:54,480
+ Para mí es la mejor profesión del mundo porque tengo mucho tiempo.
+
+12
+00:00:54,480 --> 00:01:00,040
+ O sea, esa profesión me deja hacer muchas cosas en mi día a día,
+
+13
+00:01:01,240 --> 00:01:04,520
+ encargarme de muchas cosas al mismo tiempo.
+
+14
+00:01:07,480 --> 00:01:12,560
+ porque usted puede generar ingresos en dólares si está en un país como Colombia.
+
+15
+00:01:13,360 --> 00:01:17,800
+ la moneda es cuatro veces más de lo que usted gasta,
+
+16
+00:01:17,960 --> 00:01:21,200
+ entonces, es mucho mejor, es muy bueno.
+
+17
+00:01:21,300 --> 00:01:23,980
+ Pero, pues, también tenemos que entender que eso es un proceso,
+
+18
+00:01:24,880 --> 00:01:27,680
+ es un proceso que ustedes están empezando y que es un proceso que,
+
+19
+00:01:29,440 --> 00:01:31,900
+ como tal y como todos, se tienen que respetar.
+
+20
+00:01:33,100 --> 00:01:38,660
+ El hecho de que ya sepan operar, de que ya aprendan ustedes a operar.
+
+21
+00:01:40,660 --> 00:01:46,180
+ Yo les, me gusta decirles que esto, y es que lo mejor que puedan,
+
+22
+00:01:46,180 --> 00:01:50,020
+ que puede pasar en sus operaciones es que empiecen perdiendo.
+
+23
+00:01:52,020 --> 00:01:55,820
+ ¿Por qué? Porque si ustedes empiezan con una racha ganadora,
+
+24
+00:01:58,300 --> 00:02:04,400
+ créanme que es lo, una de las cosas que para mí,
+
+25
+00:02:04,540 --> 00:02:07,860
+ que para mi pensar es de las peores cosas que le pueden pasar a un trader.
+
+26
+00:02:08,980 --> 00:02:11,640
+ ¿Por qué? Porque se llena mucho de confianza
+
+27
+00:02:11,640 --> 00:02:15,280
+ y siente que cogió el cielo con las manos y esto.
+
+28
+00:02:16,120 --> 00:02:19,580
+ Ese negocio es de usted nivelar mucho sus emociones,
+
+29
+00:02:20,840 --> 00:02:25,620
+ de tratar de manejarlas muy bien al momento de operar.
+
+30
+00:02:27,320 --> 00:02:30,560
+ De todo eso vamos a hablar esta semana, de las zonas emocionales.
+
+31
+00:02:32,500 --> 00:02:35,420
+ Listo, hoy vamos a ver estructura de mercado.
+
+32
+00:02:36,260 --> 00:02:38,440
+ Les voy a compartir pantalla para que empecemos.
+
+33
+00:02:39,180 --> 00:02:43,560
+ En el momento que quieran hacer una pausa,
+
+34
+00:02:43,620 --> 00:02:48,060
+ una pausa en la conversación, en la charla, en el entrenamiento,
+
+35
+00:02:48,820 --> 00:02:49,320
+ lo hacen.
+
+36
+00:02:51,660 --> 00:02:54,200
+ Yo entiendo que es un tema nuevo que van a ver.
+
+37
+00:02:58,040 --> 00:03:00,920
+ Y yo les puedo hacer la aclaración en el momento que sea.
+
+38
+00:03:01,040 --> 00:03:01,680
+ Listo, ¿entendido?
+
+39
+00:03:05,100 --> 00:03:06,520
+ Entendido, Cristian, muchas gracias.
+
+40
+00:03:06,620 --> 00:03:07,820
+ Sí, señor. Muchas gracias.
+
+41
+00:03:09,180 --> 00:03:11,920
+ Bueno, muchachos.
+
+42
+00:03:13,160 --> 00:03:13,980
+ Vamos a empezar.
+
+43
+00:03:15,900 --> 00:03:16,740
+ Estructura de mercado.
+
+44
+00:03:17,560 --> 00:03:20,660
+ Ahora yo voy a identificar una estructura del mercado.
+
+45
+00:03:22,940 --> 00:03:26,260
+ La estructura del mercado para nosotros en agotamientos
+
+46
+00:03:26,260 --> 00:03:28,900
+ depende del primer paso.
+
+47
+00:03:29,020 --> 00:03:29,880
+ ¿Cuál es el primer paso?
+
+48
+00:03:31,080 --> 00:03:32,020
+ Ya lo vamos a ver acá.
+
+49
+00:03:33,160 --> 00:03:37,500
+ Debemos de identificar un módulo de arranque.
+
+50
+00:03:39,180 --> 00:03:43,220
+ Para operar en la estructura del mercado.
+
+51
+00:03:43,840 --> 00:03:45,160
+ Un módulo de arranque.
+
+52
+00:03:45,920 --> 00:03:48,400
+ ¿Qué es el módulo de arranque?
+
+53
+00:03:49,560 --> 00:03:56,020
+ El módulo de arranque es el precio más bajo de un mercado alcista
+
+54
+00:03:56,020 --> 00:03:57,840
+ desde donde se impulsa el mercado.
+
+55
+00:03:57,840 --> 00:03:59,120
+ Desde donde se impulsa dicho mercado.
+
+56
+00:03:59,980 --> 00:04:05,020
+ Entonces, el módulo de arranque es el precio más bajo de un mercado alcista.
+
+57
+00:04:05,460 --> 00:04:06,940
+ Desde donde se impulsa el mercado.
+
+58
+00:04:07,300 --> 00:04:07,800
+ ¿Cómo así?
+
+59
+00:04:08,240 --> 00:04:08,500
+ Listo.
+
+60
+00:04:09,800 --> 00:04:15,220
+ A mí me gusta esta herramienta porque yo le llamo alta plastilina.
+
+61
+00:04:15,580 --> 00:04:23,080
+ Donde yo les voy a enseñar minuiciosamente y está diseñado así para que ustedes lo puedan entender mucho mejor.
+
+62
+00:04:23,280 --> 00:04:28,260
+ Y si no lo entienden, me preguntan y con mucho gusto yo les vuelvo y les repito.
+
+63
+00:04:28,400 --> 00:04:30,260
+ Las veces que sea, muchachos.
+
+64
+00:04:30,880 --> 00:04:31,640
+ Las veces que sea.
+
+65
+00:04:31,880 --> 00:04:32,020
+ ¿Oye?
+
+66
+00:04:33,240 --> 00:04:33,620
+ Entonces, miren.
+
+67
+00:04:33,700 --> 00:04:34,860
+ Vemos un mercado, por ejemplo.
+
+68
+00:04:34,960 --> 00:04:36,580
+ Vamos a ver un mercado acá.
+
+69
+00:04:37,920 --> 00:04:39,780
+ Que viene así, bajando.
+
+70
+00:04:41,320 --> 00:04:41,680
+ ¿Cierto?
+
+71
+00:04:42,880 --> 00:04:45,060
+ Y yo, el módulo de arranque.
+
+72
+00:04:46,600 --> 00:04:49,040
+ Dice que es el precio más bajo.
+
+73
+00:04:49,120 --> 00:04:51,220
+ Vamos a hablar hoy de un mercado alcista.
+
+74
+00:04:51,880 --> 00:04:55,580
+ Que es el precio más bajo desde donde se impulsa el mercado.
+
+75
+00:04:56,300 --> 00:05:00,600
+ Entonces, ¿en qué temporalidad voy a sacar yo mi módulo de arranque?
+
+76
+00:05:05,420 --> 00:05:07,100
+ En cinco minutos.
+
+77
+00:05:07,920 --> 00:05:12,200
+ Aquí lo que ya lo hacemos acá y nos vamos con la plataforma.
+
+78
+00:05:12,520 --> 00:05:12,900
+ ¿Cómo así?
+
+79
+00:05:13,040 --> 00:05:18,200
+ Sí, yo me voy a ir para la temporalidad de cinco minutos y voy a identificar mi módulo de arranque.
+
+80
+00:05:18,320 --> 00:05:20,300
+ Entonces, ¿cómo así que vamos a identificar mi módulo de arranque?
+
+81
+00:05:21,620 --> 00:05:23,800
+ Vemos un mercado así, bajando.
+
+82
+00:05:23,800 --> 00:05:31,840
+ Y yo necesito saber cuál es el precio más bajo desde donde se me está impulsando un mercado.
+
+83
+00:05:37,440 --> 00:05:40,520
+ Entonces, yo voy a mirar el precio más bajo.
+
+84
+00:05:40,520 --> 00:05:44,060
+ Siempre voy a mirar la parte de abajo del mercado.
+
+85
+00:05:44,600 --> 00:05:51,020
+ Sabemos que en una tendencia, esta es la parte de arriba y esta es la parte de abajo.
+
+86
+00:05:52,140 --> 00:05:52,440
+ Listo.
+
+87
+00:05:55,980 --> 00:06:00,380
+ ¿Cuál es el precio más bajo desde donde se me está impulsando el mercado?
+
+88
+00:06:00,520 --> 00:06:02,540
+ Entonces, yo voy a mirar hacia atrás en cinco minutos.
+
+89
+00:06:03,500 --> 00:06:06,660
+ Este no, este es no porque tengo un precio más bajo.
+
+90
+00:06:06,660 --> 00:06:10,280
+ Este es no porque tengo un precio más bajo.
+
+91
+00:06:10,280 --> 00:06:18,480
+ Entonces, voy hacia atrás, miren, este es, voy a trazar una línea para saber si este es el precio más bajo del mercado.
+
+92
+00:06:18,600 --> 00:06:21,840
+ Y efectivamente, este es mi módulo de arranque.
+
+93
+00:06:22,160 --> 00:06:28,960
+ El precio más bajo desde donde se impulsa este mercado con todos estos movimientos.
+
+94
+00:06:33,060 --> 00:06:33,540
+ Listo.
+
+95
+00:06:33,540 --> 00:06:40,380
+ Ahora, después de que identifiquemos ese módulo de arranque, vamos a ver la estructura del mercado.
+
+96
+00:06:40,780 --> 00:06:46,260
+ Esa estructura nace desde un ABC.
+
+97
+00:06:48,140 --> 00:06:49,560
+ La estructura nace desde un ABC.
+
+98
+00:06:49,880 --> 00:06:54,080
+ El ABC es el primer movimiento del mercado final.
+
+99
+00:06:54,260 --> 00:06:55,860
+ Cualquier mercado que usted quiera operar.
+
+100
+00:06:56,520 --> 00:06:57,680
+ Cualquier mercado regulado.
+
+101
+00:07:00,680 --> 00:07:17,300
+ Los futuros de Nasdaq, futuros de Russell, el petróleo, oro, todos los mercados que usted quiera operar, va a tener un módulo de arranque.
+
+102
+00:07:17,560 --> 00:07:31,980
+ Y después de que identifiquemos este módulo de arranque, que lo vamos a ver acá, ya dijimos que este es el módulo de arranque, vamos a cazar ese primer movimiento que nos da el mercado.
+
+103
+00:07:32,680 --> 00:07:34,120
+ ¿Cómo hace que el primer movimiento?
+
+104
+00:07:34,320 --> 00:07:34,420
+ Sí.
+
+105
+00:07:35,560 --> 00:07:38,680
+ Desde ese precio, se está impulsando el mercado.
+
+106
+00:07:40,040 --> 00:07:43,480
+ Ese primer movimiento del mercado debe tener un retroceso.
+
+107
+00:07:45,480 --> 00:07:48,580
+ Ese movimiento, yo ya les voy a explicar de qué se trata este movimiento.
+
+108
+00:07:51,780 --> 00:08:08,700
+ Cuando el próximo movimiento me haga este mismo, me deja el primer movimiento del mercado que lo llamamos ABC.
+
+109
+00:08:09,840 --> 00:08:12,600
+ De este ABC puede partir todo.
+
+110
+00:08:12,600 --> 00:08:19,080
+ Un ABC, desde ese ABC nace todo lo que usted quiera, una tendencia entera.
+
+111
+00:08:19,700 --> 00:08:19,920
+ ¿Listo?
+
+112
+00:08:20,720 --> 00:08:29,600
+ Entonces, primer movimiento del mercado, el módulo de arranque, sigue, de ese movimiento del módulo de arranque, sigue con un ABC.
+
+113
+00:08:29,880 --> 00:08:31,180
+ Ya lo vamos a ver en el mercado real.
+
+114
+00:08:32,640 --> 00:08:38,840
+ Este es de donde nace cualquier movimiento, tendencia, onda, el ABC.
+
+115
+00:08:39,900 --> 00:08:41,620
+ Esto es para que lo podamos entender.
+
+116
+00:08:42,900 --> 00:08:54,580
+ Pero, los mercados financieros, ustedes ya lo pueden ver en lo que les ha enseñado Jenny y lo que les ha enseñado Daniel, se mueven de una manera muy diferente.
+
+117
+00:08:55,060 --> 00:09:10,480
+ Ellos no van a ser toda la vida, van a ser alcistas, o todo un día, por mucho que noticia positiva, van a ser alcistas, o toda la vida van a ser un mercado bajista, ¿no?
+
+118
+00:09:12,160 --> 00:09:16,760
+ No toda la vida no va a ser un mercado, no va a tener este momento, o todo un día, o todo un mes.
+
+119
+00:09:17,020 --> 00:09:18,140
+ Bueno, todo un día de pronto sí.
+
+120
+00:09:18,960 --> 00:09:21,980
+ Pero no toda una semana, ni todo un mes, ni todo un año.
+
+121
+00:09:23,080 --> 00:09:30,120
+ Ya sabemos que, ya lo han visto, en los días anteriores, que los mercados financieros se mueven por medio de ondas, ¿cierto?
+
+122
+00:09:30,760 --> 00:09:39,180
+ Esas ondas tienen, ondas hacia arriba, ondas hacia abajo, vuelve a ser ondas hacia arriba, y vuelve a ser ondas hacia abajo.
+
+123
+00:09:40,540 --> 00:09:45,640
+ Esas ondas tienen un nombre, el nombre del creador de las ondas, que se llama, ondas de helio.
+
+124
+00:09:46,480 --> 00:09:46,840
+ ¿Listo?
+
+125
+00:09:47,920 --> 00:09:56,940
+ Entonces miren que, estas ondas de helio, que tienen, módulos de arranque, módulos de arranque, módulos de arranque, y módulos de arranque.
+
+126
+00:09:57,420 --> 00:09:59,920
+ Y eso es lo que estamos hablando todavía en 5 minutos.
+
+127
+00:10:00,920 --> 00:10:04,420
+ O sea, no nos hemos parado para otra temporalidad, temporalidad de 5 minutos.
+
+128
+00:10:05,200 --> 00:10:05,640
+ ¿Cómo así?
+
+129
+00:10:05,780 --> 00:10:11,140
+ Siga, este impulso, lo generó, se generó desde este movimiento, desde este precio.
+
+130
+00:10:12,500 --> 00:10:16,280
+ Este otro impulso hacia abajo, se generó desde este otro precio.
+
+131
+00:10:17,500 --> 00:10:21,460
+ Este es un impulso hacia arriba, se generó desde este precio, y este hacia abajo, desde este precio.
+
+132
+00:10:25,200 --> 00:10:26,620
+ Ahora, esas ondas,
+
+133
+00:10:27,420 --> 00:10:32,360
+ esas ondas tienen unos nombres.
+
+134
+00:10:32,360 --> 00:10:35,760
+ Por ejemplo, este ABC es una onda,
+
+135
+00:10:37,220 --> 00:10:44,940
+ pero las más populares es la onda con 5 movimientos o fallo de quinta.
+
+136
+00:10:45,480 --> 00:10:47,420
+ ¿Cómo así que 5 movimientos o fallo de quinta?
+
+137
+00:10:47,500 --> 00:10:51,980
+ Ahora, después del ABC, el próximo movimiento que me haga,
+
+138
+00:10:53,180 --> 00:10:55,960
+ que sea otro retroceso similar a este,
+
+139
+00:10:56,620 --> 00:11:00,320
+ pero que me respete la estructura que se está formando.
+
+140
+00:11:01,040 --> 00:11:04,260
+ Acá tenemos un ABC, un movimiento alcista.
+
+141
+00:11:04,260 --> 00:11:10,200
+ Y para yo determinar este movimiento como un fallo de quinta,
+
+142
+00:11:10,420 --> 00:11:13,220
+ me voy a hacer este retroceso,
+
+143
+00:11:13,220 --> 00:11:18,120
+ y a la vez, el próximo movimiento, me voy a dejar otro impulso.
+
+144
+00:11:19,720 --> 00:11:25,640
+ Y esto lo vamos a tener en cuenta como un fallo de quinta.
+
+145
+00:11:25,640 --> 00:11:30,160
+ Ya el ABC, ya deja de ser un ABC,
+
+146
+00:11:30,160 --> 00:11:34,460
+ porque el movimiento que me hizo,
+
+147
+00:11:35,460 --> 00:11:38,860
+ tuvo continuidad a una onda con 5 movimientos.
+
+148
+00:11:40,020 --> 00:11:42,280
+ Y este ya sería el paso 1,
+
+149
+00:11:43,360 --> 00:11:45,020
+ el paso 2 hacia abajo,
+
+150
+00:11:45,700 --> 00:11:46,740
+ el paso 3,
+
+151
+00:11:47,740 --> 00:11:48,860
+ el paso 4,
+
+152
+00:11:49,480 --> 00:11:51,180
+ y el paso 5,
+
+153
+00:11:51,260 --> 00:11:52,140
+ ese último impulso.
+
+154
+00:11:53,540 --> 00:11:55,640
+ De la misma manera, muchachos,
+
+155
+00:11:55,900 --> 00:11:57,660
+ este fallo de quinta,
+
+156
+00:11:59,200 --> 00:12:01,460
+ puede tener otro movimiento más.
+
+157
+00:12:01,860 --> 00:12:02,280
+ ¿Cómo así?
+
+158
+00:12:02,740 --> 00:12:02,940
+ Sí.
+
+159
+00:12:04,340 --> 00:12:06,320
+ El próximo movimiento que tenga,
+
+160
+00:12:07,400 --> 00:12:09,900
+ así como este cuarto y este segundo,
+
+161
+00:12:11,160 --> 00:12:14,100
+ puede que tenga el impulso que tenga,
+
+162
+00:12:14,360 --> 00:12:16,500
+ siempre y cuando me respete estructura.
+
+163
+00:12:16,980 --> 00:12:18,520
+ ¿Cómo así que me respete estructura?
+
+164
+00:12:18,600 --> 00:12:21,960
+ Sí, que me respete esos movimientos que me dejó anteriores,
+
+165
+00:12:21,960 --> 00:12:23,280
+ desde donde se impulsó.
+
+166
+00:12:24,400 --> 00:12:26,040
+ Entonces, si me hace ese movimiento,
+
+167
+00:12:26,220 --> 00:12:27,600
+ respetando estructura,
+
+168
+00:12:28,260 --> 00:12:30,680
+ y el próximo vuelve sin pulso,
+
+169
+00:12:30,740 --> 00:12:33,400
+ y me deja este impulso significativo,
+
+170
+00:12:34,480 --> 00:12:35,860
+ este fallo de quinta,
+
+171
+00:12:36,320 --> 00:12:40,460
+ se nos convierte en un fallo de séptima,
+
+172
+00:12:40,860 --> 00:12:42,280
+ con 7 movimientos.
+
+173
+00:12:42,940 --> 00:12:43,820
+ Acá está el sexto,
+
+174
+00:12:44,040 --> 00:12:45,380
+ y acá el séptimo.
+
+175
+00:12:48,280 --> 00:12:48,620
+ ¿Listo?
+
+176
+00:12:49,000 --> 00:12:49,840
+ Estos son,
+
+177
+00:12:50,300 --> 00:12:52,620
+ lo que ustedes pueden ver en YouTube,
+
+178
+00:12:52,820 --> 00:12:54,840
+ lo que ustedes pueden investigar,
+
+179
+00:12:54,840 --> 00:12:57,160
+ en un canal de trading,
+
+180
+00:12:57,760 --> 00:12:58,740
+ le van a enseñar,
+
+181
+00:12:59,240 --> 00:13:01,380
+ solamente hasta este movimiento,
+
+182
+00:13:02,980 --> 00:13:03,880
+ el fallo de quinta.
+
+183
+00:13:06,680 --> 00:13:08,220
+ Nosotros en el transcurso del tiempo,
+
+184
+00:13:08,420 --> 00:13:10,820
+ vimos que el mercado tenía otra continuidad,
+
+185
+00:13:11,420 --> 00:13:13,000
+ y nos daba un movimiento asista,
+
+186
+00:13:13,160 --> 00:13:14,780
+ retroceso y otro movimiento asista,
+
+187
+00:13:15,620 --> 00:13:17,400
+ para un fallo de séptima.
+
+188
+00:13:18,580 --> 00:13:18,960
+ Miren que,
+
+189
+00:13:19,280 --> 00:13:20,160
+ lo que les dije al principio,
+
+190
+00:13:20,360 --> 00:13:21,960
+ nació desde una B6,
+
+191
+00:13:22,840 --> 00:13:23,740
+ pero como tuvo,
+
+192
+00:13:24,740 --> 00:13:26,080
+ una continuidad de existe,
+
+193
+00:13:26,220 --> 00:13:27,960
+ y respetó la estructura del mercado,
+
+194
+00:13:29,060 --> 00:13:30,120
+ nos dejó un fallo de quinta.
+
+195
+00:13:30,760 --> 00:13:31,840
+ Ese fallo de quinta,
+
+196
+00:13:32,160 --> 00:13:33,720
+ también respetó la estructura,
+
+197
+00:13:34,440 --> 00:13:35,620
+ y tuvo la continuidad,
+
+198
+00:13:35,900 --> 00:13:37,900
+ del mercado.
+
+199
+00:13:39,040 --> 00:13:40,300
+ Un movimiento asista,
+
+200
+00:13:40,540 --> 00:13:41,300
+ como estos,
+
+201
+00:13:41,720 --> 00:13:42,440
+ siempre,
+
+202
+00:13:42,620 --> 00:13:42,880
+ siempre,
+
+203
+00:13:43,020 --> 00:13:43,340
+ siempre,
+
+204
+00:13:43,440 --> 00:13:44,280
+ lo vamos a marcar,
+
+205
+00:13:44,500 --> 00:13:46,080
+ por la parte de abajo.
+
+206
+00:13:48,080 --> 00:13:48,500
+ ¿Por qué?
+
+207
+00:13:48,580 --> 00:13:49,140
+ Porque ustedes,
+
+208
+00:13:49,560 --> 00:13:50,820
+ sin saber,
+
+209
+00:13:51,340 --> 00:13:52,180
+ qué va a ser el mercado,
+
+210
+00:13:52,360 --> 00:13:53,360
+ acá y acá,
+
+211
+00:13:53,860 --> 00:13:54,640
+ va a unir,
+
+212
+00:13:55,220 --> 00:13:56,440
+ el módulo de arranque,
+
+213
+00:13:57,220 --> 00:13:58,660
+ con el primer mínimo,
+
+214
+00:13:58,820 --> 00:13:59,360
+ que nos dejó,
+
+215
+00:13:59,460 --> 00:14:00,200
+ que es este,
+
+216
+00:14:01,040 --> 00:14:02,300
+ cuando termine el paso 2.
+
+217
+00:14:03,340 --> 00:14:04,540
+ Y usted puede trazar una línea,
+
+218
+00:14:04,620 --> 00:14:05,560
+ como referencia,
+
+219
+00:14:07,120 --> 00:14:07,480
+ y miren que,
+
+220
+00:14:07,660 --> 00:14:08,020
+ sin saber,
+
+221
+00:14:08,120 --> 00:14:09,100
+ qué va a ser acá y acá,
+
+222
+00:14:09,340 --> 00:14:10,780
+ el mercado va a respetar,
+
+223
+00:14:11,260 --> 00:14:12,280
+ este movimiento,
+
+224
+00:14:12,780 --> 00:14:13,660
+ y este movimiento.
+
+225
+00:14:16,440 --> 00:14:18,080
+ Cuando su mercado asista.
+
+226
+00:14:19,020 --> 00:14:19,500
+ Entonces,
+
+227
+00:14:19,760 --> 00:14:20,780
+ a ese mercado asista,
+
+228
+00:14:21,140 --> 00:14:22,040
+ la parte de abajo,
+
+229
+00:14:22,120 --> 00:14:22,720
+ le vamos a llamar,
+
+230
+00:14:22,820 --> 00:14:23,500
+ los mínimos,
+
+231
+00:14:24,340 --> 00:14:25,700
+ los mínimos de un mercado asista,
+
+232
+00:14:25,880 --> 00:14:26,880
+ la parte de arriba,
+
+233
+00:14:27,480 --> 00:14:28,180
+ lo vamos a llamar,
+
+234
+00:14:28,480 --> 00:14:29,460
+ los máximos,
+
+235
+00:14:29,620 --> 00:14:30,120
+ pero esta,
+
+236
+00:14:30,540 --> 00:14:31,700
+ no es tan necesario trazar.
+
+237
+00:14:33,840 --> 00:14:34,320
+ Solamente,
+
+238
+00:14:34,500 --> 00:14:35,400
+ en un mercado asista,
+
+239
+00:14:35,520 --> 00:14:36,580
+ solamente la parte de abajo.
+
+240
+00:14:37,840 --> 00:14:38,340
+ ¿Alguien sabe,
+
+241
+00:14:38,460 --> 00:14:39,260
+ por qué es importante,
+
+242
+00:14:39,380 --> 00:14:40,420
+ marcar esta línea,
+
+243
+00:14:41,280 --> 00:14:42,080
+ de tendencia,
+
+244
+00:14:42,200 --> 00:14:42,840
+ que se le llama,
+
+245
+00:14:43,320 --> 00:14:44,180
+ por la parte de abajo?
+
+246
+00:14:46,280 --> 00:14:47,540
+ ¿O a alguien se le ocurre algo?
+
+247
+00:14:48,580 --> 00:14:49,060
+ ¿Cómo?
+
+248
+00:14:50,580 --> 00:14:51,100
+ ¿Cómo?
+
+249
+00:14:54,400 --> 00:14:55,160
+ Porque así,
+
+250
+00:14:55,260 --> 00:14:56,140
+ podemos identificar,
+
+251
+00:14:56,340 --> 00:14:57,360
+ que es la tendencia alcista.
+
+252
+00:14:59,600 --> 00:15:00,120
+ Exacto.
+
+253
+00:15:00,760 --> 00:15:01,640
+ Se puede identificar,
+
+254
+00:15:01,760 --> 00:15:02,620
+ la tendencia alcista,
+
+255
+00:15:03,000 --> 00:15:03,880
+ porque respeta,
+
+256
+00:15:03,960 --> 00:15:05,260
+ los movimientos anteriores,
+
+257
+00:15:05,720 --> 00:15:06,680
+ la estructura anterior.
+
+258
+00:15:07,680 --> 00:15:07,900
+ Miren que,
+
+259
+00:15:08,040 --> 00:15:08,420
+ si yo,
+
+260
+00:15:08,700 --> 00:15:09,440
+ sin yo saber,
+
+261
+00:15:09,900 --> 00:15:10,740
+ y ahora lo vamos a ver,
+
+262
+00:15:12,340 --> 00:15:13,000
+ sin yo saber,
+
+263
+00:15:13,220 --> 00:15:13,800
+ que acá,
+
+264
+00:15:14,440 --> 00:15:15,520
+ iba a ser esto,
+
+265
+00:15:15,720 --> 00:15:16,180
+ y eso,
+
+266
+00:15:16,300 --> 00:15:16,900
+ yo voy a coger,
+
+267
+00:15:17,460 --> 00:15:18,680
+ desde el módulo de arranque,
+
+268
+00:15:18,780 --> 00:15:19,720
+ y el primer mínimo,
+
+269
+00:15:21,280 --> 00:15:22,000
+ y lo voy a aplazar.
+
+270
+00:15:24,460 --> 00:15:25,280
+ Y vamos a esperar,
+
+271
+00:15:25,400 --> 00:15:25,700
+ que haga,
+
+272
+00:15:25,820 --> 00:15:26,540
+ que cumpla con,
+
+273
+00:15:26,840 --> 00:15:27,620
+ efectividad con,
+
+274
+00:15:28,140 --> 00:15:29,080
+ el fallo del quinto,
+
+275
+00:15:29,180 --> 00:15:30,260
+ y el fallo del séptimo.
+
+276
+00:15:34,940 --> 00:15:35,340
+ Listo.
+
+277
+00:15:35,660 --> 00:15:36,360
+ ¿Cómo van a estar ahí,
+
+278
+00:15:36,420 --> 00:15:36,780
+ muchachos?
+
+279
+00:15:39,980 --> 00:15:40,420
+ Bien,
+
+280
+00:15:40,480 --> 00:15:40,680
+ bien,
+
+281
+00:15:40,780 --> 00:15:41,360
+ entendido.
+
+282
+00:15:43,680 --> 00:15:44,120
+ Listo.
+
+283
+00:15:44,220 --> 00:15:44,500
+ Igual,
+
+284
+00:15:44,720 --> 00:15:45,680
+ en el momento,
+
+285
+00:15:45,820 --> 00:15:46,780
+ que ustedes quieran,
+
+286
+00:15:47,780 --> 00:15:48,860
+ pausarlo,
+
+287
+00:15:49,200 --> 00:15:50,680
+ explicamos de nuevo,
+
+288
+00:15:50,860 --> 00:15:51,780
+ no tengo problema.
+
+289
+00:15:53,020 --> 00:15:53,780
+ Yo lo que necesito,
+
+290
+00:15:53,880 --> 00:15:54,160
+ es que,
+
+291
+00:15:54,960 --> 00:15:56,660
+ en este curso intensivo,
+
+292
+00:15:57,120 --> 00:15:57,460
+ ustedes,
+
+293
+00:15:58,240 --> 00:15:59,620
+ tengan un aprendizaje,
+
+294
+00:15:59,780 --> 00:16:00,580
+ relámpago,
+
+295
+00:16:01,900 --> 00:16:02,740
+ pero que empiecen,
+
+296
+00:16:02,800 --> 00:16:03,220
+ un proceso,
+
+297
+00:16:03,360 --> 00:16:04,000
+ con sus carreras,
+
+298
+00:16:04,080 --> 00:16:04,680
+ como trader,
+
+299
+00:16:05,080 --> 00:16:05,760
+ para que manejen,
+
+300
+00:16:05,860 --> 00:16:06,600
+ una consistencia,
+
+301
+00:16:06,740 --> 00:16:07,620
+ a largo plazo.
+
+302
+00:16:08,500 --> 00:16:08,820
+ Michael,
+
+303
+00:16:09,080 --> 00:16:10,260
+ la próxima semana,
+
+304
+00:16:10,460 --> 00:16:11,280
+ les va a enseñar,
+
+305
+00:16:11,460 --> 00:16:12,620
+ todo lo que relacionamos,
+
+306
+00:16:12,800 --> 00:16:14,180
+ a cuentas de fondeo,
+
+307
+00:16:14,600 --> 00:16:15,680
+ cómo operamos nosotros,
+
+308
+00:16:15,820 --> 00:16:17,080
+ con qué broker operamos,
+
+309
+00:16:17,880 --> 00:16:19,160
+ cómo pueden acceder ustedes,
+
+310
+00:16:19,220 --> 00:16:20,160
+ a estas cuentas de fondeo,
+
+311
+00:16:20,220 --> 00:16:20,820
+ que ahora,
+
+312
+00:16:21,460 --> 00:16:23,420
+ como estar,
+
+313
+00:16:23,840 --> 00:16:25,420
+ estar a muy,
+
+314
+00:16:25,640 --> 00:16:26,500
+ muy buen precio,
+
+315
+00:16:27,140 --> 00:16:28,060
+ ya no hay necesidad,
+
+316
+00:16:28,240 --> 00:16:29,200
+ de arriesgar el capital,
+
+317
+00:16:29,300 --> 00:16:30,060
+ de cada uno de ustedes,
+
+318
+00:16:30,560 --> 00:16:31,720
+ sino que pueden empezar,
+
+319
+00:16:31,880 --> 00:16:32,840
+ con cuentas de fondeo,
+
+320
+00:16:32,900 --> 00:16:33,460
+ para que empiecen,
+
+321
+00:16:33,580 --> 00:16:34,320
+ paulatinamente.
+
+322
+00:16:34,960 --> 00:16:35,320
+ Ya después,
+
+323
+00:16:35,420 --> 00:16:36,020
+ ustedes pueden,
+
+324
+00:16:36,520 --> 00:16:37,260
+ coger un capital,
+
+325
+00:16:37,440 --> 00:16:37,960
+ después de que tengan,
+
+326
+00:16:38,040 --> 00:16:38,740
+ el conocimiento,
+
+327
+00:16:39,080 --> 00:16:39,360
+ y lo,
+
+328
+00:16:39,620 --> 00:16:40,520
+ como la palabra,
+
+329
+00:16:40,620 --> 00:16:41,140
+ lo se llama,
+
+330
+00:16:41,580 --> 00:16:43,100
+ empiezan a capitalizarlo,
+
+331
+00:16:43,240 --> 00:16:44,220
+ para que vayan a crecer.
+
+332
+00:16:44,640 --> 00:16:45,760
+ Un valor,
+
+333
+00:16:45,920 --> 00:16:46,500
+ de un ejemplo,
+
+334
+00:16:46,580 --> 00:16:46,960
+ de mil,
+
+335
+00:16:47,640 --> 00:16:48,640
+ y lo conviertan,
+
+336
+00:16:48,680 --> 00:16:49,320
+ en cinco mil,
+
+337
+00:16:49,420 --> 00:16:50,120
+ y de esos cinco mil,
+
+338
+00:16:50,140 --> 00:16:50,760
+ en diez mil,
+
+339
+00:16:50,820 --> 00:16:51,040
+ y así,
+
+340
+00:16:51,120 --> 00:16:51,620
+ políticamente.
+
+341
+00:16:52,800 --> 00:16:53,180
+ Listo.
+
+342
+00:16:53,980 --> 00:16:54,220
+ Ahora,
+
+343
+00:16:55,060 --> 00:16:55,940
+ vámonos para el mercado,
+
+344
+00:16:56,960 --> 00:16:58,580
+ vámonos para el mercado financiero.
+
+345
+00:17:01,500 --> 00:17:02,460
+ ¿Qué vamos a ver,
+
+346
+00:17:02,520 --> 00:17:03,360
+ en el mercado financiero,
+
+347
+00:17:03,460 --> 00:17:03,800
+ muchachos?
+
+348
+00:17:05,800 --> 00:17:06,940
+ ¿En qué temporalidad,
+
+349
+00:17:06,980 --> 00:17:07,640
+ les dije yo,
+
+350
+00:17:07,940 --> 00:17:08,620
+ que,
+
+351
+00:17:08,620 --> 00:17:09,260
+ que,
+
+352
+00:17:09,260 --> 00:17:13,700
+ que vamos a sacar,
+
+353
+00:17:13,900 --> 00:17:14,900
+ ese módulo de arranque?
+
+354
+00:17:16,060 --> 00:17:16,500
+ Sí.
+
+355
+00:17:20,140 --> 00:17:21,560
+ Cinco minutos.
+
+356
+00:17:21,560 --> 00:17:22,420
+ Cinco minutos.
+
+357
+00:17:23,700 --> 00:17:24,140
+ Exactamente,
+
+358
+00:17:24,260 --> 00:17:25,040
+ en cinco minutos.
+
+359
+00:17:25,720 --> 00:17:26,120
+ Entonces,
+
+360
+00:17:26,920 --> 00:17:28,740
+ ¿yo qué necesito?
+
+361
+00:17:28,800 --> 00:17:28,980
+ Miren,
+
+362
+00:17:29,520 --> 00:17:29,840
+ esto es,
+
+363
+00:17:30,480 --> 00:17:30,880
+ vamos a ver,
+
+364
+00:17:30,920 --> 00:17:31,480
+ hoy vamos a ver,
+
+365
+00:17:31,620 --> 00:17:31,800
+ siempre,
+
+366
+00:17:31,960 --> 00:17:32,760
+ siempre vamos a ver,
+
+367
+00:17:32,820 --> 00:17:33,940
+ el mercado que cerró.
+
+368
+00:17:34,160 --> 00:17:34,360
+ O sea,
+
+369
+00:17:34,520 --> 00:17:35,660
+ hoy vemos el mercado de hoy.
+
+370
+00:17:36,500 --> 00:17:36,860
+ Entonces,
+
+371
+00:17:37,520 --> 00:17:38,300
+ cinco minutos,
+
+372
+00:17:38,460 --> 00:17:39,560
+ esto es cinco minutos,
+
+373
+00:17:40,320 --> 00:17:43,020
+ yo necesito identificar un módulo de arranque,
+
+374
+00:17:43,400 --> 00:17:43,620
+ pero,
+
+375
+00:17:43,820 --> 00:17:45,440
+ como estamos viendo un módulo de arranque,
+
+376
+00:17:46,440 --> 00:17:47,020
+ ahí exista,
+
+377
+00:17:47,800 --> 00:17:48,280
+ recuerden que,
+
+378
+00:17:48,460 --> 00:17:49,980
+ el módulo de arranque exista,
+
+379
+00:17:50,060 --> 00:17:50,740
+ es el precio,
+
+380
+00:17:50,920 --> 00:17:51,820
+ más bajo,
+
+381
+00:17:52,540 --> 00:17:53,200
+ del mercado.
+
+382
+00:17:54,640 --> 00:17:54,800
+ Entonces,
+
+383
+00:17:54,860 --> 00:17:55,680
+ acá yo tengo un precio,
+
+384
+00:17:55,880 --> 00:17:56,120
+ señor.
+
+385
+00:17:57,160 --> 00:17:58,280
+ Usted estaba proyectando.
+
+386
+00:18:00,940 --> 00:18:01,900
+ Está proyectando,
+
+387
+00:18:02,100 --> 00:18:02,720
+ el mercado.
+
+388
+00:18:03,940 --> 00:18:04,380
+ Sí,
+
+389
+00:18:04,560 --> 00:18:04,800
+ no,
+
+390
+00:18:04,800 --> 00:18:05,440
+ no se ve.
+
+391
+00:18:05,960 --> 00:18:06,140
+ No,
+
+392
+00:18:06,220 --> 00:18:07,100
+ te veo a ti no más.
+
+393
+00:18:07,760 --> 00:18:07,980
+ Ok,
+
+394
+00:18:08,320 --> 00:18:09,280
+ déjame mirar qué paso.
+
+395
+00:18:15,120 --> 00:18:15,720
+ Ahí ya.
+
+396
+00:18:17,300 --> 00:18:17,700
+ Sí,
+
+397
+00:18:17,800 --> 00:18:17,940
+ sí,
+
+398
+00:18:18,340 --> 00:18:18,940
+ ya veo,
+
+399
+00:18:19,040 --> 00:18:19,720
+ ya veo la pantalla,
+
+400
+00:18:19,900 --> 00:18:20,420
+ ya veo el mercado.
+
+401
+00:18:21,160 --> 00:18:21,460
+ Ok.
+
+402
+00:18:24,360 --> 00:18:24,760
+ Entonces,
+
+403
+00:18:24,920 --> 00:18:25,060
+ miren,
+
+404
+00:18:26,520 --> 00:18:27,460
+ yo qué necesito acá,
+
+405
+00:18:27,680 --> 00:18:28,720
+ estamos en cinco minutos.
+
+406
+00:18:29,220 --> 00:18:29,420
+ Yo,
+
+407
+00:18:29,620 --> 00:18:30,200
+ día juicioso,
+
+408
+00:18:30,600 --> 00:18:33,140
+ cuando ustedes se vayan a sentar a operar,
+
+409
+00:18:33,720 --> 00:18:35,400
+ lo primero que vamos a hacer,
+
+410
+00:18:36,040 --> 00:18:39,320
+ es sacar soportes y resistencias,
+
+411
+00:18:39,440 --> 00:18:40,160
+ como les enseñó,
+
+412
+00:18:40,720 --> 00:18:42,380
+ de Jenny y Daniel,
+
+413
+00:18:43,660 --> 00:18:45,700
+ de temporalidad alta,
+
+414
+00:18:46,040 --> 00:18:46,700
+ hacia atrás.
+
+415
+00:18:46,940 --> 00:18:47,200
+ Listo.
+
+416
+00:18:47,740 --> 00:18:47,880
+ Entonces,
+
+417
+00:18:47,960 --> 00:18:48,680
+ ¿qué tenemos acá?
+
+418
+00:18:49,300 --> 00:18:49,940
+ Acá tenemos,
+
+419
+00:18:50,780 --> 00:18:52,160
+ un número cerrado,
+
+420
+00:18:52,280 --> 00:18:54,060
+ una resistencia muy interesante,
+
+421
+00:18:54,620 --> 00:18:55,960
+ que la podemos trazar de acá,
+
+422
+00:18:57,380 --> 00:18:58,440
+ de toda esta mecha,
+
+423
+00:19:01,260 --> 00:19:02,160
+ 16,000.
+
+424
+00:19:02,720 --> 00:19:06,740
+ Acá tenemos otra resistencia muy pegada,
+
+425
+00:19:06,820 --> 00:19:13,520
+ y acá tenemos en la parte de abajo un soporte.
+
+426
+00:19:13,920 --> 00:19:14,760
+ ¿Por qué un soporte?
+
+427
+00:19:14,760 --> 00:19:16,100
+ Porque acá viene y testió,
+
+428
+00:19:16,340 --> 00:19:17,480
+ testió, testió, testió,
+
+429
+00:19:17,480 --> 00:19:18,760
+ ya con tres toques,
+
+430
+00:19:18,820 --> 00:19:20,180
+ es un soporte muy interesante,
+
+431
+00:19:20,500 --> 00:19:21,300
+ en 240.
+
+432
+00:19:22,380 --> 00:19:23,680
+ Acá también tenemos,
+
+433
+00:19:23,840 --> 00:19:24,580
+ en este precio,
+
+434
+00:19:25,200 --> 00:19:26,020
+ 15,500,
+
+435
+00:19:26,020 --> 00:19:26,060
+ 15,500,
+
+436
+00:19:26,060 --> 00:19:27,660
+ un soporte,
+
+437
+00:19:29,800 --> 00:19:31,340
+ vámonos para 60 minutos,
+
+438
+00:19:31,460 --> 00:19:34,060
+ y en 60 minutos vamos a corroborar estas,
+
+439
+00:19:34,720 --> 00:19:36,560
+ podemos colocar esta un poquito más arriba,
+
+440
+00:19:36,920 --> 00:19:38,440
+ en una hora,
+
+441
+00:19:40,020 --> 00:19:40,520
+ entonces miren que,
+
+442
+00:19:41,060 --> 00:19:42,120
+ esto lo podemos testar acá,
+
+443
+00:19:43,900 --> 00:19:45,240
+ esta está muy interesante,
+
+444
+00:19:47,920 --> 00:19:48,460
+ y saben,
+
+445
+00:19:48,760 --> 00:19:50,880
+ ustedes ya saben por qué marcar este soporte,
+
+446
+00:19:50,960 --> 00:19:51,580
+ es esta resistencia,
+
+447
+00:19:51,660 --> 00:19:51,860
+ ¿cierto?
+
+448
+00:19:56,800 --> 00:19:57,900
+ ¿Ya saben cómo hacerlo?
+
+449
+00:19:59,420 --> 00:20:00,700
+ ¿O alguien tiene dudas?
+
+450
+00:20:10,240 --> 00:20:10,960
+ ¿Todos saben?
+
+451
+00:20:17,920 --> 00:20:18,420
+ Sí, sí,
+
+452
+00:20:18,460 --> 00:20:19,340
+ si no se explicaron.
+
+453
+00:20:20,140 --> 00:20:20,380
+ Ok.
+
+454
+00:20:22,580 --> 00:20:22,820
+ Dice,
+
+455
+00:20:22,900 --> 00:20:24,100
+ entonces miren que 60 ya tenemos,
+
+456
+00:20:24,500 --> 00:20:25,120
+ un soporte,
+
+457
+00:20:25,460 --> 00:20:26,600
+ y dos resistencias,
+
+458
+00:20:27,140 --> 00:20:28,000
+ vamos para 30,
+
+459
+00:20:30,700 --> 00:20:31,880
+ intentamos a corroborar,
+
+460
+00:20:31,960 --> 00:20:33,400
+ que si sean esos precios,
+
+461
+00:20:33,480 --> 00:20:35,060
+ donde están rebotando el mercado,
+
+462
+00:20:35,580 --> 00:20:36,520
+ se lo podemos poner,
+
+463
+00:20:36,680 --> 00:20:37,760
+ un poquito más abajo,
+
+464
+00:20:40,060 --> 00:20:41,120
+ a 15 minutos,
+
+465
+00:20:41,280 --> 00:20:42,000
+ en 15 minutos,
+
+466
+00:20:42,120 --> 00:20:42,900
+ también me gusta ver,
+
+467
+00:20:43,320 --> 00:20:44,560
+ los patrones de vela,
+
+468
+00:20:45,440 --> 00:20:46,740
+ y vamos a mirar,
+
+469
+00:20:46,860 --> 00:20:47,780
+ que esa resistencia,
+
+470
+00:20:47,900 --> 00:20:48,300
+ por ejemplo,
+
+471
+00:20:48,460 --> 00:20:49,400
+ si sea exactamente,
+
+472
+00:20:49,580 --> 00:20:50,660
+ esa la que necesitemos,
+
+473
+00:20:51,120 --> 00:20:51,900
+ abajo el soporte,
+
+474
+00:20:52,080 --> 00:20:52,920
+ que si esté pegando,
+
+475
+00:20:52,980 --> 00:20:53,760
+ los mismos precios,
+
+476
+00:20:55,980 --> 00:20:56,420
+ y ya por ejemplo,
+
+477
+00:20:56,480 --> 00:20:57,560
+ nos vamos para 5 minutos,
+
+478
+00:20:57,680 --> 00:20:58,740
+ ya hemos corroborado,
+
+479
+00:20:58,920 --> 00:20:59,920
+ en varias temporalidades,
+
+480
+00:21:00,860 --> 00:21:02,080
+ y acá en 5 minutos,
+
+481
+00:21:02,640 --> 00:21:04,120
+ es la temporalidad,
+
+482
+00:21:04,780 --> 00:21:06,480
+ donde vamos a sacar,
+
+483
+00:21:06,800 --> 00:21:08,120
+ nuestro módulo de arranque,
+
+484
+00:21:09,560 --> 00:21:09,980
+ entonces,
+
+485
+00:21:10,680 --> 00:21:11,640
+ recuerden esto muchachos,
+
+486
+00:21:11,640 --> 00:21:13,080
+ la estructura de mercado,
+
+487
+00:21:15,680 --> 00:21:17,640
+ cuando vamos a hablar de un mercado alcista,
+
+488
+00:21:17,880 --> 00:21:18,740
+ es esto,
+
+489
+00:21:18,740 --> 00:21:21,840
+ esta es la estructura del mercado,
+
+490
+00:21:25,840 --> 00:21:27,080
+ un mercado alcista,
+
+491
+00:21:27,600 --> 00:21:29,180
+ cuál es el módulo de arranque,
+
+492
+00:21:29,360 --> 00:21:31,060
+ el precio más bajo,
+
+493
+00:21:32,860 --> 00:21:34,160
+ desde donde se impulsa,
+
+494
+00:21:34,340 --> 00:21:35,160
+ este mercado,
+
+495
+00:21:36,160 --> 00:21:36,900
+ en este caso,
+
+496
+00:21:36,900 --> 00:21:36,900
+ en este caso,
+
+497
+00:21:36,900 --> 00:21:37,900
+ sería este,
+
+498
+00:21:38,060 --> 00:21:38,960
+ el módulo de arranque,
+
+499
+00:21:38,960 --> 00:21:42,120
+ ahora,
+
+500
+00:21:42,260 --> 00:21:42,840
+ vamos a hacerlo,
+
+501
+00:21:42,960 --> 00:21:43,900
+ vamos a sacarlo acá,
+
+502
+00:21:44,040 --> 00:21:44,840
+ en 5 minutos,
+
+503
+00:21:45,560 --> 00:21:45,940
+ siempre,
+
+504
+00:21:46,260 --> 00:21:47,280
+ lo primero que voy a ir,
+
+505
+00:21:47,400 --> 00:21:48,080
+ después de que saque,
+
+506
+00:21:48,140 --> 00:21:49,140
+ los soportes y las resistencias,
+
+507
+00:21:49,300 --> 00:21:50,640
+ me quedo en 5 minutos,
+
+508
+00:21:51,640 --> 00:21:52,500
+ y en 5 minutos,
+
+509
+00:21:52,600 --> 00:21:53,280
+ voy a identificar,
+
+510
+00:21:53,580 --> 00:21:54,360
+ módulo de arranque,
+
+511
+00:21:54,820 --> 00:21:56,360
+ entonces,
+
+512
+00:21:57,320 --> 00:21:58,160
+ empezamos por este,
+
+513
+00:21:58,420 --> 00:21:59,960
+ este puede ser mi módulo de arranque,
+
+514
+00:22:01,160 --> 00:22:02,020
+ no,
+
+515
+00:22:02,180 --> 00:22:03,740
+ porque acá ya hay un movimiento,
+
+516
+00:22:04,020 --> 00:22:05,120
+ diferente,
+
+517
+00:22:05,520 --> 00:22:06,500
+ pero vamos a enfocarnos,
+
+518
+00:22:06,640 --> 00:22:06,820
+ hoy,
+
+519
+00:22:07,020 --> 00:22:08,020
+ en el módulo de arranque,
+
+520
+00:22:08,120 --> 00:22:08,440
+ del sistema,
+
+521
+00:22:08,780 --> 00:22:08,900
+ entonces,
+
+522
+00:22:08,900 --> 00:22:09,560
+ yo que voy a hacer,
+
+523
+00:22:10,100 --> 00:22:11,200
+ voy a tener para atrás,
+
+524
+00:22:11,560 --> 00:22:12,360
+ en 5 minutos,
+
+525
+00:22:12,980 --> 00:22:13,460
+ voy a buscar,
+
+526
+00:22:13,900 --> 00:22:14,420
+ un precio,
+
+527
+00:22:15,180 --> 00:22:16,560
+ desde donde se ha impulsado,
+
+528
+00:22:16,700 --> 00:22:17,220
+ el mercado,
+
+529
+00:22:17,440 --> 00:22:18,380
+ acá tengo un precio,
+
+530
+00:22:18,920 --> 00:22:19,660
+ donde vino,
+
+531
+00:22:20,040 --> 00:22:20,700
+ retesteó,
+
+532
+00:22:20,820 --> 00:22:21,360
+ recuerden que,
+
+533
+00:22:22,720 --> 00:22:23,660
+ es esto que les digo,
+
+534
+00:22:24,100 --> 00:22:29,120
+ ven que desde acá,
+
+535
+00:22:29,200 --> 00:22:29,980
+ se está impulsando,
+
+536
+00:22:30,640 --> 00:22:30,800
+ entonces,
+
+537
+00:22:30,860 --> 00:22:31,500
+ yo que voy a decir,
+
+538
+00:22:31,740 --> 00:22:32,880
+ este mismo módulo de arranque,
+
+539
+00:22:33,180 --> 00:22:33,500
+ no,
+
+540
+00:22:33,620 --> 00:22:34,320
+ porque hay un precio,
+
+541
+00:22:34,580 --> 00:22:35,300
+ más abajo,
+
+542
+00:22:35,680 --> 00:22:36,160
+ véanlo acá,
+
+543
+00:22:37,440 --> 00:22:38,800
+ este mismo módulo de arranque,
+
+544
+00:22:38,900 --> 00:22:39,240
+ o sea,
+
+545
+00:22:39,360 --> 00:22:40,140
+ hay uno más abajo,
+
+546
+00:22:40,300 --> 00:22:40,400
+ entonces,
+
+547
+00:22:40,540 --> 00:22:41,200
+ este no es,
+
+548
+00:22:42,560 --> 00:22:43,340
+ que necesito mirar,
+
+549
+00:22:43,460 --> 00:22:44,440
+ si hay un precio,
+
+550
+00:22:44,740 --> 00:22:45,380
+ más abajo,
+
+551
+00:22:46,400 --> 00:22:47,280
+ el módulo de arranque,
+
+552
+00:22:47,340 --> 00:22:48,040
+ lo vamos a sacar,
+
+553
+00:22:48,360 --> 00:22:49,060
+ teniendo en cuenta,
+
+554
+00:22:50,740 --> 00:22:51,340
+ la sesión,
+
+555
+00:22:51,580 --> 00:22:53,100
+ donde abre la sesión asiática,
+
+556
+00:22:53,880 --> 00:22:54,580
+ europea,
+
+557
+00:22:54,680 --> 00:22:55,000
+ que es,
+
+558
+00:22:55,520 --> 00:22:56,460
+ abre a las 5 de la tarde,
+
+559
+00:22:56,520 --> 00:22:57,120
+ la asiática,
+
+560
+00:22:57,720 --> 00:22:59,380
+ abre a la europea,
+
+561
+00:22:59,440 --> 00:23:00,300
+ a las 2 de la mañana,
+
+562
+00:23:01,280 --> 00:23:02,260
+ del mismo día,
+
+563
+00:23:02,820 --> 00:23:02,960
+ entonces,
+
+564
+00:23:03,020 --> 00:23:03,540
+ miren que nosotros,
+
+565
+00:23:03,620 --> 00:23:04,380
+ acá lo señalamos,
+
+566
+00:23:04,920 --> 00:23:05,720
+ desde la apertura,
+
+567
+00:23:06,020 --> 00:23:07,440
+ asiática europea,
+
+568
+00:23:07,820 --> 00:23:08,880
+ porque yo no voy a tener en cuenta,
+
+569
+00:23:08,880 --> 00:23:10,600
+ lo que pasó el día anterior,
+
+570
+00:23:10,780 --> 00:23:11,780
+ en la sesión americana,
+
+571
+00:23:13,620 --> 00:23:13,800
+ entonces,
+
+572
+00:23:14,040 --> 00:23:14,400
+ acá,
+
+573
+00:23:14,840 --> 00:23:16,420
+ a la 1 de la mañana,
+
+574
+00:23:16,980 --> 00:23:17,320
+ tengo,
+
+575
+00:23:17,700 --> 00:23:18,960
+ un módulo de arranque,
+
+576
+00:23:19,560 --> 00:23:23,840
+ donde se me está impulsando,
+
+577
+00:23:24,080 --> 00:23:24,920
+ todo este mercado,
+
+578
+00:23:25,340 --> 00:23:25,620
+ cierto,
+
+579
+00:23:27,700 --> 00:23:28,700
+ vamos a marcarlo,
+
+580
+00:23:28,780 --> 00:23:28,880
+ miren,
+
+581
+00:23:29,880 --> 00:23:30,940
+ el máximo,
+
+582
+00:23:31,360 --> 00:23:31,900
+ mínimo,
+
+583
+00:23:32,660 --> 00:23:33,360
+ máximo,
+
+584
+00:23:33,480 --> 00:23:34,560
+ mínimo,
+
+585
+00:23:34,560 --> 00:23:34,660
+ mínimo,
+
+586
+00:23:34,660 --> 00:23:35,660
+ máximo,
+
+587
+00:23:35,660 --> 00:23:36,320
+ máximo,
+
+588
+00:23:36,980 --> 00:23:37,480
+ mínimo,
+
+589
+00:23:37,720 --> 00:23:39,360
+ máximo,
+
+590
+00:23:39,580 --> 00:23:40,460
+ muy notorio,
+
+591
+00:23:42,460 --> 00:23:44,000
+ muy hasta arriba,
+
+592
+00:23:44,140 --> 00:23:45,620
+ me deja ese último máximo,
+
+593
+00:23:46,320 --> 00:23:47,100
+ y que paso acá,
+
+594
+00:23:48,240 --> 00:23:49,100
+ esta estructura,
+
+595
+00:23:49,980 --> 00:23:52,200
+ intentó girar,
+
+596
+00:23:53,340 --> 00:23:54,000
+ porque nos hizo,
+
+597
+00:23:54,300 --> 00:23:54,980
+ otra onda,
+
+598
+00:23:55,580 --> 00:23:56,300
+ en una onda,
+
+599
+00:23:56,380 --> 00:23:56,520
+ miren,
+
+600
+00:23:58,400 --> 00:23:59,160
+ miren que los movimientos,
+
+601
+00:23:59,340 --> 00:24:01,000
+ de esa onda,
+
+602
+00:24:01,580 --> 00:24:02,420
+ ya eran diferentes,
+
+603
+00:24:02,520 --> 00:24:03,060
+ a los movimientos,
+
+604
+00:24:03,180 --> 00:24:04,180
+ de esa onda,
+
+605
+00:24:05,180 --> 00:24:09,460
+ esta es una onda bajista,
+
+606
+00:24:09,620 --> 00:24:10,440
+ con 1,
+
+607
+00:24:10,580 --> 00:24:10,960
+ 2,
+
+608
+00:24:11,620 --> 00:24:12,020
+ 3,
+
+609
+00:24:13,160 --> 00:24:13,720
+ 4,
+
+610
+00:24:14,300 --> 00:24:14,800
+ 5,
+
+611
+00:24:15,300 --> 00:24:15,580
+ 6,
+
+612
+00:24:15,700 --> 00:24:16,680
+ y 7 movimientos,
+
+613
+00:24:17,160 --> 00:24:21,760
+ ahora,
+
+614
+00:24:21,860 --> 00:24:22,460
+ vamos a contar,
+
+615
+00:24:22,600 --> 00:24:23,360
+ es 1,
+
+616
+00:24:23,600 --> 00:24:25,020
+ esta yo la contaría,
+
+617
+00:24:27,520 --> 00:24:27,920
+ así,
+
+618
+00:24:28,260 --> 00:24:31,180
+ recuerde que la estructura,
+
+619
+00:24:31,420 --> 00:24:31,920
+ del mercado,
+
+620
+00:24:32,040 --> 00:24:32,560
+ está formada,
+
+621
+00:24:32,720 --> 00:24:33,580
+ por máximos,
+
+622
+00:24:33,740 --> 00:24:34,680
+ y por mínimos,
+
+623
+00:24:36,280 --> 00:24:37,400
+ podemos contar acá,
+
+624
+00:24:37,660 --> 00:24:37,880
+ 1,
+
+625
+00:24:39,160 --> 00:24:39,840
+ 2,
+
+626
+00:24:40,840 --> 00:24:41,280
+ 3,
+
+627
+00:24:42,140 --> 00:24:42,580
+ 4,
+
+628
+00:24:43,300 --> 00:24:43,900
+ 5,
+
+629
+00:24:45,980 --> 00:24:47,020
+ por máximos,
+
+630
+00:24:47,100 --> 00:24:47,860
+ y por mínimos,
+
+631
+00:24:52,140 --> 00:24:52,460
+ tenemos,
+
+632
+00:24:52,980 --> 00:24:57,500
+ y se marca,
+
+633
+00:24:57,700 --> 00:24:58,380
+ por la parte,
+
+634
+00:24:58,580 --> 00:24:59,140
+ de abajo,
+
+635
+00:24:59,440 --> 00:25:00,200
+ de este mercado,
+
+636
+00:25:04,120 --> 00:25:04,580
+ recuerden que,
+
+637
+00:25:04,800 --> 00:25:05,780
+ un mercado bajista,
+
+638
+00:25:05,860 --> 00:25:06,220
+ se marca,
+
+639
+00:25:06,400 --> 00:25:07,280
+ por la parte,
+
+640
+00:25:07,440 --> 00:25:07,900
+ de abajo,
+
+641
+00:25:08,720 --> 00:25:09,580
+ de todos los mínimos,
+
+642
+00:25:09,640 --> 00:25:10,480
+ donde nos pegaron,
+
+643
+00:25:10,900 --> 00:25:11,920
+ donde nos tocó los mínimos,
+
+644
+00:25:12,040 --> 00:25:12,280
+ entonces,
+
+645
+00:25:12,440 --> 00:25:13,440
+ miren que yo voy a coger,
+
+646
+00:25:14,620 --> 00:25:16,000
+ desde el módulo de arranque,
+
+647
+00:25:16,260 --> 00:25:17,560
+ que empezó prácticamente,
+
+648
+00:25:17,960 --> 00:25:18,500
+ a acá,
+
+649
+00:25:20,340 --> 00:25:21,120
+ y voy a juntarla,
+
+650
+00:25:21,200 --> 00:25:21,940
+ con este precio,
+
+651
+00:25:25,940 --> 00:25:26,420
+ así,
+
+652
+00:25:27,140 --> 00:25:28,080
+ esa sería,
+
+653
+00:25:28,080 --> 00:25:29,860
+ una línea de tendencia,
+
+654
+00:25:30,140 --> 00:25:30,600
+ macro,
+
+655
+00:25:37,300 --> 00:25:38,320
+ en términos,
+
+656
+00:25:38,400 --> 00:25:39,040
+ que aunque tuvo,
+
+657
+00:25:39,260 --> 00:25:40,760
+ otra onda bajista,
+
+658
+00:25:42,640 --> 00:25:43,160
+ ese precio,
+
+659
+00:25:43,240 --> 00:25:44,160
+ lo vino y lo tocó,
+
+660
+00:25:44,440 --> 00:25:45,260
+ como lo tocó acá,
+
+661
+00:25:49,760 --> 00:25:51,860
+ ¿cómo vamos muchachos,
+
+662
+00:25:51,920 --> 00:25:52,580
+ cómo van hasta ahora,
+
+663
+00:25:53,580 --> 00:25:54,340
+ alguna duda,
+
+664
+00:25:54,460 --> 00:25:55,220
+ alguna pregunta,
+
+665
+00:25:58,040 --> 00:25:58,880
+ disculpe,
+
+666
+00:25:59,040 --> 00:25:59,420
+ Cristian,
+
+667
+00:25:59,600 --> 00:26:00,300
+ entonces,
+
+668
+00:26:00,680 --> 00:26:01,180
+ el,
+
+669
+00:26:01,180 --> 00:26:03,360
+ el módulo de arranque,
+
+670
+00:26:03,880 --> 00:26:04,400
+ lo vemos,
+
+671
+00:26:04,600 --> 00:26:05,300
+ desde qué hora,
+
+672
+00:26:05,480 --> 00:26:05,760
+ siempre,
+
+673
+00:26:05,900 --> 00:26:06,780
+ desde que arranca el mercado,
+
+674
+00:26:07,020 --> 00:26:08,080
+ o un poco antes,
+
+675
+00:26:10,080 --> 00:26:10,820
+ el módulo de arranque,
+
+676
+00:26:10,820 --> 00:26:10,840
+ el módulo de arranque,
+
+677
+00:26:10,900 --> 00:26:12,100
+ lo vamos a poder,
+
+678
+00:26:12,240 --> 00:26:12,880
+ a ver,
+
+679
+00:26:12,940 --> 00:26:14,000
+ desde cualquier hora,
+
+680
+00:26:14,200 --> 00:26:14,560
+ ¿por qué?
+
+681
+00:26:15,560 --> 00:26:16,100
+ Porque miren,
+
+682
+00:26:16,720 --> 00:26:18,320
+ aunque la tendencia macro,
+
+683
+00:26:18,900 --> 00:26:19,840
+ es una tendencia,
+
+684
+00:26:20,040 --> 00:26:20,660
+ alcista,
+
+685
+00:26:21,500 --> 00:26:22,080
+ en que desde acá,
+
+686
+00:26:22,120 --> 00:26:22,800
+ se está impulsando,
+
+687
+00:26:25,020 --> 00:26:25,900
+ desde ese precio,
+
+688
+00:26:26,020 --> 00:26:27,180
+ que tenemos acá abajo,
+
+689
+00:26:27,640 --> 00:26:28,800
+ está impulsando el mercado,
+
+690
+00:26:30,860 --> 00:26:31,140
+ pero,
+
+691
+00:26:31,480 --> 00:26:32,420
+ anteriormente,
+
+692
+00:26:32,940 --> 00:26:33,640
+ también había,
+
+693
+00:26:33,980 --> 00:26:34,860
+ un movimiento,
+
+694
+00:26:36,820 --> 00:26:37,480
+ pero solamente,
+
+695
+00:26:37,600 --> 00:26:38,440
+ lo vamos a tener en cuenta,
+
+696
+00:26:38,620 --> 00:26:39,640
+ desde la apertura,
+
+697
+00:26:39,780 --> 00:26:40,500
+ asiática,
+
+698
+00:26:41,400 --> 00:26:41,620
+ miren,
+
+699
+00:26:42,980 --> 00:26:43,540
+ y esto,
+
+700
+00:26:43,720 --> 00:26:44,320
+ es otra onda,
+
+701
+00:26:44,600 --> 00:26:45,700
+ esto es un módulo de arranque,
+
+702
+00:26:45,840 --> 00:26:46,500
+ bajista,
+
+703
+00:26:47,220 --> 00:26:48,580
+ con esta onda bajista,
+
+704
+00:26:52,880 --> 00:26:53,220
+ ¿por qué?
+
+705
+00:26:53,300 --> 00:26:54,240
+ porque me genera,
+
+706
+00:26:54,420 --> 00:26:55,080
+ movimientos,
+
+707
+00:26:55,500 --> 00:26:56,140
+ bajistas,
+
+708
+00:26:58,020 --> 00:26:58,900
+ este es un módulo,
+
+709
+00:26:58,900 --> 00:26:59,340
+ de arranque,
+
+710
+00:26:59,480 --> 00:26:59,860
+ así está,
+
+711
+00:27:00,040 --> 00:27:01,020
+ porque me genera,
+
+712
+00:27:01,140 --> 00:27:01,660
+ un movimiento,
+
+713
+00:27:01,860 --> 00:27:02,420
+ alcista,
+
+714
+00:27:04,380 --> 00:27:05,000
+ y adivine que,
+
+715
+00:27:05,540 --> 00:27:06,420
+ aunque tengamos,
+
+716
+00:27:06,580 --> 00:27:07,100
+ un impulso,
+
+717
+00:27:07,340 --> 00:27:08,460
+ muy significativo,
+
+718
+00:27:09,680 --> 00:27:10,140
+ este,
+
+719
+00:27:10,280 --> 00:27:11,000
+ es un movimiento,
+
+720
+00:27:11,360 --> 00:27:11,940
+ bajista,
+
+721
+00:27:12,680 --> 00:27:13,380
+ dentro de un,
+
+722
+00:27:13,720 --> 00:27:14,600
+ dentro de una onda,
+
+723
+00:27:14,800 --> 00:27:15,280
+ alcista,
+
+724
+00:27:17,540 --> 00:27:17,940
+ entonces,
+
+725
+00:27:18,420 --> 00:27:19,000
+ como les dije,
+
+726
+00:27:19,320 --> 00:27:19,540
+ ahora,
+
+727
+00:27:21,920 --> 00:27:22,360
+ el mercado,
+
+728
+00:27:23,040 --> 00:27:23,680
+ el mercado,
+
+729
+00:27:23,780 --> 00:27:24,600
+ se mueve por ondas,
+
+730
+00:27:24,860 --> 00:27:25,660
+ esto es una onda,
+
+731
+00:27:26,520 --> 00:27:27,440
+ esto es una onda,
+
+732
+00:27:28,440 --> 00:27:29,360
+ y esto es una onda,
+
+733
+00:27:29,940 --> 00:27:32,080
+ esto es un módulo de arranque,
+
+734
+00:27:32,200 --> 00:27:32,800
+ bajista,
+
+735
+00:27:33,040 --> 00:27:34,000
+ un módulo de arranque,
+
+736
+00:27:34,440 --> 00:27:35,080
+ alcista,
+
+737
+00:27:35,540 --> 00:27:36,460
+ y un módulo de arranque,
+
+738
+00:27:36,700 --> 00:27:37,260
+ bajista,
+
+739
+00:27:37,480 --> 00:27:41,820
+ lo que pasa,
+
+740
+00:27:41,880 --> 00:27:41,980
+ es que,
+
+741
+00:27:42,120 --> 00:27:42,780
+ tenemos que entender,
+
+742
+00:27:42,920 --> 00:27:43,420
+ esta parte,
+
+743
+00:27:43,620 --> 00:27:45,020
+ cien por ciento,
+
+744
+00:27:45,220 --> 00:27:46,180
+ para poder pasar,
+
+745
+00:27:46,700 --> 00:27:47,480
+ a la otra parte,
+
+746
+00:27:47,600 --> 00:27:48,160
+ que es el momento,
+
+747
+00:27:48,240 --> 00:27:49,060
+ en el que vamos a entrar,
+
+748
+00:27:49,940 --> 00:27:50,320
+ el momento,
+
+749
+00:27:50,440 --> 00:27:51,020
+ como es la entrada,
+
+750
+00:27:51,100 --> 00:27:51,480
+ del mercado,
+
+751
+00:27:51,980 --> 00:27:52,180
+ pero,
+
+752
+00:27:52,400 --> 00:27:52,680
+ yo,
+
+753
+00:27:52,900 --> 00:27:53,860
+ les debo dejar,
+
+754
+00:27:53,860 --> 00:27:54,440
+ super,
+
+755
+00:27:54,600 --> 00:27:55,200
+ super claro,
+
+756
+00:27:55,380 --> 00:27:55,860
+ todo esto,
+
+757
+00:27:55,940 --> 00:27:56,780
+ el módulo de arranque,
+
+758
+00:27:57,280 --> 00:27:58,480
+ para que ustedes puedan entender,
+
+759
+00:27:58,700 --> 00:27:59,680
+ cómo vamos a entrar,
+
+760
+00:27:59,680 --> 00:28:07,080
+ listo,
+
+761
+00:28:11,260 --> 00:28:12,140
+ miremos,
+
+762
+00:28:12,220 --> 00:28:13,300
+ miremos una cosa muchachos,
+
+763
+00:28:13,360 --> 00:28:13,840
+ y es que,
+
+764
+00:28:14,080 --> 00:28:15,140
+ el mercado,
+
+765
+00:28:16,060 --> 00:28:16,580
+ este precio,
+
+766
+00:28:16,660 --> 00:28:17,380
+ que tenemos acá,
+
+767
+00:28:17,680 --> 00:28:18,280
+ es un precio,
+
+768
+00:28:19,000 --> 00:28:19,760
+ de una,
+
+769
+00:28:20,660 --> 00:28:21,780
+ temporalidad alta,
+
+770
+00:28:21,880 --> 00:28:22,660
+ este que les estoy marcando,
+
+771
+00:28:22,720 --> 00:28:23,400
+ en el rectángulo,
+
+772
+00:28:24,860 --> 00:28:26,300
+ donde en una temporalidad alta,
+
+773
+00:28:26,520 --> 00:28:28,380
+ esto es una resistencia,
+
+774
+00:28:29,680 --> 00:28:31,760
+ eso es una resistencia,
+
+775
+00:28:31,860 --> 00:28:32,020
+ entonces,
+
+776
+00:28:32,080 --> 00:28:32,880
+ que quiere decir eso,
+
+777
+00:28:34,360 --> 00:28:35,060
+ que el mercado,
+
+778
+00:28:35,500 --> 00:28:37,320
+ en una temporalidad alta,
+
+779
+00:28:38,280 --> 00:28:39,020
+ desde acá,
+
+780
+00:28:39,580 --> 00:28:40,320
+ vendieron,
+
+781
+00:28:40,920 --> 00:28:41,600
+ vendieron,
+
+782
+00:28:42,380 --> 00:28:43,000
+ vendieron,
+
+783
+00:28:44,080 --> 00:28:44,660
+ vendieron,
+
+784
+00:28:47,920 --> 00:28:49,300
+ que quiere decir eso,
+
+785
+00:28:49,440 --> 00:28:50,940
+ que para yo poder entrar,
+
+786
+00:28:51,120 --> 00:28:52,580
+ en una compra,
+
+787
+00:28:53,260 --> 00:28:53,960
+ el mercado,
+
+788
+00:28:54,100 --> 00:28:54,860
+ me tiene que quedar,
+
+789
+00:28:55,040 --> 00:28:55,840
+ por encima,
+
+790
+00:28:56,160 --> 00:28:57,080
+ de este precio,
+
+791
+00:28:57,820 --> 00:29:03,220
+ para que esa resistencia,
+
+792
+00:29:03,320 --> 00:29:03,660
+ que tengo,
+
+793
+00:29:04,080 --> 00:29:04,540
+ tenemos,
+
+794
+00:29:04,780 --> 00:29:05,900
+ en una temporalidad alta,
+
+795
+00:29:06,000 --> 00:29:06,380
+ me sirva,
+
+796
+00:29:06,540 --> 00:29:07,220
+ de soporte,
+
+797
+00:29:07,220 --> 00:29:12,220
+ ya no va a ser,
+
+798
+00:29:12,500 --> 00:29:13,280
+ una resistencia,
+
+799
+00:29:13,760 --> 00:29:14,620
+ como lo hizo acá,
+
+800
+00:29:15,220 --> 00:29:15,620
+ sino que,
+
+801
+00:29:15,720 --> 00:29:16,500
+ lo vamos a tomar,
+
+802
+00:29:16,880 --> 00:29:18,100
+ como soporte,
+
+803
+00:29:18,100 --> 00:29:23,160
+ listo,
+
+804
+00:29:24,700 --> 00:29:25,000
+ entonces,
+
+805
+00:29:25,240 --> 00:29:26,160
+ en este orden de ideas,
+
+806
+00:29:26,280 --> 00:29:27,060
+ que podemos sacar,
+
+807
+00:29:27,880 --> 00:29:28,100
+ que,
+
+808
+00:29:28,740 --> 00:29:30,460
+ desde la apertura asiática,
+
+809
+00:29:30,860 --> 00:29:31,480
+ y hasta el momento,
+
+810
+00:29:31,580 --> 00:29:31,880
+ que ya,
+
+811
+00:29:32,040 --> 00:29:32,800
+ vamos a abrir,
+
+812
+00:29:32,880 --> 00:29:33,900
+ la apertura americana,
+
+813
+00:29:34,980 --> 00:29:35,280
+ tenemos,
+
+814
+00:29:35,740 --> 00:29:36,760
+ un módulo de arranque,
+
+815
+00:29:36,820 --> 00:29:37,280
+ bajista,
+
+816
+00:29:38,040 --> 00:29:39,100
+ ese módulo de arranque,
+
+817
+00:29:39,200 --> 00:29:39,440
+ tuvo,
+
+818
+00:29:39,620 --> 00:29:40,320
+ un impulso,
+
+819
+00:29:40,380 --> 00:29:42,500
+ un impulso,
+
+820
+00:29:42,500 --> 00:29:44,660
+ y nos generó,
+
+821
+00:29:45,200 --> 00:29:46,280
+ un módulo de arranque,
+
+822
+00:29:46,500 --> 00:29:46,860
+ a la,
+
+823
+00:29:47,080 --> 00:29:47,800
+ una de la mañana,
+
+824
+00:29:49,860 --> 00:29:50,320
+ ese impulso,
+
+825
+00:29:50,400 --> 00:29:50,580
+ de cista,
+
+826
+00:29:50,700 --> 00:29:50,920
+ tuvo,
+
+827
+00:29:51,140 --> 00:29:52,340
+ movimientos bajistas,
+
+828
+00:29:52,460 --> 00:29:53,400
+ una onda bajista,
+
+829
+00:29:53,500 --> 00:29:54,780
+ con movimientos bajistas,
+
+830
+00:29:55,220 --> 00:29:55,640
+ y tuvo,
+
+831
+00:29:55,880 --> 00:29:56,940
+ un módulo de arranque,
+
+832
+00:29:57,080 --> 00:29:57,740
+ a las cinco,
+
+833
+00:29:57,800 --> 00:29:58,320
+ de la mañana,
+
+834
+00:29:59,260 --> 00:30:00,360
+ con todos estos movimientos,
+
+835
+00:30:00,440 --> 00:30:04,820
+ ahora,
+
+836
+00:30:05,100 --> 00:30:05,720
+ estamos a,
+
+837
+00:30:05,820 --> 00:30:06,280
+ un minuto,
+
+838
+00:30:06,380 --> 00:30:07,240
+ aproximadamente,
+
+839
+00:30:07,760 --> 00:30:08,260
+ de que,
+
+840
+00:30:08,460 --> 00:30:09,080
+ abramos la bolsa,
+
+841
+00:30:09,140 --> 00:30:09,580
+ en Nueva York,
+
+842
+00:30:12,000 --> 00:30:12,520
+ y,
+
+843
+00:30:12,720 --> 00:30:13,200
+ vamos a,
+
+844
+00:30:13,200 --> 00:30:13,940
+ identificar,
+
+845
+00:30:14,280 --> 00:30:14,660
+ como,
+
+846
+00:30:14,980 --> 00:30:15,840
+ vamos a entrar,
+
+847
+00:30:16,060 --> 00:30:16,640
+ en el mercado,
+
+848
+00:30:16,780 --> 00:30:17,640
+ después de que nos deja,
+
+849
+00:30:17,820 --> 00:30:18,620
+ este movimiento,
+
+850
+00:30:19,980 --> 00:30:20,380
+ listo,
+
+851
+00:30:20,980 --> 00:30:21,640
+ como van hasta ahora,
+
+852
+00:30:21,740 --> 00:30:22,160
+ muchachos,
+
+853
+00:30:23,300 --> 00:30:23,460
+ y,
+
+854
+00:30:23,700 --> 00:30:24,080
+ estas,
+
+855
+00:30:24,540 --> 00:30:25,440
+ estoy siendo claro,
+
+856
+00:30:28,640 --> 00:30:28,860
+ si,
+
+857
+00:30:28,960 --> 00:30:29,100
+ si,
+
+858
+00:30:29,200 --> 00:30:29,680
+ muy claro,
+
+859
+00:30:30,580 --> 00:30:30,920
+ señor,
+
+860
+00:30:31,100 --> 00:30:31,340
+ ok,
+
+861
+00:30:32,800 --> 00:30:33,620
+ eso muchachos,
+
+862
+00:30:33,840 --> 00:30:34,460
+ si señor,
+
+863
+00:30:38,020 --> 00:30:38,700
+ vamos a continuar,
+
+864
+00:30:38,900 --> 00:30:39,320
+ entonces,
+
+865
+00:30:41,120 --> 00:30:41,740
+ recuerden esto,
+
+866
+00:30:41,840 --> 00:30:42,680
+ esto es muy importante,
+
+867
+00:30:42,820 --> 00:30:42,940
+ miren,
+
+868
+00:30:44,060 --> 00:30:44,700
+ este precio,
+
+869
+00:30:44,780 --> 00:30:45,640
+ que marcamos acá,
+
+870
+00:30:46,240 --> 00:30:46,760
+ lo sacamos,
+
+871
+00:30:46,860 --> 00:30:47,880
+ en la temporalidad alta,
+
+872
+00:30:47,940 --> 00:30:49,220
+ ya estamos en cinco minutos,
+
+873
+00:30:50,900 --> 00:30:51,700
+ la temporalidad,
+
+874
+00:30:51,820 --> 00:30:52,900
+ donde vamos a sacar,
+
+875
+00:30:53,040 --> 00:30:53,880
+ el módulo de arranque,
+
+876
+00:30:55,640 --> 00:30:56,120
+ y donde,
+
+877
+00:30:56,560 --> 00:30:56,880
+ esta,
+
+878
+00:30:57,520 --> 00:30:58,020
+ este precio,
+
+879
+00:30:58,100 --> 00:30:58,720
+ nos va a servir,
+
+880
+00:30:58,720 --> 00:30:59,420
+ de soporte,
+
+881
+00:30:59,560 --> 00:31:00,320
+ si lo rompe,
+
+882
+00:31:00,680 --> 00:31:01,700
+ o si lo respeta,
+
+883
+00:31:01,700 --> 00:31:07,940
+ lo ha respetado,
+
+884
+00:31:08,460 --> 00:31:09,420
+ lo ha respetado,
+
+885
+00:31:10,140 --> 00:31:11,020
+ y ya vamos a tener,
+
+886
+00:31:11,100 --> 00:31:12,040
+ la apertura americana,
+
+887
+00:31:12,720 --> 00:31:12,840
+ entonces,
+
+888
+00:31:12,880 --> 00:31:13,640
+ la apertura americana,
+
+889
+00:31:13,860 --> 00:31:14,600
+ nos hace esto,
+
+890
+00:31:14,640 --> 00:31:15,440
+ y nos respeta,
+
+891
+00:31:15,640 --> 00:31:16,280
+ este precio,
+
+892
+00:31:18,040 --> 00:31:18,840
+ es para meterle,
+
+893
+00:31:18,980 --> 00:31:19,660
+ un corto,
+
+894
+00:31:19,740 --> 00:31:20,360
+ o una venta,
+
+895
+00:31:20,560 --> 00:31:21,120
+ al mercado,
+
+896
+00:31:24,320 --> 00:31:24,880
+ listo,
+
+897
+00:31:25,880 --> 00:31:26,300
+ vamos a ver,
+
+898
+00:31:26,360 --> 00:31:26,780
+ que pasa,
+
+899
+00:31:26,780 --> 00:31:34,500
+ acá vamos a abrir,
+
+900
+00:31:34,580 --> 00:31:35,340
+ ya la apertura,
+
+901
+00:31:35,420 --> 00:31:35,960
+ en Nueva York,
+
+902
+00:31:37,040 --> 00:31:37,400
+ vamos a hacer,
+
+903
+00:31:37,480 --> 00:31:37,820
+ la apertura,
+
+904
+00:31:37,900 --> 00:31:38,220
+ en Nueva York,
+
+905
+00:31:38,320 --> 00:31:38,800
+ para que,
+
+906
+00:31:39,100 --> 00:31:40,020
+ analicemos entre todos,
+
+907
+00:31:40,080 --> 00:31:40,740
+ que puede pasar,
+
+908
+00:31:55,820 --> 00:31:56,760
+ esta es la apertura,
+
+909
+00:31:56,820 --> 00:31:57,260
+ en Nueva York,
+
+910
+00:31:57,340 --> 00:31:57,820
+ una apertura,
+
+911
+00:31:57,940 --> 00:31:58,600
+ muy volátil,
+
+912
+00:31:58,680 --> 00:31:59,400
+ la volatilidad,
+
+913
+00:31:59,620 --> 00:32:00,320
+ que hace,
+
+914
+00:32:00,520 --> 00:32:01,280
+ esta vela,
+
+915
+00:32:01,860 --> 00:32:02,680
+ y es porque,
+
+916
+00:32:02,800 --> 00:32:03,180
+ se unen,
+
+917
+00:32:03,360 --> 00:32:04,140
+ todas las bolsas,
+
+918
+00:32:04,480 --> 00:32:05,100
+ en una sola,
+
+919
+00:32:05,520 --> 00:32:06,100
+ liberándola,
+
+920
+00:32:06,180 --> 00:32:07,040
+ la bolsa de Nueva York,
+
+921
+00:32:07,440 --> 00:32:07,920
+ es por eso,
+
+922
+00:32:08,040 --> 00:32:09,140
+ que tenemos,
+
+923
+00:32:09,900 --> 00:32:10,880
+ esa volatilidad,
+
+924
+00:32:13,260 --> 00:32:13,680
+ y por eso,
+
+925
+00:32:13,820 --> 00:32:14,320
+ y por eso,
+
+926
+00:32:14,380 --> 00:32:14,840
+ el tamaño,
+
+927
+00:32:14,880 --> 00:32:15,320
+ de las velas,
+
+928
+00:32:15,340 --> 00:32:16,740
+ es totalmente diferente,
+
+929
+00:32:17,260 --> 00:32:18,320
+ a los de la bolsa,
+
+930
+00:32:18,520 --> 00:32:19,120
+ europea,
+
+931
+00:32:25,120 --> 00:32:25,760
+ miren chicos,
+
+932
+00:32:25,860 --> 00:32:26,660
+ algo muy importante,
+
+933
+00:32:26,820 --> 00:32:27,180
+ que pues,
+
+934
+00:32:27,320 --> 00:32:28,280
+ que esta paso hoy,
+
+935
+00:32:28,740 --> 00:32:29,640
+ y algo muy importante,
+
+936
+00:32:29,860 --> 00:32:31,260
+ que ustedes van a poder ver,
+
+937
+00:32:33,260 --> 00:32:34,760
+ esta estructura de mercado,
+
+938
+00:32:35,100 --> 00:32:35,720
+ y yo necesito,
+
+939
+00:32:35,800 --> 00:32:36,540
+ que ustedes esto,
+
+940
+00:32:37,400 --> 00:32:38,540
+ se les quede muy grabado,
+
+941
+00:32:38,600 --> 00:32:38,720
+ miren,
+
+942
+00:32:38,840 --> 00:32:39,960
+ esta estructura de mercado,
+
+943
+00:32:42,280 --> 00:32:43,580
+ yo voy a bloquear,
+
+944
+00:32:43,960 --> 00:32:44,360
+ esta,
+
+945
+00:32:44,540 --> 00:32:45,260
+ para que no se me,
+
+946
+00:32:45,500 --> 00:32:45,860
+ borre,
+
+947
+00:32:45,960 --> 00:32:46,740
+ y borre las demás,
+
+948
+00:32:46,960 --> 00:32:47,400
+ y esta,
+
+949
+00:32:49,640 --> 00:32:50,180
+ para que me,
+
+950
+00:32:50,360 --> 00:32:51,020
+ para hacerme entender,
+
+951
+00:32:51,020 --> 00:32:51,420
+ muy bien,
+
+952
+00:32:51,440 --> 00:32:52,500
+ lo que les quiero hacer entender,
+
+953
+00:32:52,500 --> 00:32:56,380
+ listo,
+
+954
+00:32:57,280 --> 00:32:57,620
+ dijimos,
+
+955
+00:32:57,720 --> 00:32:58,300
+ que este,
+
+956
+00:32:58,300 --> 00:32:59,360
+ era el módulo de arranque,
+
+957
+00:33:00,220 --> 00:33:01,620
+ y que el módulo de arranque,
+
+958
+00:33:02,720 --> 00:33:03,040
+ se,
+
+959
+00:33:03,840 --> 00:33:04,620
+ tenía en cuenta,
+
+960
+00:33:05,280 --> 00:33:06,320
+ la parte de abajo,
+
+961
+00:33:07,380 --> 00:33:09,820
+ y que llegó,
+
+962
+00:33:09,920 --> 00:33:10,500
+ hasta un precio,
+
+963
+00:33:10,760 --> 00:33:10,980
+ que,
+
+964
+00:33:11,620 --> 00:33:12,180
+ el mercado,
+
+965
+00:33:12,520 --> 00:33:13,120
+ posiblemente,
+
+966
+00:33:13,500 --> 00:33:14,120
+ haya girado,
+
+967
+00:33:14,660 --> 00:33:14,860
+ y el,
+
+968
+00:33:15,040 --> 00:33:15,380
+ y la,
+
+969
+00:33:15,660 --> 00:33:16,600
+ y los movimientos,
+
+970
+00:33:16,840 --> 00:33:17,480
+ bajistas,
+
+971
+00:33:18,320 --> 00:33:19,260
+ no se tienen en cuenta,
+
+972
+00:33:19,260 --> 00:33:19,880
+ por debajo,
+
+973
+00:33:19,980 --> 00:33:20,900
+ sino que se tienen en cuenta,
+
+974
+00:33:21,160 --> 00:33:21,680
+ por encima,
+
+975
+00:33:26,860 --> 00:33:28,180
+ ya saben,
+
+976
+00:33:28,380 --> 00:33:28,560
+ por qué,
+
+977
+00:33:28,760 --> 00:33:29,240
+ con esta,
+
+978
+00:33:29,320 --> 00:33:30,100
+ con esta línea,
+
+979
+00:33:31,020 --> 00:33:31,680
+ por qué debemos,
+
+980
+00:33:31,740 --> 00:33:32,600
+ de trazar esa línea,
+
+981
+00:33:32,820 --> 00:33:33,380
+ y para qué,
+
+982
+00:33:39,380 --> 00:33:43,060
+ recuerden,
+
+983
+00:33:43,160 --> 00:33:43,240
+ que,
+
+984
+00:33:43,460 --> 00:33:44,620
+ la estructura de mercado,
+
+985
+00:33:45,380 --> 00:33:45,580
+ se,
+
+986
+00:33:45,580 --> 00:33:46,040
+ se,
+
+987
+00:33:46,040 --> 00:33:47,740
+ se conforma,
+
+988
+00:33:47,820 --> 00:33:49,120
+ por estos máximos,
+
+989
+00:33:49,160 --> 00:33:49,960
+ y estos mínimos,
+
+990
+00:33:50,260 --> 00:33:51,280
+ pero no solamente,
+
+991
+00:33:51,460 --> 00:33:52,120
+ por esos máximos,
+
+992
+00:33:52,180 --> 00:33:53,000
+ y por esos mínimos,
+
+993
+00:33:53,400 --> 00:33:53,600
+ sino,
+
+994
+00:33:53,880 --> 00:33:54,240
+ cuando,
+
+995
+00:33:54,520 --> 00:33:55,840
+ el próximo movimiento,
+
+996
+00:33:56,420 --> 00:33:57,220
+ respeta,
+
+997
+00:33:57,440 --> 00:33:58,540
+ el movimiento anterior,
+
+998
+00:33:59,540 --> 00:34:05,600
+ es muy importante,
+
+999
+00:34:05,680 --> 00:34:06,080
+ yo trazar,
+
+1000
+00:34:06,240 --> 00:34:07,440
+ esta línea de tendencia,
+
+1001
+00:34:07,520 --> 00:34:08,040
+ que la marco,
+
+1002
+00:34:08,120 --> 00:34:08,860
+ desde este precio,
+
+1003
+00:34:08,980 --> 00:34:10,040
+ desde el módulo de arranque,
+
+1004
+00:34:10,720 --> 00:34:11,560
+ con el primer mínimo,
+
+1005
+00:34:12,040 --> 00:34:12,220
+ miren,
+
+1006
+00:34:12,280 --> 00:34:13,040
+ que si yo la trazo,
+
+1007
+00:34:13,400 --> 00:34:14,000
+ desde acá,
+
+1008
+00:34:15,960 --> 00:34:16,580
+ ella me va a dar,
+
+1009
+00:34:16,740 --> 00:34:17,820
+ todos estos movimientos,
+
+1010
+00:34:18,380 --> 00:34:18,880
+ que muy probable,
+
+1011
+00:34:18,960 --> 00:34:19,480
+ me lo está,
+
+1012
+00:34:19,620 --> 00:34:20,420
+ respetando ahí,
+
+1013
+00:34:20,920 --> 00:34:21,220
+ cierto,
+
+1014
+00:34:21,220 --> 00:34:23,560
+ pero,
+
+1015
+00:34:23,780 --> 00:34:24,500
+ que pasa,
+
+1016
+00:34:24,580 --> 00:34:24,900
+ cuando,
+
+1017
+00:34:24,900 --> 00:34:25,900
+ esa estructura,
+
+1018
+00:34:26,280 --> 00:34:26,800
+ se rompió,
+
+1019
+00:34:27,380 --> 00:34:27,700
+ cuando,
+
+1020
+00:34:27,920 --> 00:34:33,760
+ totalmente,
+
+1021
+00:34:34,280 --> 00:34:34,660
+ diferente,
+
+1022
+00:34:34,960 --> 00:34:35,380
+ a los,
+
+1023
+00:34:35,500 --> 00:34:36,060
+ que me venía,
+
+1024
+00:34:36,160 --> 00:34:36,540
+ haciendo acá,
+
+1025
+00:34:36,620 --> 00:34:36,880
+ mira que,
+
+1026
+00:34:37,340 --> 00:34:38,020
+ el máximo,
+
+1027
+00:34:39,160 --> 00:34:39,520
+ me dejó,
+
+1028
+00:34:39,620 --> 00:34:40,320
+ un máximo acá,
+
+1029
+00:34:40,540 --> 00:34:41,020
+ pero acá,
+
+1030
+00:34:41,120 --> 00:34:42,000
+ ya no me está dejando,
+
+1031
+00:34:42,240 --> 00:34:43,180
+ un alto más alto,
+
+1032
+00:34:43,660 --> 00:34:44,020
+ sino que,
+
+1033
+00:34:44,180 --> 00:34:45,320
+ un alto más bajo,
+
+1034
+00:34:46,200 --> 00:34:46,600
+ un alto,
+
+1035
+00:34:46,800 --> 00:34:47,320
+ más bajo,
+
+1036
+00:34:48,180 --> 00:34:48,660
+ un alto,
+
+1037
+00:34:49,280 --> 00:34:49,960
+ más bajo,
+
+1038
+00:34:51,500 --> 00:34:52,100
+ un alto,
+
+1039
+00:34:52,360 --> 00:34:52,680
+ más bajo,
+
+1040
+00:34:52,740 --> 00:34:53,580
+ ya no tienen fuerza,
+
+1041
+00:34:54,100 --> 00:34:55,480
+ ya los que están comprando acá,
+
+1042
+00:34:56,060 --> 00:34:56,860
+ los que compraron,
+
+1043
+00:34:56,900 --> 00:34:58,140
+ en este módulo de arranque,
+
+1044
+00:34:59,140 --> 00:34:59,900
+ vendieron acá,
+
+1045
+00:35:03,180 --> 00:35:04,160
+ y es lo que estamos viendo,
+
+1046
+00:35:04,400 --> 00:35:05,400
+ en este momento,
+
+1047
+00:35:06,520 --> 00:35:07,640
+ lo que pasó acá,
+
+1048
+00:35:08,220 --> 00:35:08,480
+ entonces,
+
+1049
+00:35:08,480 --> 00:35:09,160
+ miren que tenemos,
+
+1050
+00:35:09,440 --> 00:35:10,440
+ un alto más alto,
+
+1051
+00:35:11,000 --> 00:35:12,040
+ un alto más alto,
+
+1052
+00:35:12,500 --> 00:35:13,480
+ pero esos máximos,
+
+1053
+00:35:14,000 --> 00:35:14,680
+ y esos mínimos,
+
+1054
+00:35:15,160 --> 00:35:16,360
+ rompieron la estructura,
+
+1055
+00:35:16,900 --> 00:35:17,960
+ acá tenemos ya,
+
+1056
+00:35:18,160 --> 00:35:19,980
+ un alto más bajo,
+
+1057
+00:35:20,580 --> 00:35:21,840
+ un alto más bajo,
+
+1058
+00:35:22,420 --> 00:35:22,860
+ pero,
+
+1059
+00:35:23,060 --> 00:35:24,080
+ muy cerquita,
+
+1060
+00:35:24,300 --> 00:35:25,160
+ a la apertura,
+
+1061
+00:35:25,240 --> 00:35:25,740
+ de Nueva York,
+
+1062
+00:35:30,180 --> 00:35:32,700
+ entonces,
+
+1063
+00:35:33,080 --> 00:35:33,740
+ esa estructura,
+
+1064
+00:35:33,820 --> 00:35:34,980
+ que se está formando ahí,
+
+1065
+00:35:36,320 --> 00:35:37,080
+ ya la apertura,
+
+1066
+00:35:37,140 --> 00:35:37,660
+ de Nueva York,
+
+1067
+00:35:38,080 --> 00:35:38,600
+ la rompió,
+
+1068
+00:35:40,140 --> 00:35:40,740
+ y no solamente,
+
+1069
+00:35:40,840 --> 00:35:41,240
+ la rompió,
+
+1070
+00:35:41,340 --> 00:35:41,900
+ sino que rompió,
+
+1071
+00:35:42,020 --> 00:35:42,340
+ también,
+
+1072
+00:35:42,980 --> 00:35:44,100
+ esa resistencia,
+
+1073
+00:35:45,200 --> 00:35:46,500
+ para nosotros,
+
+1074
+00:35:47,500 --> 00:35:48,640
+ era muy importante,
+
+1075
+00:35:48,820 --> 00:35:49,300
+ porque era,
+
+1076
+00:35:49,420 --> 00:35:50,300
+ en la temporalidad,
+
+1077
+00:35:51,040 --> 00:35:51,380
+ alta,
+
+1078
+00:35:53,860 --> 00:35:54,820
+ desde los 40,
+
+1079
+00:35:54,980 --> 00:35:55,520
+ hacia atrás,
+
+1080
+00:35:56,900 --> 00:35:57,300
+ listo,
+
+1081
+00:35:59,560 --> 00:35:59,780
+ ahora,
+
+1082
+00:36:00,120 --> 00:36:00,460
+ cómo,
+
+1083
+00:36:00,960 --> 00:36:01,980
+ vamos a buscar,
+
+1084
+00:36:02,240 --> 00:36:02,880
+ una entrada,
+
+1085
+00:36:04,640 --> 00:36:05,460
+ ya teniendo en cuenta,
+
+1086
+00:36:05,640 --> 00:36:07,040
+ que rompimos estructura,
+
+1087
+00:36:09,700 --> 00:36:10,320
+ y que,
+
+1088
+00:36:10,320 --> 00:36:12,620
+ para nosotros,
+
+1089
+00:36:13,440 --> 00:36:14,400
+ ya ese rompimiento,
+
+1090
+00:36:14,520 --> 00:36:15,100
+ ese impulso,
+
+1091
+00:36:15,220 --> 00:36:16,540
+ es el paso número uno,
+
+1092
+00:36:17,620 --> 00:36:18,260
+ para buscar,
+
+1093
+00:36:18,500 --> 00:36:19,380
+ un agotamiento,
+
+1094
+00:36:19,740 --> 00:36:21,020
+ ¿qué son agotamientos?
+
+1095
+00:36:22,600 --> 00:36:24,100
+ los agotamientos son,
+
+1096
+00:36:24,180 --> 00:36:27,020
+ estos engaños,
+
+1097
+00:36:27,140 --> 00:36:28,120
+ o esos movimientos,
+
+1098
+00:36:28,280 --> 00:36:28,620
+ que nos hacen,
+
+1099
+00:36:33,360 --> 00:36:35,020
+ vemos,
+
+1100
+00:36:35,080 --> 00:36:35,460
+ que el mercado,
+
+1101
+00:36:35,560 --> 00:36:35,980
+ está siendo,
+
+1102
+00:36:36,200 --> 00:36:36,700
+ alcista,
+
+1103
+00:36:37,280 --> 00:36:37,520
+ acá,
+
+1104
+00:36:38,440 --> 00:36:38,680
+ pero,
+
+1105
+00:36:38,800 --> 00:36:39,780
+ en este precio,
+
+1106
+00:36:39,960 --> 00:36:41,080
+ hace un retroceso,
+
+1107
+00:36:41,760 --> 00:36:44,120
+ ese retroceso,
+
+1108
+00:36:44,200 --> 00:36:44,720
+ para nosotros,
+
+1109
+00:36:45,600 --> 00:36:45,920
+ es,
+
+1110
+00:36:47,120 --> 00:36:48,000
+ la teoría,
+
+1111
+00:36:48,140 --> 00:36:49,400
+ es que es un retroceso,
+
+1112
+00:36:49,540 --> 00:36:49,760
+ cierto,
+
+1113
+00:36:49,960 --> 00:36:50,200
+ pero,
+
+1114
+00:36:51,720 --> 00:36:52,820
+ ¿qué significa?
+
+1115
+00:36:54,060 --> 00:36:55,060
+ Este movimiento,
+
+1116
+00:36:55,160 --> 00:36:55,660
+ lo generó,
+
+1117
+00:36:55,860 --> 00:36:56,840
+ la entidad,
+
+1118
+00:36:57,000 --> 00:36:57,940
+ el fondo de inversiones,
+
+1119
+00:36:58,040 --> 00:36:58,740
+ o el banco,
+
+1120
+00:36:59,420 --> 00:37:00,420
+ que está comprando,
+
+1121
+00:37:00,540 --> 00:37:01,340
+ estas posiciones,
+
+1122
+00:37:01,880 --> 00:37:02,600
+ en este precio,
+
+1123
+00:37:03,940 --> 00:37:04,940
+ de esa misma manera,
+
+1124
+00:37:05,280 --> 00:37:06,040
+ ese trader,
+
+1125
+00:37:06,280 --> 00:37:06,880
+ que está moviendo,
+
+1126
+00:37:06,960 --> 00:37:07,920
+ el mercado institucional,
+
+1127
+00:37:08,460 --> 00:37:08,960
+ necesita,
+
+1128
+00:37:10,400 --> 00:37:11,520
+ ir por liquidez,
+
+1129
+00:37:13,120 --> 00:37:13,800
+ esa idea,
+
+1130
+00:37:13,920 --> 00:37:14,500
+ por liquidez,
+
+1131
+00:37:14,640 --> 00:37:14,820
+ o sea,
+
+1132
+00:37:14,960 --> 00:37:16,400
+ necesita ir por platica,
+
+1133
+00:37:17,620 --> 00:37:17,880
+ esa idea,
+
+1134
+00:37:17,940 --> 00:37:18,440
+ por platica,
+
+1135
+00:37:18,640 --> 00:37:18,960
+ lo vemos,
+
+1136
+00:37:19,100 --> 00:37:19,800
+ en este movimiento,
+
+1137
+00:37:20,960 --> 00:37:21,980
+ en este movimiento,
+
+1138
+00:37:22,660 --> 00:37:23,240
+ están haciendo,
+
+1139
+00:37:23,380 --> 00:37:24,280
+ creer algunos traders,
+
+1140
+00:37:24,400 --> 00:37:24,920
+ que el mercado,
+
+1141
+00:37:25,160 --> 00:37:25,720
+ va a bajar,
+
+1142
+00:37:26,880 --> 00:37:27,540
+ lo que están haciendo,
+
+1143
+00:37:27,640 --> 00:37:27,940
+ realmente,
+
+1144
+00:37:28,120 --> 00:37:28,540
+ es bajar,
+
+1145
+00:37:28,580 --> 00:37:29,180
+ por liquidez,
+
+1146
+00:37:30,840 --> 00:37:31,300
+ y acá,
+
+1147
+00:37:32,840 --> 00:37:33,620
+ los ponen a salida,
+
+1148
+00:37:33,880 --> 00:37:34,600
+ todos por stop,
+
+1149
+00:37:35,600 --> 00:37:36,500
+ todos salen por stop,
+
+1150
+00:37:36,560 --> 00:37:37,180
+ los que vendieron,
+
+1151
+00:37:37,280 --> 00:37:37,980
+ en este precio,
+
+1152
+00:37:40,280 --> 00:37:40,880
+ es por esas,
+
+1153
+00:37:40,940 --> 00:37:41,520
+ de las razones,
+
+1154
+00:37:41,700 --> 00:37:42,340
+ que nosotros,
+
+1155
+00:37:43,000 --> 00:37:44,420
+ no operamos,
+
+1156
+00:37:45,200 --> 00:37:45,920
+ con volumen,
+
+1157
+00:37:46,280 --> 00:37:46,940
+ no necesitamos,
+
+1158
+00:37:47,020 --> 00:37:47,440
+ el volumen,
+
+1159
+00:37:47,800 --> 00:37:48,260
+ para nada,
+
+1160
+00:37:48,340 --> 00:37:48,920
+ mire que volumen,
+
+1161
+00:37:49,420 --> 00:37:49,920
+ acá lo tenemos,
+
+1162
+00:37:50,040 --> 00:37:50,720
+ nosotros abajo,
+
+1163
+00:37:51,440 --> 00:37:51,980
+ no lo necesitamos,
+
+1164
+00:37:52,160 --> 00:37:52,480
+ para nada,
+
+1165
+00:37:54,680 --> 00:37:55,620
+ porque solamente,
+
+1166
+00:37:56,440 --> 00:37:56,960
+ operamos,
+
+1167
+00:37:57,080 --> 00:37:57,840
+ con la estructura,
+
+1168
+00:37:57,880 --> 00:37:58,400
+ del mercado,
+
+1169
+00:37:58,940 --> 00:37:59,580
+ si ya tenemos,
+
+1170
+00:37:59,720 --> 00:38:00,400
+ identificado,
+
+1171
+00:38:00,820 --> 00:38:01,780
+ este movimiento,
+
+1172
+00:38:02,620 --> 00:38:03,220
+ vamos a esperar,
+
+1173
+00:38:03,300 --> 00:38:03,840
+ que se genere,
+
+1174
+00:38:04,180 --> 00:38:05,160
+ este movimiento,
+
+1175
+00:38:05,500 --> 00:38:05,820
+ pero,
+
+1176
+00:38:06,520 --> 00:38:07,520
+ que me respete,
+
+1177
+00:38:08,400 --> 00:38:09,520
+ el que identificamos,
+
+1178
+00:38:09,680 --> 00:38:11,140
+ como modelo de arranque,
+
+1179
+00:38:13,000 --> 00:38:15,460
+ ya me van entendiendo,
+
+1180
+00:38:15,560 --> 00:38:16,000
+ más o menos,
+
+1181
+00:38:17,300 --> 00:38:17,820
+ a donde voy,
+
+1182
+00:38:17,940 --> 00:38:18,560
+ ya tenemos,
+
+1183
+00:38:18,960 --> 00:38:19,640
+ un impulso,
+
+1184
+00:38:20,640 --> 00:38:22,320
+ que rompió,
+
+1185
+00:38:22,420 --> 00:38:23,680
+ estructura bajista,
+
+1186
+00:38:26,160 --> 00:38:27,060
+ pero nosotros,
+
+1187
+00:38:27,160 --> 00:38:27,900
+ en ese impulso,
+
+1188
+00:38:28,120 --> 00:38:29,480
+ no entramos,
+
+1189
+00:38:29,700 --> 00:38:30,200
+ para nosotros,
+
+1190
+00:38:30,340 --> 00:38:30,960
+ este es el paso,
+
+1191
+00:38:31,280 --> 00:38:31,900
+ número uno,
+
+1192
+00:38:32,460 --> 00:38:33,140
+ para entrar,
+
+1193
+00:38:33,420 --> 00:38:34,220
+ en agotamientos,
+
+1194
+00:38:35,020 --> 00:38:35,620
+ el impulso,
+
+1195
+00:38:35,680 --> 00:38:35,980
+ existe,
+
+1196
+00:38:36,400 --> 00:38:39,420
+ que necesitamos,
+
+1197
+00:38:39,520 --> 00:38:39,920
+ para entrar,
+
+1198
+00:38:40,320 --> 00:38:41,120
+ después de que tenemos,
+
+1199
+00:38:41,240 --> 00:38:41,760
+ la confirmación,
+
+1200
+00:38:41,880 --> 00:38:44,180
+ del paso número uno,
+
+1201
+00:38:44,280 --> 00:38:45,000
+ que es el impulso,
+
+1202
+00:38:45,820 --> 00:38:46,380
+ que ven,
+
+1203
+00:38:46,440 --> 00:38:47,880
+ y haga el retroceso,
+
+1204
+00:38:48,400 --> 00:38:51,580
+ pero que me respete,
+
+1205
+00:38:51,820 --> 00:38:52,380
+ este precio,
+
+1206
+00:38:55,260 --> 00:38:55,840
+ que es el precio,
+
+1207
+00:38:55,940 --> 00:38:56,940
+ desde donde se impulsó,
+
+1208
+00:38:57,080 --> 00:38:57,640
+ el mercado,
+
+1209
+00:38:58,400 --> 00:38:58,720
+ porque,
+
+1210
+00:38:58,860 --> 00:38:59,500
+ porque ustedes también,
+
+1211
+00:38:59,580 --> 00:39:00,660
+ van a ver mucho esto,
+
+1212
+00:39:00,760 --> 00:39:01,360
+ que impulsa,
+
+1213
+00:39:01,940 --> 00:39:03,000
+ pero de la misma manera,
+
+1214
+00:39:04,000 --> 00:39:04,640
+ el mercado,
+
+1215
+00:39:05,280 --> 00:39:05,940
+ va a hacer esto,
+
+1216
+00:39:06,140 --> 00:39:08,740
+ y les va a llegar,
+
+1217
+00:39:09,320 --> 00:39:10,600
+ hasta el mismo precio,
+
+1218
+00:39:11,000 --> 00:39:11,760
+ desde donde se impulsó,
+
+1219
+00:39:11,840 --> 00:39:12,200
+ el mercado,
+
+1220
+00:39:14,280 --> 00:39:15,340
+ por esa razón,
+
+1221
+00:39:16,060 --> 00:39:16,580
+ nosotros,
+
+1222
+00:39:16,920 --> 00:39:17,580
+ que vamos a hacer,
+
+1223
+00:39:18,200 --> 00:39:19,500
+ después de que tengamos,
+
+1224
+00:39:19,700 --> 00:39:20,480
+ ese impulso,
+
+1225
+00:39:22,160 --> 00:39:23,120
+ ya identificado,
+
+1226
+00:39:24,000 --> 00:39:24,560
+ vamos a esperar,
+
+1227
+00:39:24,700 --> 00:39:25,420
+ que ellos bajen,
+
+1228
+00:39:25,560 --> 00:39:26,540
+ por liquidez,
+
+1229
+00:39:30,740 --> 00:39:31,720
+ cuando yo le hablo,
+
+1230
+00:39:31,800 --> 00:39:32,060
+ de ellos,
+
+1231
+00:39:32,120 --> 00:39:33,460
+ es el fondo de inversiones,
+
+1232
+00:39:33,600 --> 00:39:35,040
+ que mueve el mercado financiero,
+
+1233
+00:39:35,620 --> 00:39:36,660
+ los bancos,
+
+1234
+00:39:36,780 --> 00:39:37,400
+ o los grandes,
+
+1235
+00:39:37,400 --> 00:39:39,040
+ primeros institucionales,
+
+1236
+00:39:39,660 --> 00:39:40,260
+ que trabajan,
+
+1237
+00:39:40,320 --> 00:39:41,480
+ para hechas entidades,
+
+1238
+00:39:43,660 --> 00:39:44,580
+ ya tengo,
+
+1239
+00:39:45,580 --> 00:39:46,280
+ ya tengo,
+
+1240
+00:39:46,280 --> 00:39:47,580
+ el primer impulso,
+
+1241
+00:39:47,820 --> 00:39:49,200
+ que estructuralmente,
+
+1242
+00:39:49,260 --> 00:39:50,180
+ vamos a pararlo por acá,
+
+1243
+00:39:50,300 --> 00:39:50,880
+ para irnos otra vez,
+
+1244
+00:39:50,960 --> 00:39:51,480
+ para la gráfica,
+
+1245
+00:39:51,560 --> 00:39:52,420
+ de alta plastilina,
+
+1246
+00:39:54,320 --> 00:39:54,800
+ es este,
+
+1247
+00:39:54,800 --> 00:39:56,920
+ en un mercado alcista,
+
+1248
+00:39:56,920 --> 00:40:02,140
+ pero yo necesito,
+
+1249
+00:40:02,140 --> 00:40:03,540
+ que ese impulso,
+
+1250
+00:40:03,700 --> 00:40:05,140
+ me genere,
+
+1251
+00:40:05,140 --> 00:40:06,700
+ el próximo movimiento,
+
+1252
+00:40:06,980 --> 00:40:07,740
+ y que ese movimiento,
+
+1253
+00:40:07,840 --> 00:40:08,780
+ sea un retroceso,
+
+1254
+00:40:08,780 --> 00:40:11,160
+ que este movimiento,
+
+1255
+00:40:11,240 --> 00:40:11,940
+ sea un retroceso,
+
+1256
+00:40:12,100 --> 00:40:13,180
+ pero que me respete,
+
+1257
+00:40:13,860 --> 00:40:14,580
+ el precio,
+
+1258
+00:40:14,780 --> 00:40:15,600
+ desde donde se impulsó,
+
+1259
+00:40:15,600 --> 00:40:16,000
+ el mercado,
+
+1260
+00:40:16,140 --> 00:40:16,860
+ que es este,
+
+1261
+00:40:18,360 --> 00:40:19,440
+ para yo identificarlo,
+
+1262
+00:40:19,600 --> 00:40:21,000
+ como un retroceso,
+
+1263
+00:40:21,520 --> 00:40:22,880
+ como lo vamos a identificar,
+
+1264
+00:40:23,080 --> 00:40:23,800
+ ya les voy a decir,
+
+1265
+00:40:23,920 --> 00:40:24,340
+ entonces acá,
+
+1266
+00:40:24,900 --> 00:40:26,380
+ ya estamos en cinco minutos,
+
+1267
+00:40:26,600 --> 00:40:27,480
+ ya identificamos,
+
+1268
+00:40:27,640 --> 00:40:29,100
+ ese módulo de arranque,
+
+1269
+00:40:29,980 --> 00:40:30,220
+ ahora,
+
+1270
+00:40:30,520 --> 00:40:31,320
+ ya teniendo en cuenta,
+
+1271
+00:40:31,560 --> 00:40:31,700
+ que,
+
+1272
+00:40:32,260 --> 00:40:32,740
+ ya tenemos,
+
+1273
+00:40:33,160 --> 00:40:34,580
+ un nuevo módulo de arranque,
+
+1274
+00:40:34,700 --> 00:40:35,980
+ que rompió esa estructura,
+
+1275
+00:40:37,220 --> 00:40:38,420
+ me voy para un minuto,
+
+1276
+00:40:41,520 --> 00:40:43,060
+ ¿qué vamos a hacer en un minuto?
+
+1277
+00:40:43,220 --> 00:40:43,920
+ vamos a esperar,
+
+1278
+00:40:44,120 --> 00:40:45,720
+ que el próximo movimiento,
+
+1279
+00:40:46,680 --> 00:40:48,520
+ que sea un retroceso,
+
+1280
+00:40:49,060 --> 00:40:50,060
+ en cinco minutos,
+
+1281
+00:40:50,120 --> 00:40:50,800
+ y en un minuto,
+
+1282
+00:40:51,240 --> 00:40:52,700
+ pero que me respete,
+
+1283
+00:40:52,900 --> 00:40:53,660
+ estructura,
+
+1284
+00:40:54,580 --> 00:40:55,880
+ ¿cómo así que me respete estructura?
+
+1285
+00:40:55,980 --> 00:40:56,100
+ si,
+
+1286
+00:40:56,280 --> 00:40:58,520
+ ya tenemos todo este impulso,
+
+1287
+00:40:59,980 --> 00:41:00,540
+ entonces,
+
+1288
+00:41:00,780 --> 00:41:02,140
+ vamos a esperar,
+
+1289
+00:41:02,200 --> 00:41:02,780
+ que se genere,
+
+1290
+00:41:03,100 --> 00:41:04,020
+ ese movimiento,
+
+1291
+00:41:04,860 --> 00:41:06,420
+ y lo vamos a perseguir,
+
+1292
+00:41:07,260 --> 00:41:07,920
+ con una línea,
+
+1293
+00:41:08,040 --> 00:41:08,660
+ que llamamos,
+
+1294
+00:41:09,020 --> 00:41:09,480
+ nosotros,
+
+1295
+00:41:09,980 --> 00:41:10,980
+ la línea de,
+
+1296
+00:41:11,380 --> 00:41:12,620
+ agotamiento,
+
+1297
+00:41:14,720 --> 00:41:15,500
+ es lo que se frenó,
+
+1298
+00:41:16,900 --> 00:41:21,200
+ ¿qué vamos a hacer en un minuto?
+
+1299
+00:41:29,980 --> 00:41:33,100
+ ¿qué vamos a hacer en un minuto?
+
+1300
+00:41:33,100 --> 00:41:34,780
+ ¿qué vamos a hacer en un minuto?
+
+1301
+00:41:34,780 --> 00:41:35,100
+ ¿qué vamos a hacer en un minuto?
+
+1302
+00:41:35,100 --> 00:41:35,580
+ ¿qué vamos a hacer en un minuto?
+
+1303
+00:41:35,580 --> 00:41:36,220
+ ¿qué vamos a hacer en un minuto?
+
+1304
+00:41:36,220 --> 00:41:36,700
+ ¿qué vamos a hacer en un minuto?
+
+1305
+00:41:36,700 --> 00:41:37,100
+ ¿qué vamos a hacer en un minuto?
+
+1306
+00:41:37,100 --> 00:41:37,700
+ ¿qué vamos a hacer en un minuto?
+
+1307
+00:41:37,700 --> 00:41:38,380
+ ¿qué vamos a hacer en un minuto?
+
+1308
+00:41:38,380 --> 00:41:44,160
+ ¿qué vamos a hacer en un minuto?
+
+1309
+00:41:44,160 --> 00:41:44,600
+ ¿qué vamos a hacer en un minuto?
+
+1310
+00:41:44,600 --> 00:41:45,040
+ ¿qué vamos a hacer en un minuto?
+
+1311
+00:41:45,040 --> 00:41:46,060
+ ¿qué vamos a hacer en un minuto?
+
+1312
+00:41:46,060 --> 00:41:46,940
+ ¿qué vamos a hacer en un minuto?
+
+1313
+00:41:46,940 --> 00:41:47,320
+ ¿qué vamos a hacer en un minuto?
+
+1314
+00:41:47,320 --> 00:41:48,320
+ ¿qué vamos a hacer en un minuto?
+
+1315
+00:41:48,320 --> 00:41:49,060
+ ¿qué vamos a hacer en un minuto?
+
+1316
+00:41:49,060 --> 00:41:50,060
+ ¿qué vamos a hacer en un minuto?
+
+1317
+00:41:50,060 --> 00:41:51,140
+ ¿qué vamos a hacer en un minuto?
+
+1318
+00:41:51,140 --> 00:41:52,060
+ ¿qué vamos a hacer en un minuto?
+
+1319
+00:41:52,060 --> 00:41:54,780
+ ¿qué necesito?
+
+1320
+00:41:54,780 --> 00:42:03,540
+ ¿que ese impulso en el cual incitaron a comprar bajen por liquidez?
+
+1321
+00:42:04,100 --> 00:42:08,780
+ nosotros esa bajada por liquidez la vamos a identificar con velas rojas
+
+1322
+00:42:08,780 --> 00:42:11,740
+ cuando estamos en un mercado alcista velas rojas
+
+1323
+00:42:11,740 --> 00:42:16,640
+ y vamos a trazar esas velas rojas por la parte de arriba con esta lineecita
+
+1324
+00:42:16,640 --> 00:42:25,240
+ esperando que, esperando que tenga un rompimiento de estructura
+
+1325
+00:42:25,240 --> 00:42:30,440
+ ¿cómo así?
+
+1326
+00:42:30,440 --> 00:42:37,300
+ listo, que me salga una vela y que esa vela interrumpa este movimiento bajista
+
+1327
+00:42:37,300 --> 00:42:41,920
+ pero que aún así me siga respetando este módulo de arranque
+
+1328
+00:42:41,920 --> 00:42:50,520
+ entonces yo voy a perseguir ese retroceso
+
+1329
+00:42:50,520 --> 00:42:56,900
+ y cuando me salga una vela que me rompa esta línea de agotamiento
+
+1330
+00:42:56,900 --> 00:42:58,760
+ vamos a colocar la posición
+
+1331
+00:42:58,760 --> 00:42:59,500
+ ahora
+
+1332
+00:42:59,500 --> 00:43:04,620
+ algo muy importante que yo siempre digo en este punto es
+
+1333
+00:43:04,620 --> 00:43:05,940
+ y siempre lo voy a decir
+
+1334
+00:43:05,940 --> 00:43:10,600
+ y es que para mí no es solamente muy importante colocar la posición
+
+1335
+00:43:10,600 --> 00:43:13,920
+ si no saber colocar el stop
+
+1336
+00:43:13,920 --> 00:43:16,160
+ ¿dónde voy a colocar el stop?
+
+1337
+00:43:16,460 --> 00:43:16,940
+ por ejemplo
+
+1338
+00:43:16,940 --> 00:43:18,300
+ en este caso
+
+1339
+00:43:18,300 --> 00:43:20,200
+ yo me voy para lápiz
+
+1340
+00:43:20,740 --> 00:43:22,560
+ y el lápiz me voy para risk reward
+
+1341
+00:43:22,560 --> 00:43:27,520
+ yo necesito que me dé un stop acorde a mi cuenta
+
+1342
+00:43:27,520 --> 00:43:31,680
+ un stop que no sobrepase el valor de mi cuenta
+
+1343
+00:43:31,680 --> 00:43:32,320
+ entonces
+
+1344
+00:43:32,320 --> 00:43:34,740
+ yo lo cojo acá
+
+1345
+00:43:34,740 --> 00:43:36,520
+ y lo voy a colocar
+
+1346
+00:43:36,520 --> 00:43:38,780
+ lo voy a buscar un último rebote
+
+1347
+00:43:38,780 --> 00:43:41,760
+ acá por ejemplo tenemos este último rebote
+
+1348
+00:43:41,760 --> 00:43:44,020
+ donde puede ser válido un stop
+
+1349
+00:43:44,020 --> 00:43:45,620
+ o por debajo
+
+1350
+00:43:45,620 --> 00:43:47,900
+ de esta resistencia
+
+1351
+00:43:47,900 --> 00:43:49,920
+ sería mucho más válido
+
+1352
+00:43:49,920 --> 00:43:53,160
+ que el mercado siga bajando
+
+1353
+00:43:53,160 --> 00:43:54,760
+ sigan bajando por liquidez
+
+1354
+00:43:54,760 --> 00:43:55,600
+ pero
+
+1355
+00:43:55,600 --> 00:43:56,760
+ que me respete
+
+1356
+00:43:56,760 --> 00:43:58,720
+ o este último rebote
+
+1357
+00:43:58,720 --> 00:43:59,520
+ para colocar
+
+1358
+00:43:59,520 --> 00:44:00,880
+ mi stop
+
+1359
+00:44:00,880 --> 00:44:02,400
+ o esa resistencia
+
+1360
+00:44:02,400 --> 00:44:03,280
+ mucho mejor
+
+1361
+00:44:03,280 --> 00:44:08,680
+ entonces cuando vamos a buscar una entrada en agotamientos
+
+1362
+00:44:08,680 --> 00:44:14,060
+ cuando la vela me quede por encima de esta línea
+
+1363
+00:44:14,060 --> 00:44:17,620
+ pero miren que también hay que tener en cuenta
+
+1364
+00:44:17,620 --> 00:44:20,460
+ ese stop
+
+1365
+00:44:20,460 --> 00:44:21,940
+ acá pasó algo muy particular
+
+1366
+00:44:21,940 --> 00:44:23,640
+ y es que miren la mecha
+
+1367
+00:44:23,640 --> 00:44:24,800
+ que quedó
+
+1368
+00:44:24,800 --> 00:44:26,420
+ esta mecha
+
+1369
+00:44:26,420 --> 00:44:28,220
+ yo la voy a tener en cuenta
+
+1370
+00:44:28,220 --> 00:44:29,780
+ con mi línea de agotamiento
+
+1371
+00:44:29,780 --> 00:44:30,800
+ entonces voy a ampliar
+
+1372
+00:44:30,800 --> 00:44:32,800
+ mi agotamiento
+
+1373
+00:44:32,800 --> 00:44:37,900
+ y voy a esperar sencillamente
+
+1374
+00:44:37,900 --> 00:44:38,720
+ que el mercado
+
+1375
+00:44:38,720 --> 00:44:40,860
+ haga lo que yo
+
+1376
+00:44:40,860 --> 00:44:43,040
+ sea que va a hacer
+
+1377
+00:44:43,040 --> 00:44:43,620
+ o sea que yo
+
+1378
+00:44:43,620 --> 00:44:44,360
+ en ese momento
+
+1379
+00:44:44,360 --> 00:44:45,020
+ que estoy esperando
+
+1380
+00:44:45,020 --> 00:44:46,100
+ que me haga un rompimiento
+
+1381
+00:44:46,100 --> 00:44:47,260
+ de una
+
+1382
+00:44:47,260 --> 00:44:48,860
+ línea de agotamiento
+
+1383
+00:44:48,860 --> 00:44:50,420
+ espero que me respete
+
+1384
+00:44:50,420 --> 00:44:52,320
+ estructura de mercado
+
+1385
+00:44:52,320 --> 00:45:06,300
+ vamos a ver
+
+1386
+00:45:06,300 --> 00:45:18,820
+ miren por ejemplo
+
+1387
+00:45:18,820 --> 00:45:19,540
+ ese agotamiento
+
+1388
+00:45:19,540 --> 00:45:21,080
+ yo necesito que
+
+1389
+00:45:21,080 --> 00:45:23,260
+ la vela me quede por encima
+
+1390
+00:45:23,260 --> 00:45:26,700
+ de esta línea
+
+1391
+00:45:26,700 --> 00:45:28,140
+ de agotamiento
+
+1392
+00:45:28,140 --> 00:45:29,760
+ si es así
+
+1393
+00:45:29,760 --> 00:45:30,840
+ si me queda
+
+1394
+00:45:30,840 --> 00:45:31,840
+ a este le faltan
+
+1395
+00:45:31,840 --> 00:45:32,220
+ ¿cuánto?
+
+1396
+00:45:32,260 --> 00:45:32,920
+ 10, 7
+
+1397
+00:45:32,920 --> 00:45:35,960
+ vamos acá
+
+1398
+00:45:35,960 --> 00:45:36,760
+ pongo mi stop
+
+1399
+00:45:36,760 --> 00:45:37,820
+ en este precio
+
+1400
+00:45:37,820 --> 00:45:39,800
+ y pongo mi profit
+
+1401
+00:45:39,800 --> 00:45:41,640
+ en este precio
+
+1402
+00:45:41,640 --> 00:45:42,740
+ esto sería
+
+1403
+00:45:42,740 --> 00:45:43,460
+ irnos
+
+1404
+00:45:43,460 --> 00:45:44,540
+ en un
+
+1405
+00:45:44,540 --> 00:45:46,000
+ 1 a 1
+
+1406
+00:45:51,080 --> 00:45:52,700
+ muchachos
+
+1407
+00:45:52,700 --> 00:46:07,060
+ ¿cómo van?
+
+1408
+00:46:07,160 --> 00:46:08,000
+ preguntar hasta ahora
+
+1409
+00:46:08,000 --> 00:46:08,860
+ dudas
+
+1410
+00:46:08,860 --> 00:46:09,640
+ inquietudes
+
+1411
+00:46:09,640 --> 00:46:20,420
+ no señor
+
+1412
+00:46:20,420 --> 00:46:20,940
+ hasta el momento
+
+1413
+00:46:20,940 --> 00:46:21,620
+ muy bien
+
+1414
+00:46:21,620 --> 00:46:25,380
+ oh claro
+
+1415
+00:46:25,380 --> 00:46:31,140
+ sí señor
+
+1416
+00:46:31,140 --> 00:46:32,960
+ no
+
+1417
+00:46:32,960 --> 00:46:34,080
+ sí señor
+
+1418
+00:46:34,080 --> 00:46:44,500
+ bueno
+
+1419
+00:46:44,500 --> 00:46:45,100
+ continuemos
+
+1420
+00:46:45,100 --> 00:46:45,720
+ si no tienen
+
+1421
+00:46:45,720 --> 00:46:46,440
+ preguntas
+
+1422
+00:46:46,440 --> 00:46:48,860
+ yo considero
+
+1423
+00:46:48,860 --> 00:46:49,460
+ que todo está
+
+1424
+00:46:49,460 --> 00:46:50,200
+ muy claro
+
+1425
+00:46:50,200 --> 00:46:56,660
+ cristian
+
+1426
+00:46:56,660 --> 00:46:57,700
+ ¿cómo consideran
+
+1427
+00:46:57,700 --> 00:46:58,760
+ ustedes esta operación?
+
+1428
+00:46:58,760 --> 00:46:59,660
+ yo los quiero
+
+1429
+00:46:59,660 --> 00:47:00,140
+ escuchar
+
+1430
+00:47:00,140 --> 00:47:01,040
+ están muy callados
+
+1431
+00:47:01,040 --> 00:47:02,460
+ ¿cómo consideran
+
+1432
+00:47:02,460 --> 00:47:03,160
+ ustedes que salió
+
+1433
+00:47:03,160 --> 00:47:03,660
+ esta operación?
+
+1434
+00:47:04,960 --> 00:47:06,060
+ le hago una consulta
+
+1435
+00:47:06,060 --> 00:47:06,540
+ por ejemplo
+
+1436
+00:47:06,540 --> 00:47:07,060
+ entonces
+
+1437
+00:47:07,060 --> 00:47:08,060
+ ahí se analizó
+
+1438
+00:47:08,060 --> 00:47:08,500
+ que fue
+
+1439
+00:47:08,500 --> 00:47:09,660
+ la línea de agotamiento
+
+1440
+00:47:09,660 --> 00:47:11,200
+ y respetó
+
+1441
+00:47:11,200 --> 00:47:12,720
+ la estructura
+
+1442
+00:47:12,720 --> 00:47:14,240
+ que viene
+
+1443
+00:47:14,240 --> 00:47:15,280
+ ¿qué ven ustedes ahí?
+
+1444
+00:47:15,440 --> 00:47:15,780
+ cuéntenme
+
+1445
+00:47:15,780 --> 00:47:16,180
+ ¿qué ven?
+
+1446
+00:47:16,840 --> 00:47:19,140
+ en lo que ya han aprendido
+
+1447
+00:47:19,140 --> 00:47:20,240
+ ¿qué ven?
+
+1448
+00:47:20,560 --> 00:47:21,420
+ lo que ustedes quieran
+
+1449
+00:47:21,420 --> 00:47:21,920
+ tranquilos
+
+1450
+00:47:21,920 --> 00:47:27,640
+ Cristian
+
+1451
+00:47:27,640 --> 00:47:28,160
+ ¿me escuchan?
+
+1452
+00:47:30,060 --> 00:47:30,880
+ primero que no lo estoy
+
+1453
+00:47:30,880 --> 00:47:31,340
+ escuchando
+
+1454
+00:47:31,340 --> 00:47:32,160
+ muchachos
+
+1455
+00:47:32,160 --> 00:47:33,740
+ el tema es mío
+
+1456
+00:47:39,660 --> 00:47:56,000
+ ahora sí
+
+1457
+00:47:56,000 --> 00:47:57,080
+ ¿quién está hablando?
+
+1458
+00:47:58,360 --> 00:47:59,080
+ ¿ahí me escucha?
+
+1459
+00:47:59,760 --> 00:48:00,320
+ sí ahí sí
+
+1460
+00:48:00,320 --> 00:48:01,420
+ ah bueno
+
+1461
+00:48:01,420 --> 00:48:02,360
+ Cristian le preguntaba
+
+1462
+00:48:02,360 --> 00:48:02,760
+ por ejemplo
+
+1463
+00:48:02,760 --> 00:48:03,520
+ ahí en esa entrada
+
+1464
+00:48:03,520 --> 00:48:05,020
+ se analizó
+
+1465
+00:48:05,020 --> 00:48:05,460
+ entonces
+
+1466
+00:48:05,460 --> 00:48:06,120
+ lo de la línea
+
+1467
+00:48:06,120 --> 00:48:06,860
+ de agotamiento
+
+1468
+00:48:06,860 --> 00:48:08,160
+ que respete
+
+1469
+00:48:08,160 --> 00:48:08,960
+ la estructura
+
+1470
+00:48:08,960 --> 00:48:10,680
+ con lo del
+
+1471
+00:48:10,680 --> 00:48:11,480
+ módulo de arranque
+
+1472
+00:48:11,480 --> 00:48:11,780
+ ¿cierto?
+
+1473
+00:48:11,840 --> 00:48:12,480
+ que empezó
+
+1474
+00:48:12,480 --> 00:48:14,960
+ en la tendencia
+
+1475
+00:48:14,960 --> 00:48:15,460
+ bajista
+
+1476
+00:48:15,460 --> 00:48:17,120
+ cuando
+
+1477
+00:48:17,120 --> 00:48:17,700
+ entonces
+
+1478
+00:48:17,700 --> 00:48:18,820
+ toma la determinación
+
+1479
+00:48:18,820 --> 00:48:19,240
+ de entrar
+
+1480
+00:48:19,240 --> 00:48:19,980
+ es porque
+
+1481
+00:48:19,980 --> 00:48:21,240
+ la vela
+
+1482
+00:48:21,240 --> 00:48:21,760
+ rompió
+
+1483
+00:48:21,760 --> 00:48:22,420
+ totalmente
+
+1484
+00:48:22,420 --> 00:48:23,160
+ la línea
+
+1485
+00:48:23,160 --> 00:48:23,820
+ de agotamiento
+
+1486
+00:48:23,820 --> 00:48:24,280
+ ¿cierto?
+
+1487
+00:48:25,380 --> 00:48:25,980
+ exacto
+
+1488
+00:48:25,980 --> 00:48:27,220
+ pero entonces
+
+1489
+00:48:27,220 --> 00:48:27,800
+ ahí no
+
+1490
+00:48:27,800 --> 00:48:29,020
+ no tenemos en cuenta
+
+1491
+00:48:29,020 --> 00:48:29,800
+ ningún patrón
+
+1492
+00:48:29,800 --> 00:48:30,300
+ de velas
+
+1493
+00:48:30,300 --> 00:48:30,780
+ por ejemplo
+
+1494
+00:48:30,780 --> 00:48:32,100
+ de lo que nos han enseñado
+
+1495
+00:48:32,100 --> 00:48:32,720
+ anteriormente
+
+1496
+00:48:32,720 --> 00:48:33,540
+ solamente
+
+1497
+00:48:33,540 --> 00:48:34,040
+ que haya
+
+1498
+00:48:34,040 --> 00:48:35,980
+ pasado la línea
+
+1499
+00:48:35,980 --> 00:48:36,540
+ de agotamiento
+
+1500
+00:48:36,540 --> 00:48:38,160
+ exactamente
+
+1501
+00:48:38,160 --> 00:48:39,180
+ lo que sí
+
+1502
+00:48:39,180 --> 00:48:39,700
+ vamos a tener
+
+1503
+00:48:39,700 --> 00:48:40,080
+ en cuenta
+
+1504
+00:48:40,080 --> 00:48:40,440
+ acá
+
+1505
+00:48:40,440 --> 00:48:41,720
+ es que
+
+1506
+00:48:41,720 --> 00:48:42,540
+ lo mismo
+
+1507
+00:48:42,540 --> 00:48:42,960
+ que usted
+
+1508
+00:48:42,960 --> 00:48:44,360
+ entró
+
+1509
+00:48:44,360 --> 00:48:45,340
+ en un minuto
+
+1510
+00:48:45,340 --> 00:48:46,080
+ o sea
+
+1511
+00:48:46,080 --> 00:48:46,320
+ miren
+
+1512
+00:48:46,320 --> 00:48:47,560
+ donde yo le marqué
+
+1513
+00:48:47,560 --> 00:48:47,840
+ acá
+
+1514
+00:48:47,840 --> 00:48:49,160
+ este circulito
+
+1515
+00:48:49,160 --> 00:48:52,240
+ que en cinco minutos
+
+1516
+00:48:52,240 --> 00:48:53,620
+ también
+
+1517
+00:48:53,620 --> 00:48:54,720
+ esté a favor
+
+1518
+00:48:54,720 --> 00:48:55,480
+ la vela
+
+1519
+00:48:55,480 --> 00:48:56,420
+ o sea
+
+1520
+00:48:56,420 --> 00:48:57,120
+ vamos a entrar
+
+1521
+00:48:57,120 --> 00:48:58,720
+ en una vela
+
+1522
+00:48:58,720 --> 00:48:58,940
+ así
+
+1523
+00:48:58,940 --> 00:48:59,320
+ o sea
+
+1524
+00:48:59,320 --> 00:48:59,840
+ en una vela
+
+1525
+00:48:59,840 --> 00:49:00,100
+ verde
+
+1526
+00:49:00,100 --> 00:49:00,780
+ en un minuto
+
+1527
+00:49:00,780 --> 00:49:02,020
+ pero que en cinco
+
+1528
+00:49:02,020 --> 00:49:02,380
+ también
+
+1529
+00:49:02,380 --> 00:49:03,200
+ que la estructura
+
+1530
+00:49:03,200 --> 00:49:03,760
+ del mercado
+
+1531
+00:49:03,760 --> 00:49:05,000
+ sea así
+
+1532
+00:49:05,000 --> 00:49:06,080
+ ¿no?
+
+1533
+00:49:08,160 --> 00:49:15,800
+ o sea
+
+1534
+00:49:15,800 --> 00:49:16,340
+ que la entrada
+
+1535
+00:49:16,340 --> 00:49:16,900
+ se debe hacer
+
+1536
+00:49:16,900 --> 00:49:17,780
+ en temporalidad
+
+1537
+00:49:17,780 --> 00:49:18,300
+ de un minuto
+
+1538
+00:49:18,300 --> 00:49:19,280
+ preferiblemente
+
+1539
+00:49:19,280 --> 00:49:20,400
+ exacto
+
+1540
+00:49:20,400 --> 00:49:20,940
+ si la entrada
+
+1541
+00:49:20,940 --> 00:49:21,880
+ ustedes la pueden hacer
+
+1542
+00:49:21,880 --> 00:49:22,340
+ en uno
+
+1543
+00:49:22,340 --> 00:49:23,280
+ o en dos minutos
+
+1544
+00:49:23,280 --> 00:49:23,720
+ si quieren
+
+1545
+00:49:23,720 --> 00:49:24,460
+ también en dos
+
+1546
+00:49:24,460 --> 00:49:26,660
+ pero la confirmación
+
+1547
+00:49:26,660 --> 00:49:27,120
+ la
+
+1548
+00:49:27,120 --> 00:49:28,820
+ cinco minutos
+
+1549
+00:49:28,820 --> 00:49:32,480
+ la confirmación
+
+1550
+00:49:32,480 --> 00:49:33,140
+ de la estructura
+
+1551
+00:49:33,140 --> 00:49:34,060
+ la da cinco minutos
+
+1552
+00:49:34,060 --> 00:49:44,220
+ ¿qué más tiene
+
+1553
+00:49:44,220 --> 00:49:45,300
+ preguntas
+
+1554
+00:49:45,300 --> 00:49:45,820
+ dudas
+
+1555
+00:49:45,820 --> 00:49:46,700
+ o por ejemplo
+
+1556
+00:49:46,700 --> 00:49:48,800
+ tiene opinión
+
+1557
+00:49:48,800 --> 00:49:49,480
+ sobre esa operación
+
+1558
+00:49:49,480 --> 00:49:50,280
+ que acabamos de hacer
+
+1559
+00:49:50,280 --> 00:50:02,760
+ o si todo está
+
+1560
+00:50:02,760 --> 00:50:03,160
+ muy claro
+
+1561
+00:50:03,160 --> 00:50:04,640
+ continuamos
+
+1562
+00:50:20,280 --> 00:50:22,840
+ yo miro por acá
+
+1563
+00:50:22,840 --> 00:50:32,300
+ seguimos
+
+1564
+00:50:32,300 --> 00:50:32,860
+ muchos
+
+1565
+00:50:32,860 --> 00:50:33,880
+ tienen todo
+
+1566
+00:50:33,880 --> 00:50:34,460
+ clarísimo
+
+1567
+00:50:34,460 --> 00:50:46,360
+ Cristian
+
+1568
+00:50:46,360 --> 00:50:47,220
+ si es claro
+
+1569
+00:50:47,220 --> 00:50:47,820
+ pero digamos
+
+1570
+00:50:47,820 --> 00:50:48,420
+ que yo todavía
+
+1571
+00:50:48,420 --> 00:50:48,800
+ no tengo
+
+1572
+00:50:48,800 --> 00:50:50,220
+ los argumentos
+
+1573
+00:50:50,220 --> 00:50:51,540
+ para poderle
+
+1574
+00:50:51,540 --> 00:50:51,940
+ explicar
+
+1575
+00:50:51,940 --> 00:50:53,360
+ la operación
+
+1576
+00:50:53,360 --> 00:50:54,500
+ no sé si de pronto
+
+1577
+00:50:54,500 --> 00:50:55,460
+ usted nos quisiera
+
+1578
+00:50:55,460 --> 00:50:56,180
+ dar luces
+
+1579
+00:50:56,180 --> 00:50:58,580
+ sí
+
+1580
+00:50:58,580 --> 00:50:59,020
+ a ver
+
+1581
+00:50:59,020 --> 00:50:59,540
+ como
+
+1582
+00:50:59,540 --> 00:51:00,580
+ ¿qué creen ustedes
+
+1583
+00:51:00,580 --> 00:51:01,100
+ que acá
+
+1584
+00:51:01,100 --> 00:51:01,880
+ o sea
+
+1585
+00:51:01,880 --> 00:51:02,620
+ lo que yo les quiero
+
+1586
+00:51:02,620 --> 00:51:03,540
+ preguntar es
+
+1587
+00:51:03,540 --> 00:51:05,620
+ ¿cómo ven ustedes
+
+1588
+00:51:05,620 --> 00:51:06,380
+ esta operación?
+
+1589
+00:51:07,920 --> 00:51:08,820
+ según lo que ustedes
+
+1590
+00:51:08,820 --> 00:51:09,480
+ han aprendido
+
+1591
+00:51:09,480 --> 00:51:10,180
+ de Daniel
+
+1592
+00:51:10,180 --> 00:51:11,120
+ y de Jenny
+
+1593
+00:51:11,120 --> 00:51:13,700
+ ¿qué creen ustedes?
+
+1594
+00:51:13,960 --> 00:51:15,040
+ ¿cómo la ven acá?
+
+1595
+00:51:15,480 --> 00:51:16,300
+ esta que acabamos
+
+1596
+00:51:16,300 --> 00:51:16,640
+ de hacer
+
+1597
+00:51:16,640 --> 00:51:19,500
+ yo vi en la entrada
+
+1598
+00:51:19,500 --> 00:51:20,300
+ que hubo
+
+1599
+00:51:20,300 --> 00:51:21,620
+ como un retesteo
+
+1600
+00:51:21,620 --> 00:51:21,840
+ ¿cierto?
+
+1601
+00:51:21,920 --> 00:51:22,500
+ entonces ahí
+
+1602
+00:51:22,500 --> 00:51:23,720
+ se tomó la decisión
+
+1603
+00:51:23,720 --> 00:51:24,660
+ de entrar
+
+1604
+00:51:24,660 --> 00:51:25,480
+ por lo que yo vi
+
+1605
+00:51:25,480 --> 00:51:25,940
+ ¿cierto?
+
+1606
+00:51:26,740 --> 00:51:27,060
+ sí
+
+1607
+00:51:27,060 --> 00:51:28,640
+ sí
+
+1608
+00:51:28,640 --> 00:51:29,420
+ sí
+
+1609
+00:51:29,420 --> 00:51:29,460
+ sí
+
+1610
+00:51:29,460 --> 00:51:29,660
+ sí
+
+1611
+00:51:29,660 --> 00:51:32,440
+ exactamente
+
+1612
+00:51:32,440 --> 00:51:32,980
+ bien
+
+1613
+00:51:32,980 --> 00:51:35,160
+ y es algo
+
+1614
+00:51:35,160 --> 00:51:35,800
+ que yo
+
+1615
+00:51:35,800 --> 00:51:36,680
+ les quería
+
+1616
+00:51:36,680 --> 00:51:38,400
+ traer acá
+
+1617
+00:51:38,400 --> 00:51:39,240
+ y mucho
+
+1618
+00:51:39,240 --> 00:51:40,320
+ o sea
+
+1619
+00:51:40,320 --> 00:51:41,020
+ hoy
+
+1620
+00:51:41,020 --> 00:51:42,000
+ ese mercado
+
+1621
+00:51:42,000 --> 00:51:42,560
+ muy
+
+1622
+00:51:42,560 --> 00:51:44,800
+ fue muy
+
+1623
+00:51:44,800 --> 00:51:45,760
+ ejemplar
+
+1624
+00:51:45,760 --> 00:51:46,720
+ fue muy maestro
+
+1625
+00:51:46,720 --> 00:51:47,280
+ ¿por qué?
+
+1626
+00:51:49,340 --> 00:51:50,060
+ porque mire
+
+1627
+00:51:50,060 --> 00:51:51,180
+ acá por ejemplo
+
+1628
+00:51:51,180 --> 00:51:52,020
+ se nos dio
+
+1629
+00:51:52,020 --> 00:51:53,000
+ una entrada
+
+1630
+00:51:53,000 --> 00:51:54,220
+ en agotamiento
+
+1631
+00:51:54,220 --> 00:51:55,220
+ si ustedes van a ver
+
+1632
+00:51:55,220 --> 00:51:55,880
+ hacia atrás
+
+1633
+00:51:55,880 --> 00:51:57,280
+ ustedes pueden ver
+
+1634
+00:51:57,280 --> 00:51:58,620
+ agotamientos
+
+1635
+00:51:58,620 --> 00:51:59,640
+ como un berraco
+
+1636
+00:51:59,640 --> 00:52:00,560
+ miren por ejemplo
+
+1637
+00:52:00,560 --> 00:52:01,040
+ eso
+
+1638
+00:52:01,040 --> 00:52:02,760
+ se va a ver
+
+1639
+00:52:02,760 --> 00:52:03,980
+ acá un agotamiento
+
+1640
+00:52:03,980 --> 00:52:04,800
+ y cruzó
+
+1641
+00:52:04,800 --> 00:52:05,780
+ y entramos
+
+1642
+00:52:05,780 --> 00:52:07,340
+ para atrás
+
+1643
+00:52:07,340 --> 00:52:08,360
+ ustedes van a poder
+
+1644
+00:52:08,360 --> 00:52:09,500
+ ver muchas cosas
+
+1645
+00:52:09,500 --> 00:52:12,080
+ muchos agotamientos
+
+1646
+00:52:12,080 --> 00:52:12,900
+ pero
+
+1647
+00:52:12,900 --> 00:52:13,740
+ acá teníamos
+
+1648
+00:52:13,740 --> 00:52:14,360
+ algo
+
+1649
+00:52:14,360 --> 00:52:17,280
+ muy fuerte
+
+1650
+00:52:17,280 --> 00:52:17,900
+ por el cual
+
+1651
+00:52:17,900 --> 00:52:18,880
+ no podíamos
+
+1652
+00:52:18,880 --> 00:52:19,480
+ entrar
+
+1653
+00:52:19,480 --> 00:52:20,680
+ en este
+
+1654
+00:52:20,680 --> 00:52:21,380
+ agotamiento
+
+1655
+00:52:21,380 --> 00:52:29,060
+ aunque se nos
+
+1656
+00:52:29,060 --> 00:52:30,080
+ presentó
+
+1657
+00:52:30,080 --> 00:52:31,940
+ y por eso
+
+1658
+00:52:31,940 --> 00:52:32,700
+ soy muy enfático
+
+1659
+00:52:32,700 --> 00:52:33,200
+ en esto
+
+1660
+00:52:33,200 --> 00:52:34,540
+ yo quiero que ustedes
+
+1661
+00:52:34,540 --> 00:52:37,340
+ se graben muy bien
+
+1662
+00:52:37,340 --> 00:52:37,540
+ esto
+
+1663
+00:52:37,540 --> 00:52:37,740
+ miren
+
+1664
+00:52:37,740 --> 00:52:39,300
+ aunque se nos presentó
+
+1665
+00:52:39,300 --> 00:52:40,200
+ ese agotamiento
+
+1666
+00:52:40,200 --> 00:52:40,920
+ y un agotamiento
+
+1667
+00:52:40,920 --> 00:52:42,260
+ patentico
+
+1668
+00:52:42,260 --> 00:52:43,620
+ muy clarito
+
+1669
+00:52:43,620 --> 00:52:46,820
+ no era válido
+
+1670
+00:52:46,820 --> 00:52:47,160
+ entrar
+
+1671
+00:52:47,160 --> 00:52:47,720
+ en ese
+
+1672
+00:52:47,720 --> 00:52:48,360
+ agotamiento
+
+1673
+00:52:48,360 --> 00:52:49,640
+ por una razón
+
+1674
+00:52:49,640 --> 00:52:53,920
+ yo creo que
+
+1675
+00:52:53,920 --> 00:52:54,420
+ eso lo vieron
+
+1676
+00:52:54,420 --> 00:52:55,240
+ ustedes con Dani
+
+1677
+00:52:55,240 --> 00:52:57,040
+ alguien sabe
+
+1678
+00:52:57,040 --> 00:52:57,720
+ por cual razón
+
+1679
+00:52:57,720 --> 00:53:15,460
+ no no yo no me acuerdo
+
+1680
+00:53:15,460 --> 00:53:16,780
+ listo
+
+1681
+00:53:16,780 --> 00:53:19,140
+ no importa Jorge
+
+1682
+00:53:19,140 --> 00:53:19,600
+ tranquilo
+
+1683
+00:53:19,600 --> 00:53:20,260
+ miren
+
+1684
+00:53:20,260 --> 00:53:21,940
+ hay una
+
+1685
+00:53:21,940 --> 00:53:22,460
+ algo que
+
+1686
+00:53:22,460 --> 00:53:23,460
+ que hacemos
+
+1687
+00:53:23,460 --> 00:53:23,480
+ que hacemos
+
+1688
+00:53:23,480 --> 00:53:24,880
+ en premercado
+
+1689
+00:53:24,880 --> 00:53:25,480
+ y es
+
+1690
+00:53:25,480 --> 00:53:26,040
+ sentarnos
+
+1691
+00:53:26,040 --> 00:53:27,000
+ a trazar
+
+1692
+00:53:27,000 --> 00:53:28,460
+ estas linecitas
+
+1693
+00:53:28,460 --> 00:53:28,780
+ que yo
+
+1694
+00:53:28,780 --> 00:53:31,200
+ marqué
+
+1695
+00:53:31,200 --> 00:53:32,280
+ con rectángulos
+
+1696
+00:53:32,280 --> 00:53:33,480
+ que son
+
+1697
+00:53:33,480 --> 00:53:34,500
+ soportes
+
+1698
+00:53:34,500 --> 00:53:35,580
+ y resistencias
+
+1699
+00:53:35,580 --> 00:53:37,420
+ entonces
+
+1700
+00:53:37,420 --> 00:53:38,740
+ las marcamos
+
+1701
+00:53:38,740 --> 00:53:39,280
+ para qué
+
+1702
+00:53:39,280 --> 00:53:40,320
+ para saber
+
+1703
+00:53:40,320 --> 00:53:41,220
+ esto nos está
+
+1704
+00:53:41,220 --> 00:53:41,840
+ indicando
+
+1705
+00:53:41,840 --> 00:53:42,880
+ el mercado
+
+1706
+00:53:42,880 --> 00:53:44,000
+ anteriormente
+
+1707
+00:53:44,000 --> 00:53:44,780
+ que hizo
+
+1708
+00:53:44,780 --> 00:53:45,760
+ en una temporalidad
+
+1709
+00:53:45,760 --> 00:53:46,900
+ por ejemplo
+
+1710
+00:53:46,900 --> 00:53:48,280
+ esta que marcamos
+
+1711
+00:53:48,280 --> 00:53:50,300
+ es una resistencia
+
+1712
+00:53:50,300 --> 00:53:51,000
+ que marcamos
+
+1713
+00:53:51,000 --> 00:53:54,940
+ en 16.000
+
+1714
+00:53:54,940 --> 00:53:55,840
+ o sea
+
+1715
+00:53:55,840 --> 00:53:57,500
+ acá
+
+1716
+00:53:57,500 --> 00:54:01,180
+ de donde se está
+
+1717
+00:54:01,180 --> 00:54:01,820
+ devolviendo
+
+1718
+00:54:01,820 --> 00:54:02,360
+ ese mercado
+
+1719
+00:54:02,360 --> 00:54:04,880
+ qué quiere decir
+
+1720
+00:54:04,880 --> 00:54:05,160
+ eso
+
+1721
+00:54:05,160 --> 00:54:06,640
+ por muy bonito
+
+1722
+00:54:06,640 --> 00:54:07,280
+ que yo vea
+
+1723
+00:54:07,280 --> 00:54:08,220
+ este movimiento
+
+1724
+00:54:08,220 --> 00:54:08,980
+ que me está dando
+
+1725
+00:54:08,980 --> 00:54:09,580
+ el mercado
+
+1726
+00:54:09,580 --> 00:54:13,180
+ por muy bonito
+
+1727
+00:54:13,180 --> 00:54:13,980
+ que yo lo vea
+
+1728
+00:54:13,980 --> 00:54:14,360
+ acá
+
+1729
+00:54:14,360 --> 00:54:15,240
+ este rompimiento
+
+1730
+00:54:15,240 --> 00:54:17,420
+ con esta resistencia
+
+1731
+00:54:17,420 --> 00:54:17,820
+ acá
+
+1732
+00:54:17,820 --> 00:54:19,280
+ sería
+
+1733
+00:54:19,280 --> 00:54:20,060
+ o colocar
+
+1734
+00:54:20,060 --> 00:54:20,620
+ un profit
+
+1735
+00:54:20,620 --> 00:54:21,520
+ por debajo
+
+1736
+00:54:21,520 --> 00:54:22,320
+ de esa resistencia
+
+1737
+00:54:22,320 --> 00:54:23,940
+ pero lo más indicado
+
+1738
+00:54:23,940 --> 00:54:24,640
+ es esperar
+
+1739
+00:54:24,640 --> 00:54:26,240
+ o entrar
+
+1740
+00:54:26,240 --> 00:54:27,020
+ en un corto
+
+1741
+00:54:27,020 --> 00:54:27,520
+ ahí
+
+1742
+00:54:27,520 --> 00:54:28,500
+ donde llegó
+
+1743
+00:54:28,500 --> 00:54:29,140
+ a ese precio
+
+1744
+00:54:29,140 --> 00:54:30,760
+ porque ya el mercado
+
+1745
+00:54:30,760 --> 00:54:31,640
+ estaba en la parte
+
+1746
+00:54:31,640 --> 00:54:32,000
+ de arriba
+
+1747
+00:54:32,000 --> 00:54:33,420
+ o esperar
+
+1748
+00:54:33,420 --> 00:54:36,140
+ que el movimiento
+
+1749
+00:54:36,140 --> 00:54:37,340
+ sea totalmente
+
+1750
+00:54:37,340 --> 00:54:38,000
+ diferente
+
+1751
+00:54:38,000 --> 00:54:38,280
+ o sea
+
+1752
+00:54:38,280 --> 00:54:39,260
+ que sea eso
+
+1753
+00:54:39,260 --> 00:54:41,540
+ porque
+
+1754
+00:54:41,540 --> 00:54:42,960
+ no podemos
+
+1755
+00:54:42,960 --> 00:54:43,580
+ entrar
+
+1756
+00:54:43,580 --> 00:54:44,360
+ cerca
+
+1757
+00:54:44,360 --> 00:54:45,820
+ a una resistencia
+
+1758
+00:54:45,820 --> 00:54:48,580
+ de alta temporalidad
+
+1759
+00:54:48,580 --> 00:54:53,760
+ eso es
+
+1760
+00:54:53,760 --> 00:54:54,560
+ una ley
+
+1761
+00:54:54,560 --> 00:54:55,020
+ muchachos
+
+1762
+00:54:55,020 --> 00:54:55,420
+ eso es ley
+
+1763
+00:54:55,420 --> 00:54:55,920
+ de trader
+
+1764
+00:54:55,920 --> 00:54:57,420
+ si usted se dedicó
+
+1765
+00:54:57,420 --> 00:54:58,180
+ a
+
+1766
+00:54:58,180 --> 00:54:59,400
+ rayar
+
+1767
+00:54:59,400 --> 00:54:59,980
+ a marcar
+
+1768
+00:54:59,980 --> 00:55:01,440
+ en el premercado
+
+1769
+00:55:01,440 --> 00:55:01,920
+ es para
+
+1770
+00:55:01,920 --> 00:55:02,500
+ respetar
+
+1771
+00:55:02,500 --> 00:55:02,760
+ eso
+
+1772
+00:55:02,760 --> 00:55:04,120
+ como si
+
+1773
+00:55:04,120 --> 00:55:04,660
+ hay que respetar
+
+1774
+00:55:04,660 --> 00:55:04,840
+ eso
+
+1775
+00:55:04,840 --> 00:55:05,580
+ si respetar
+
+1776
+00:55:05,580 --> 00:55:06,200
+ esos precios
+
+1777
+00:55:06,200 --> 00:55:06,760
+ que marcamos
+
+1778
+00:55:06,760 --> 00:55:07,680
+ en premercado
+
+1779
+00:55:07,680 --> 00:55:09,100
+ como soportes
+
+1780
+00:55:09,100 --> 00:55:10,320
+ y como resistencias
+
+1781
+00:55:10,320 --> 00:55:12,040
+ si ya teníamos
+
+1782
+00:55:12,040 --> 00:55:12,980
+ una resistencia
+
+1783
+00:55:12,980 --> 00:55:13,520
+ acá
+
+1784
+00:55:13,520 --> 00:55:14,380
+ que nos sacamos
+
+1785
+00:55:14,380 --> 00:55:15,320
+ en premercado
+
+1786
+00:55:15,320 --> 00:55:17,060
+ se tiene
+
+1787
+00:55:17,060 --> 00:55:17,940
+ que respetar
+
+1788
+00:55:17,940 --> 00:55:19,180
+ entonces
+
+1789
+00:55:19,180 --> 00:55:20,700
+ tengo un agotamiento
+
+1790
+00:55:20,700 --> 00:55:21,960
+ acá muy clarísimo
+
+1791
+00:55:21,960 --> 00:55:22,240
+ si
+
+1792
+00:55:22,240 --> 00:55:23,180
+ pero se acercita
+
+1793
+00:55:23,180 --> 00:55:24,400
+ a una resistencia
+
+1794
+00:55:24,400 --> 00:55:25,700
+ y eso no es
+
+1795
+00:55:25,700 --> 00:55:26,000
+ entrada
+
+1796
+00:55:26,000 --> 00:55:26,580
+ para nosotros
+
+1797
+00:55:26,580 --> 00:55:33,080
+ ¿entendido?
+
+1798
+00:55:37,640 --> 00:55:38,460
+ sí señor
+
+1799
+00:55:38,460 --> 00:55:39,240
+ sí señor
+
+1800
+00:55:39,240 --> 00:55:39,580
+ ¿cómo
+
+1801
+00:55:39,580 --> 00:55:41,120
+ cómo vamos a buscar
+
+1802
+00:55:41,120 --> 00:55:41,600
+ una entrada
+
+1803
+00:55:41,600 --> 00:55:42,860
+ cuando tenemos
+
+1804
+00:55:42,860 --> 00:55:43,940
+ una resistencia
+
+1805
+00:55:43,940 --> 00:55:44,860
+ de acá
+
+1806
+00:55:44,860 --> 00:55:45,620
+ tan cerquita
+
+1807
+00:55:45,620 --> 00:55:47,000
+ en agotamientos?
+
+1808
+00:55:48,560 --> 00:55:49,240
+ bueno
+
+1809
+00:55:49,240 --> 00:55:49,600
+ espérame
+
+1810
+00:55:49,600 --> 00:55:50,480
+ esto por acá
+
+1811
+00:55:50,480 --> 00:55:54,060
+ ¿por qué agotamientos?
+
+1812
+00:55:54,240 --> 00:55:54,360
+ miren
+
+1813
+00:55:54,360 --> 00:55:55,140
+ porque
+
+1814
+00:55:55,140 --> 00:55:56,180
+ vamos a reconocer
+
+1815
+00:55:56,180 --> 00:55:56,680
+ un mercado
+
+1816
+00:55:56,680 --> 00:55:57,620
+ y el mercado
+
+1817
+00:55:57,620 --> 00:55:58,720
+ lo vamos a reconocer
+
+1818
+00:55:58,720 --> 00:55:59,660
+ cuando tenemos
+
+1819
+00:55:59,660 --> 00:56:01,360
+ impulsos
+
+1820
+00:56:01,360 --> 00:56:03,420
+ pero para nosotros
+
+1821
+00:56:03,420 --> 00:56:04,720
+ ese impulso
+
+1822
+00:56:04,720 --> 00:56:05,560
+ es el paso
+
+1823
+00:56:05,560 --> 00:56:06,320
+ número uno
+
+1824
+00:56:06,320 --> 00:56:06,860
+ para entrar
+
+1825
+00:56:06,860 --> 00:56:08,520
+ el paso
+
+1826
+00:56:08,520 --> 00:56:09,200
+ número dos
+
+1827
+00:56:09,200 --> 00:56:09,620
+ es cuando
+
+1828
+00:56:09,620 --> 00:56:10,340
+ el siguiente
+
+1829
+00:56:10,340 --> 00:56:11,080
+ movimiento
+
+1830
+00:56:11,080 --> 00:56:11,880
+ me haga
+
+1831
+00:56:11,880 --> 00:56:12,520
+ lo que nosotros
+
+1832
+00:56:12,520 --> 00:56:13,080
+ llamamos
+
+1833
+00:56:13,080 --> 00:56:14,720
+ retroceso
+
+1834
+00:56:14,720 --> 00:56:16,640
+ ese retroceso
+
+1835
+00:56:16,640 --> 00:56:17,100
+ nosotros vamos
+
+1836
+00:56:17,100 --> 00:56:17,460
+ a empezar
+
+1837
+00:56:17,460 --> 00:56:17,780
+ a ver
+
+1838
+00:56:17,780 --> 00:56:18,320
+ que tienen
+
+1839
+00:56:18,320 --> 00:56:21,020
+ unas velitas
+
+1840
+00:56:21,020 --> 00:56:21,620
+ como así
+
+1841
+00:56:21,620 --> 00:56:22,140
+ y se empiezan
+
+1842
+00:56:22,140 --> 00:56:22,800
+ a agotar
+
+1843
+00:56:22,800 --> 00:56:23,960
+ que ya no tienen
+
+1844
+00:56:23,960 --> 00:56:25,020
+ esta fuerza
+
+1845
+00:56:25,020 --> 00:56:26,060
+ y que ya se empieza
+
+1846
+00:56:26,060 --> 00:56:26,520
+ a agotar
+
+1847
+00:56:26,520 --> 00:56:27,480
+ ¿qué vamos a hacer
+
+1848
+00:56:27,480 --> 00:56:27,840
+ nosotros?
+
+1849
+00:56:27,920 --> 00:56:28,660
+ lo vamos a trazar
+
+1850
+00:56:28,660 --> 00:56:30,020
+ con una línea
+
+1851
+00:56:30,020 --> 00:56:31,420
+ de agotamiento
+
+1852
+00:56:31,420 --> 00:56:33,800
+ por la parte
+
+1853
+00:56:33,800 --> 00:56:34,240
+ de arriba
+
+1854
+00:56:34,240 --> 00:56:35,400
+ esperando
+
+1855
+00:56:35,400 --> 00:56:36,500
+ que nos salga
+
+1856
+00:56:36,500 --> 00:56:37,800
+ esta vela
+
+1857
+00:56:37,800 --> 00:56:42,140
+ ¿y qué vamos a hacer?
+
+1858
+00:56:42,240 --> 00:56:42,860
+ vamos a colocar
+
+1859
+00:56:42,860 --> 00:56:44,000
+ nuestra entrada
+
+1860
+00:56:44,000 --> 00:56:44,660
+ acá
+
+1861
+00:56:44,660 --> 00:56:46,420
+ y el stop
+
+1862
+00:56:46,420 --> 00:56:47,460
+ en el precio
+
+1863
+00:56:47,460 --> 00:56:48,800
+ que fue el último rebote
+
+1864
+00:56:48,800 --> 00:56:53,200
+ y esto sería
+
+1865
+00:56:53,200 --> 00:56:54,380
+ una estructura
+
+1866
+00:56:54,380 --> 00:56:55,020
+ de mercado
+
+1867
+00:56:55,020 --> 00:56:56,200
+ alcista
+
+1868
+00:56:56,200 --> 00:56:57,380
+ ¿cómo hace que
+
+1869
+00:56:57,380 --> 00:56:57,740
+ una estructura
+
+1870
+00:56:57,740 --> 00:56:58,220
+ de mercado alcista
+
+1871
+00:56:58,220 --> 00:56:58,400
+ así?
+
+1872
+00:56:58,500 --> 00:56:59,240
+ esto es como si usted
+
+1873
+00:56:59,240 --> 00:57:00,600
+ cogiera una cauchera
+
+1874
+00:57:00,600 --> 00:57:01,920
+ y la jalara
+
+1875
+00:57:01,920 --> 00:57:02,580
+ hacia atrás
+
+1876
+00:57:02,580 --> 00:57:03,220
+ hacia atrás
+
+1877
+00:57:03,220 --> 00:57:03,800
+ hacia atrás
+
+1878
+00:57:03,800 --> 00:57:04,300
+ hacia atrás
+
+1879
+00:57:04,300 --> 00:57:04,900
+ hacia atrás
+
+1880
+00:57:04,900 --> 00:57:06,180
+ ¿qué nos da
+
+1881
+00:57:06,180 --> 00:57:06,780
+ confirmación?
+
+1882
+00:57:07,140 --> 00:57:08,040
+ es impulso
+
+1883
+00:57:08,040 --> 00:57:09,700
+ que la cauchera
+
+1884
+00:57:09,700 --> 00:57:10,520
+ se va a impulsar
+
+1885
+00:57:10,520 --> 00:57:11,740
+ de la misma manera
+
+1886
+00:57:11,740 --> 00:57:12,500
+ hasta mejor
+
+1887
+00:57:12,500 --> 00:57:14,940
+ y esto
+
+1888
+00:57:14,940 --> 00:57:15,740
+ es coger
+
+1889
+00:57:15,740 --> 00:57:17,040
+ el paso
+
+1890
+00:57:17,040 --> 00:57:17,840
+ número
+
+1891
+00:57:17,840 --> 00:57:18,740
+ tres
+
+1892
+00:57:18,740 --> 00:57:20,220
+ el del ABC
+
+1893
+00:57:20,220 --> 00:57:21,560
+ de un mercado
+
+1894
+00:57:21,560 --> 00:57:22,160
+ alcista
+
+1895
+00:57:22,160 --> 00:57:23,480
+ que es el que más
+
+1896
+00:57:23,480 --> 00:57:23,980
+ nos interesa
+
+1897
+00:57:23,980 --> 00:57:24,280
+ a nosotros
+
+1898
+00:57:24,280 --> 00:57:24,740
+ coger
+
+1899
+00:57:24,740 --> 00:57:26,520
+ porque es el más
+
+1900
+00:57:26,520 --> 00:57:27,760
+ sustancioso
+
+1901
+00:57:27,760 --> 00:57:29,860
+ y lo podemos
+
+1902
+00:57:29,860 --> 00:57:30,420
+ decir así
+
+1903
+00:57:30,420 --> 00:57:33,220
+ listo
+
+1904
+00:57:33,220 --> 00:57:36,060
+ el paso número
+
+1905
+00:57:36,060 --> 00:57:36,460
+ tres
+
+1906
+00:57:36,460 --> 00:57:37,240
+ por ejemplo
+
+1907
+00:57:37,240 --> 00:57:39,100
+ después de un módulo
+
+1908
+00:57:39,100 --> 00:57:39,680
+ de arranque
+
+1909
+00:57:39,680 --> 00:57:40,920
+ si tenemos
+
+1910
+00:57:40,920 --> 00:57:42,100
+ este como el nuevo
+
+1911
+00:57:42,100 --> 00:57:42,960
+ módulo de arranque
+
+1912
+00:57:42,960 --> 00:57:43,800
+ uno
+
+1913
+00:57:43,800 --> 00:57:45,800
+ vamos a ver
+
+1914
+00:57:45,800 --> 00:57:46,600
+ en cinco minutos
+
+1915
+00:57:46,600 --> 00:57:50,120
+ uno
+
+1916
+00:57:50,120 --> 00:57:50,900
+ nos llegó
+
+1917
+00:57:50,900 --> 00:57:52,120
+ hasta la resistencia
+
+1918
+00:57:52,120 --> 00:57:53,460
+ dos
+
+1919
+00:57:53,460 --> 00:57:54,380
+ y acá
+
+1920
+00:57:54,380 --> 00:57:55,480
+ podríamos esperar
+
+1921
+00:57:55,480 --> 00:57:55,960
+ el paso
+
+1922
+00:57:55,960 --> 00:57:56,640
+ número tres
+
+1923
+00:57:56,640 --> 00:57:58,060
+ pero estamos
+
+1924
+00:57:58,060 --> 00:57:58,560
+ igual
+
+1925
+00:57:58,560 --> 00:57:59,800
+ de la misma manera
+
+1926
+00:57:59,800 --> 00:58:00,840
+ cerquita
+
+1927
+00:58:00,840 --> 00:58:02,320
+ a esa resistencia
+
+1928
+00:58:02,320 --> 00:58:03,580
+ que vamos
+
+1929
+00:58:03,580 --> 00:58:04,880
+ que tenemos
+
+1930
+00:58:04,880 --> 00:58:05,580
+ ahí pendientes
+
+1931
+00:58:05,580 --> 00:58:06,120
+ que sacamos
+
+1932
+00:58:06,120 --> 00:58:07,180
+ en una temporalidad alta
+
+1933
+00:58:07,180 --> 00:58:08,560
+ entonces
+
+1934
+00:58:08,560 --> 00:58:09,760
+ cuando tenemos
+
+1935
+00:58:09,760 --> 00:58:10,460
+ una resistencia
+
+1936
+00:58:10,460 --> 00:58:11,520
+ tan cerquita
+
+1937
+00:58:11,520 --> 00:58:12,260
+ lo que vamos
+
+1938
+00:58:12,260 --> 00:58:12,620
+ a hacer
+
+1939
+00:58:12,620 --> 00:58:13,320
+ es esperar
+
+1940
+00:58:13,320 --> 00:58:15,720
+ que ese mercado
+
+1941
+00:58:15,720 --> 00:58:17,040
+ rompa esa resistencia
+
+1942
+00:58:17,040 --> 00:58:18,540
+ se devuelva
+
+1943
+00:58:18,540 --> 00:58:20,400
+ y que ese techo
+
+1944
+00:58:20,400 --> 00:58:21,840
+ que nos estaba
+
+1945
+00:58:21,840 --> 00:58:22,320
+ ahorita
+
+1946
+00:58:22,320 --> 00:58:23,560
+ impidiendo
+
+1947
+00:58:23,560 --> 00:58:23,940
+ entrar
+
+1948
+00:58:23,940 --> 00:58:24,840
+ nos sirva
+
+1949
+00:58:24,840 --> 00:58:25,840
+ de piso
+
+1950
+00:58:25,840 --> 00:58:27,980
+ para colocar
+
+1951
+00:58:27,980 --> 00:58:28,580
+ una posición
+
+1952
+00:58:28,580 --> 00:58:30,020
+ y ya les voy a decir
+
+1953
+00:58:30,020 --> 00:58:30,840
+ cómo la vamos
+
+1954
+00:58:30,840 --> 00:58:31,220
+ a colocar
+
+1955
+00:58:31,220 --> 00:58:40,300
+ acá
+
+1956
+00:58:40,300 --> 00:58:41,060
+ ¿qué necesitamos?
+
+1957
+00:58:41,140 --> 00:58:41,680
+ es una entrada
+
+1958
+00:58:41,680 --> 00:58:42,620
+ muy demorada
+
+1959
+00:58:42,620 --> 00:58:43,420
+ es un poquito
+
+1960
+00:58:43,420 --> 00:58:44,500
+ demorada la entrada
+
+1961
+00:58:44,500 --> 00:58:45,380
+ pero
+
+1962
+00:58:45,380 --> 00:58:48,260
+ si no le da
+
+1963
+00:58:48,260 --> 00:58:48,800
+ confirmación
+
+1964
+00:58:48,800 --> 00:58:49,640
+ a usted como trader
+
+1965
+00:58:49,640 --> 00:58:50,600
+ toca esperar
+
+1966
+00:58:50,600 --> 00:58:52,600
+ porque si usted
+
+1967
+00:58:52,600 --> 00:58:53,200
+ no vendió
+
+1968
+00:58:53,200 --> 00:58:53,520
+ acá
+
+1969
+00:58:53,520 --> 00:58:54,200
+ como que
+
+1970
+00:58:54,200 --> 00:58:55,080
+ vio confirmación
+
+1971
+00:58:55,080 --> 00:58:55,760
+ para venta
+
+1972
+00:58:55,760 --> 00:58:56,220
+ eso lo vamos
+
+1973
+00:58:56,220 --> 00:58:56,760
+ a ver mañana
+
+1974
+00:58:56,760 --> 00:58:58,400
+ esperamos
+
+1975
+00:58:58,400 --> 00:58:59,460
+ que ese impulso
+
+1976
+00:58:59,460 --> 00:59:03,420
+ y que ese impulso
+
+1977
+00:59:03,420 --> 00:59:04,720
+ nos rompa
+
+1978
+00:59:04,720 --> 00:59:05,300
+ ese precio
+
+1979
+00:59:05,300 --> 00:59:06,540
+ que nos dio
+
+1980
+00:59:06,540 --> 00:59:07,180
+ la confirmación
+
+1981
+00:59:07,180 --> 00:59:08,740
+ en agotamiento
+
+1982
+00:59:08,740 --> 00:59:09,080
+ o sea
+
+1983
+00:59:09,080 --> 00:59:09,560
+ que tenga
+
+1984
+00:59:09,560 --> 00:59:10,840
+ un retroceso
+
+1985
+00:59:10,840 --> 00:59:12,580
+ de velas continuas
+
+1986
+00:59:12,580 --> 00:59:14,020
+ para entrar
+
+1987
+00:59:14,020 --> 00:59:14,780
+ en un
+
+1988
+00:59:14,780 --> 00:59:16,200
+ agotamiento
+
+1989
+00:59:16,200 --> 00:59:16,820
+ al sistema
+
+1990
+00:59:16,820 --> 00:59:21,000
+ si yo no
+
+1991
+00:59:21,000 --> 00:59:21,500
+ entré acá
+
+1992
+00:59:21,500 --> 00:59:22,380
+ en venta
+
+1993
+00:59:22,380 --> 00:59:23,680
+ en esa resistencia
+
+1994
+00:59:23,680 --> 00:59:24,120
+ yo ya tengo
+
+1995
+00:59:24,120 --> 00:59:24,580
+ que esperar
+
+1996
+00:59:24,580 --> 00:59:25,360
+ ya tenemos
+
+1997
+00:59:25,360 --> 00:59:26,060
+ un impulso
+
+1998
+00:59:26,060 --> 00:59:26,740
+ que es este
+
+1999
+00:59:26,740 --> 00:59:29,400
+ vamos a esperar
+
+2000
+00:59:29,400 --> 00:59:29,780
+ que
+
+2001
+00:59:29,780 --> 00:59:31,320
+ haga lo suyo
+
+2002
+00:59:31,320 --> 00:59:32,140
+ que haga todo
+
+2003
+00:59:32,140 --> 00:59:32,800
+ ese movimiento
+
+2004
+00:59:32,800 --> 00:59:33,420
+ bajista
+
+2005
+00:59:33,420 --> 00:59:35,200
+ porque lo que
+
+2006
+00:59:35,200 --> 00:59:36,220
+ nosotros necesitamos
+
+2007
+00:59:36,220 --> 00:59:37,300
+ es que nos rompa
+
+2008
+00:59:37,300 --> 00:59:38,280
+ ese precio
+
+2009
+00:59:38,280 --> 00:59:41,340
+ entonces
+
+2010
+00:59:41,340 --> 00:59:42,400
+ ¿cómo vamos a entrar?
+
+2011
+00:59:42,520 --> 00:59:43,100
+ vamos a esperar
+
+2012
+00:59:43,100 --> 00:59:44,020
+ que nos haga
+
+2013
+00:59:44,020 --> 00:59:45,220
+ un impulso
+
+2014
+00:59:45,220 --> 00:59:46,140
+ que ese impulso
+
+2015
+00:59:46,140 --> 00:59:46,520
+ nos haga
+
+2016
+00:59:46,520 --> 00:59:48,020
+ un retroceso
+
+2017
+00:59:48,020 --> 00:59:50,140
+ y que ese retroceso
+
+2018
+00:59:50,140 --> 00:59:51,460
+ sea de velas continuas
+
+2019
+00:59:51,460 --> 00:59:53,220
+ ¿cómo así que
+
+2020
+00:59:53,220 --> 00:59:54,140
+ de velas continuas?
+
+2021
+00:59:54,140 --> 00:59:54,420
+ o sea
+
+2022
+00:59:54,420 --> 00:59:55,740
+ de velas rojas
+
+2023
+00:59:55,740 --> 00:59:57,020
+ de esta manera
+
+2024
+00:59:57,020 --> 01:00:00,000
+ para yo poder
+
+2025
+01:00:00,000 --> 01:00:00,340
+ trazar
+
+2026
+01:00:00,340 --> 01:00:01,200
+ mi línea
+
+2027
+01:00:01,200 --> 01:00:02,260
+ de agotamiento
+
+2028
+01:00:02,260 --> 01:00:03,680
+ por la parte de arriba
+
+2029
+01:00:03,680 --> 01:00:05,520
+ y buscar
+
+2030
+01:00:05,520 --> 01:00:06,400
+ un rompimiento
+
+2031
+01:00:06,400 --> 01:00:09,340
+ sobre ese precio
+
+2032
+01:00:09,340 --> 01:00:09,820
+ o sea
+
+2033
+01:00:09,820 --> 01:00:10,320
+ así
+
+2034
+01:00:10,320 --> 01:00:14,440
+ miren
+
+2035
+01:00:14,440 --> 01:00:15,020
+ lo que está pasando
+
+2036
+01:00:15,020 --> 01:00:15,280
+ acá
+
+2037
+01:00:15,280 --> 01:00:16,300
+ acá
+
+2038
+01:00:16,300 --> 01:00:17,300
+ ya está llegando
+
+2039
+01:00:17,300 --> 01:00:19,960
+ a ese precio
+
+2040
+01:00:19,960 --> 01:00:20,400
+ de nuevo
+
+2041
+01:00:20,400 --> 01:00:22,320
+ que necesitamos
+
+2042
+01:00:22,320 --> 01:00:23,180
+ o que necesito
+
+2043
+01:00:23,180 --> 01:00:23,920
+ yo en este momento
+
+2044
+01:00:23,920 --> 01:00:25,780
+ que me genere
+
+2045
+01:00:25,780 --> 01:00:26,780
+ ese impulso
+
+2046
+01:00:26,780 --> 01:00:28,340
+ que me genere
+
+2047
+01:00:28,340 --> 01:00:29,980
+ el retroceso
+
+2048
+01:00:29,980 --> 01:00:31,960
+ y que sea
+
+2049
+01:00:31,960 --> 01:00:32,680
+ un retroceso
+
+2050
+01:00:32,680 --> 01:00:33,880
+ de velas continuas
+
+2051
+01:00:33,880 --> 01:00:35,280
+ para yo poder
+
+2052
+01:00:35,280 --> 01:00:35,600
+ colocar
+
+2053
+01:00:35,600 --> 01:00:36,440
+ mi posición
+
+2054
+01:00:36,440 --> 01:00:37,700
+ pero cuando
+
+2055
+01:00:37,700 --> 01:00:38,200
+ me rompa
+
+2056
+01:00:38,200 --> 01:00:38,860
+ esta línea
+
+2057
+01:00:38,860 --> 01:00:39,820
+ vamos a ver
+
+2058
+01:00:39,820 --> 01:00:40,260
+ si lo hace
+
+2059
+01:00:40,260 --> 01:00:46,980
+ esta mechita
+
+2060
+01:00:46,980 --> 01:00:47,720
+ la tengo en cuenta
+
+2061
+01:00:47,720 --> 01:00:52,060
+ y ahora
+
+2062
+01:00:52,060 --> 01:00:53,120
+ ¿qué necesito?
+
+2063
+01:00:53,240 --> 01:00:54,500
+ que ese rompimiento
+
+2064
+01:00:54,500 --> 01:00:55,560
+ me dé una entrada
+
+2065
+01:00:55,560 --> 01:00:57,000
+ sobre ese techo
+
+2066
+01:00:57,000 --> 01:00:57,680
+ que ahora me puede
+
+2067
+01:00:57,680 --> 01:00:58,400
+ servir de piso
+
+2068
+01:00:58,400 --> 01:01:01,840
+ algo muy importante
+
+2069
+01:01:01,840 --> 01:01:02,340
+ que yo tengo que
+
+2070
+01:01:02,340 --> 01:01:02,860
+ tener en cuenta
+
+2071
+01:01:02,860 --> 01:01:03,140
+ acá
+
+2072
+01:01:03,140 --> 01:01:03,600
+ y es que
+
+2073
+01:01:03,600 --> 01:01:05,080
+ ¿dónde voy a colocar
+
+2074
+01:01:05,080 --> 01:01:05,620
+ mi stop?
+
+2075
+01:01:06,540 --> 01:01:07,620
+ si voy a colocar
+
+2076
+01:01:07,620 --> 01:01:08,080
+ una entrada
+
+2077
+01:01:08,080 --> 01:01:09,360
+ en este precio
+
+2078
+01:01:09,360 --> 01:01:10,740
+ el stop
+
+2079
+01:01:10,740 --> 01:01:11,840
+ lo voy a poner
+
+2080
+01:01:11,840 --> 01:01:13,420
+ en el último rebote
+
+2081
+01:01:13,420 --> 01:01:14,860
+ acá tengo un rebote
+
+2082
+01:01:14,860 --> 01:01:15,980
+ que es este
+
+2083
+01:01:17,720 --> 01:01:18,800
+ y acá abajo
+
+2084
+01:01:18,800 --> 01:01:19,780
+ tenemos un rebote
+
+2085
+01:01:19,780 --> 01:01:20,440
+ más cercano
+
+2086
+01:01:20,440 --> 01:01:20,960
+ que es
+
+2087
+01:01:20,960 --> 01:01:21,760
+ este abajo
+
+2088
+01:01:21,760 --> 01:01:26,240
+ entonces miren
+
+2089
+01:01:26,240 --> 01:01:26,860
+ que yo lo puedo
+
+2090
+01:01:26,860 --> 01:01:27,300
+ colocar
+
+2091
+01:01:27,300 --> 01:01:28,380
+ a más o menos
+
+2092
+01:01:28,380 --> 01:01:28,960
+ puedo calcular
+
+2093
+01:01:28,960 --> 01:01:29,740
+ cuánto puede ser
+
+2094
+01:01:29,740 --> 01:01:30,420
+ mi pérdida
+
+2095
+01:01:30,420 --> 01:01:32,320
+ y me dé
+
+2096
+01:01:32,320 --> 01:01:32,780
+ respeta
+
+2097
+01:01:32,780 --> 01:01:34,380
+ este retroceso
+
+2098
+01:01:34,380 --> 01:01:36,700
+ aproximadamente
+
+2099
+01:01:36,700 --> 01:01:38,080
+ 80 dólares
+
+2100
+01:01:38,080 --> 01:01:39,060
+ por contrato
+
+2101
+01:01:39,060 --> 01:01:45,820
+ vamos a ver
+
+2102
+01:01:45,820 --> 01:01:51,060
+ debe romper
+
+2103
+01:01:51,060 --> 01:01:52,020
+ esta línea
+
+2104
+01:01:52,020 --> 01:01:53,080
+ ese retroceso
+
+2105
+01:01:53,080 --> 01:01:53,600
+ para poder
+
+2106
+01:01:53,600 --> 01:01:54,660
+ colocar nuestra posición
+
+2107
+01:01:54,660 --> 01:02:02,560
+ hasta que
+
+2108
+01:02:02,560 --> 01:02:03,400
+ no nos la rompa
+
+2109
+01:02:03,400 --> 01:02:04,300
+ no es entrada
+
+2110
+01:02:04,300 --> 01:02:05,060
+ para nosotros
+
+2111
+01:02:05,060 --> 01:02:11,900
+ vamos a ver
+
+2112
+01:02:11,900 --> 01:02:12,500
+ acá
+
+2113
+01:02:12,500 --> 01:02:13,440
+ si la rompe
+
+2114
+01:02:13,440 --> 01:02:16,840
+ bueno les digo
+
+2115
+01:02:16,840 --> 01:02:17,900
+ lo más importante
+
+2116
+01:02:17,900 --> 01:02:19,100
+ no es colocar
+
+2117
+01:02:19,100 --> 01:02:20,340
+ la posición
+
+2118
+01:02:20,340 --> 01:02:22,400
+ sino también
+
+2119
+01:02:22,400 --> 01:02:23,060
+ colocar
+
+2120
+01:02:23,060 --> 01:02:24,740
+ ese stop
+
+2121
+01:02:24,740 --> 01:02:25,520
+ en ese rebote
+
+2122
+01:02:25,520 --> 01:02:26,080
+ vamos a buscar
+
+2123
+01:02:26,080 --> 01:02:26,980
+ esos rebotes
+
+2124
+01:02:26,980 --> 01:02:28,420
+ acá en rebote
+
+2125
+01:02:28,420 --> 01:02:28,740
+ listo
+
+2126
+01:02:28,740 --> 01:02:29,700
+ esto nos puede servir
+
+2127
+01:02:29,700 --> 01:02:31,440
+ porque
+
+2128
+01:02:31,440 --> 01:02:32,320
+ acá el mercado
+
+2129
+01:02:32,320 --> 01:02:33,060
+ se impulsó
+
+2130
+01:02:33,060 --> 01:02:34,180
+ pero eso solamente
+
+2131
+01:02:34,180 --> 01:02:35,240
+ lo podemos colocar
+
+2132
+01:02:35,240 --> 01:02:36,460
+ cuando nos rompa
+
+2133
+01:02:36,460 --> 01:02:37,320
+ esta línea
+
+2134
+01:02:37,320 --> 01:02:38,640
+ de agotamiento
+
+2135
+01:02:38,640 --> 01:02:50,940
+ acá parece que
+
+2136
+01:02:50,940 --> 01:02:51,360
+ me voy a dar
+
+2137
+01:02:51,360 --> 01:02:52,240
+ confirmación
+
+2138
+01:02:52,240 --> 01:02:53,140
+ cuánto le falta
+
+2139
+01:02:53,140 --> 01:02:53,560
+ dos
+
+2140
+01:02:53,560 --> 01:02:54,120
+ y señor
+
+2141
+01:02:54,120 --> 01:02:56,720
+ vamos a colocar
+
+2142
+01:02:56,720 --> 01:02:57,260
+ el stop
+
+2143
+01:02:57,260 --> 01:02:57,860
+ por acá
+
+2144
+01:02:57,860 --> 01:03:00,620
+ y el profit
+
+2145
+01:03:00,620 --> 01:03:01,600
+ lo vamos a poner
+
+2146
+01:03:01,600 --> 01:03:02,240
+ por acá
+
+2147
+01:03:02,240 --> 01:03:11,280
+ eso es un agotamiento
+
+2148
+01:03:11,280 --> 01:03:12,260
+ un agotamiento
+
+2149
+01:03:12,260 --> 01:03:12,820
+ alcista
+
+2150
+01:03:12,820 --> 01:03:14,400
+ sobre un precio
+
+2151
+01:03:14,400 --> 01:03:15,140
+ que antes era
+
+2152
+01:03:15,140 --> 01:03:16,020
+ un techo
+
+2153
+01:03:16,020 --> 01:03:16,840
+ ahora nos va a servir
+
+2154
+01:03:16,840 --> 01:03:17,540
+ de piso
+
+2155
+01:03:17,540 --> 01:03:19,740
+ y vamos a ver
+
+2156
+01:03:19,740 --> 01:03:20,700
+ que nos da
+
+2157
+01:03:20,700 --> 01:03:21,920
+ ese entrar
+
+2158
+01:03:21,920 --> 01:03:22,620
+ en agotamiento
+
+2159
+01:03:22,620 --> 01:03:28,400
+ muy bien
+
+2160
+01:03:28,400 --> 01:03:29,420
+ lo importante
+
+2161
+01:03:29,420 --> 01:03:30,320
+ no es solamente
+
+2162
+01:03:30,320 --> 01:03:30,900
+ colocar
+
+2163
+01:03:30,900 --> 01:03:32,540
+ esa entrada
+
+2164
+01:03:32,540 --> 01:03:32,880
+ sino
+
+2165
+01:03:32,880 --> 01:03:33,900
+ el stop
+
+2166
+01:03:33,900 --> 01:03:35,100
+ es más importante
+
+2167
+01:03:35,100 --> 01:03:35,420
+ aún
+
+2168
+01:03:35,420 --> 01:03:37,140
+ porque ese es el que
+
+2169
+01:03:37,140 --> 01:03:38,040
+ nos va a proteger
+
+2170
+01:03:38,040 --> 01:03:39,500
+ esa posición
+
+2171
+01:03:39,500 --> 01:03:50,440
+ es un stop
+
+2172
+01:03:50,440 --> 01:03:50,960
+ donde yo hubiera tenido
+
+2173
+01:03:50,960 --> 01:03:52,000
+ un stop cortico
+
+2174
+01:03:52,000 --> 01:03:53,380
+ que hubiera pasado
+
+2175
+01:03:53,380 --> 01:03:53,880
+ acá
+
+2176
+01:03:53,880 --> 01:03:56,460
+ ya me hubiera sacado
+
+2177
+01:03:56,460 --> 01:03:56,700
+ entonces
+
+2178
+01:03:56,700 --> 01:03:57,600
+ por eso es que yo voy a buscar
+
+2179
+01:03:57,600 --> 01:03:58,440
+ un rebote
+
+2180
+01:03:58,440 --> 01:04:00,500
+ para un posible stop
+
+2181
+01:04:00,500 --> 01:04:02,160
+ y evitar que
+
+2182
+01:04:02,160 --> 01:04:02,800
+ vaya
+
+2183
+01:04:02,800 --> 01:04:03,740
+ por mi
+
+2184
+01:04:03,740 --> 01:04:04,320
+ me case
+
+2185
+01:04:04,320 --> 01:04:05,540
+ y continúe a favor
+
+2186
+01:04:05,540 --> 01:04:14,020
+ vamos a ver
+
+2187
+01:04:14,020 --> 01:04:15,280
+ miren todo el movimiento
+
+2188
+01:04:15,280 --> 01:04:16,000
+ que hace
+
+2189
+01:04:16,000 --> 01:04:17,300
+ es una entrada
+
+2190
+01:04:17,300 --> 01:04:18,100
+ muy demorada
+
+2191
+01:04:18,100 --> 01:04:18,740
+ porque ya
+
+2192
+01:04:18,740 --> 01:04:20,040
+ el mercado ya lleva
+
+2193
+01:04:20,040 --> 01:04:21,440
+ aproximadamente
+
+2194
+01:04:21,440 --> 01:04:23,020
+ dos horas de apertura
+
+2195
+01:04:23,020 --> 01:04:24,160
+ pero siempre
+
+2196
+01:04:24,160 --> 01:04:24,920
+ cuando yo tenga
+
+2197
+01:04:24,920 --> 01:04:25,340
+ el stop
+
+2198
+01:04:25,340 --> 01:04:26,360
+ bien puestecito
+
+2199
+01:04:26,360 --> 01:04:27,160
+ ahí en el rebote
+
+2200
+01:04:27,160 --> 01:04:27,700
+ no pasa
+
+2201
+01:04:27,700 --> 01:04:28,820
+ absolutamente nada
+
+2202
+01:04:28,820 --> 01:04:30,840
+ y pues obviamente
+
+2203
+01:04:30,840 --> 01:04:32,340
+ que se apalanquen
+
+2204
+01:04:32,340 --> 01:04:32,920
+ lo
+
+2205
+01:04:32,920 --> 01:04:35,720
+ lo normal
+
+2206
+01:04:35,720 --> 01:04:36,780
+ para sus cuentas
+
+2207
+01:04:36,780 --> 01:04:51,700
+ miren
+
+2208
+01:04:51,700 --> 01:04:52,020
+ muy bien
+
+2209
+01:04:52,020 --> 01:04:52,500
+ les repito
+
+2210
+01:04:52,500 --> 01:04:53,000
+ lo que les dije
+
+2211
+01:04:53,000 --> 01:04:53,640
+ al comienzo
+
+2212
+01:04:53,640 --> 01:04:54,180
+ lo
+
+2213
+01:04:54,180 --> 01:04:55,100
+ lo mejor
+
+2214
+01:04:55,100 --> 01:04:55,800
+ que les puede pasar
+
+2215
+01:04:55,800 --> 01:04:56,120
+ a ustedes
+
+2216
+01:04:56,120 --> 01:04:56,800
+ como trader
+
+2217
+01:04:56,800 --> 01:04:58,140
+ es que empiecen
+
+2218
+01:04:58,140 --> 01:04:58,640
+ perdiendo
+
+2219
+01:04:58,640 --> 01:04:59,680
+ que empiecen
+
+2220
+01:04:59,680 --> 01:05:00,440
+ regulando
+
+2221
+01:05:00,440 --> 01:05:01,160
+ esas emociones
+
+2222
+01:05:01,160 --> 01:05:01,640
+ al momento
+
+2223
+01:05:01,640 --> 01:05:02,100
+ de operar
+
+2224
+01:05:02,100 --> 01:05:03,240
+ que empiecen
+
+2225
+01:05:03,240 --> 01:05:03,580
+ ustedes
+
+2226
+01:05:03,580 --> 01:05:04,460
+ identificando
+
+2227
+01:05:04,460 --> 01:05:05,240
+ que sienten
+
+2228
+01:05:05,240 --> 01:05:05,660
+ al momento
+
+2229
+01:05:05,660 --> 01:05:06,760
+ de operar
+
+2230
+01:05:06,760 --> 01:05:07,540
+ pero no en demo
+
+2231
+01:05:07,540 --> 01:05:08,680
+ sino en cuenta real
+
+2232
+01:05:08,680 --> 01:05:09,480
+ es lo que
+
+2233
+01:05:09,480 --> 01:05:10,180
+ ustedes van a operar
+
+2234
+01:05:10,180 --> 01:05:10,780
+ más adelante
+
+2235
+01:05:10,780 --> 01:05:32,680
+ miren la estructura
+
+2236
+01:05:32,680 --> 01:05:33,180
+ que se está
+
+2237
+01:05:33,180 --> 01:05:33,900
+ formando
+
+2238
+01:05:33,900 --> 01:05:35,060
+ una estructura
+
+2239
+01:05:35,060 --> 01:05:35,940
+ alcista
+
+2240
+01:05:35,940 --> 01:05:37,540
+ donde los máximos
+
+2241
+01:05:37,540 --> 01:05:38,540
+ son más altos
+
+2242
+01:05:38,540 --> 01:05:39,360
+ que los anteriores
+
+2243
+01:05:39,360 --> 01:05:40,900
+ altos
+
+2244
+01:05:40,900 --> 01:05:41,960
+ altos
+
+2245
+01:05:41,960 --> 01:05:43,060
+ altos
+
+2246
+01:05:43,060 --> 01:05:56,760
+ pero ya cuando tomamos
+
+2247
+01:05:56,760 --> 01:05:57,640
+ esa decisión
+
+2248
+01:05:57,640 --> 01:05:58,400
+ ya cuando tomamos
+
+2249
+01:05:58,400 --> 01:05:59,480
+ esta operación
+
+2250
+01:05:59,480 --> 01:06:01,080
+ ya no podemos decir
+
+2251
+01:06:01,080 --> 01:06:01,780
+ que vamos a cerrar
+
+2252
+01:06:01,780 --> 01:06:02,340
+ manual
+
+2253
+01:06:02,340 --> 01:06:03,140
+ o que
+
+2254
+01:06:03,140 --> 01:06:03,660
+ no
+
+2255
+01:06:03,660 --> 01:06:04,280
+ ya está
+
+2256
+01:06:04,280 --> 01:06:04,840
+ tomada
+
+2257
+01:06:04,840 --> 01:06:05,460
+ la decisión
+
+2258
+01:06:05,460 --> 01:06:06,100
+ muchachos
+
+2259
+01:06:06,100 --> 01:06:10,820
+ y ya tenemos
+
+2260
+01:06:10,820 --> 01:06:11,480
+ que dejar
+
+2261
+01:06:11,480 --> 01:06:12,080
+ que el mercado
+
+2262
+01:06:12,080 --> 01:06:13,040
+ haga lo suyo
+
+2263
+01:06:13,060 --> 01:06:20,380
+ listo
+
+2264
+01:06:20,380 --> 01:06:21,380
+ listo
+
+2265
+01:06:21,380 --> 01:06:26,360
+ eso fue todo
+
+2266
+01:06:26,360 --> 01:06:26,740
+ muchachos
+
+2267
+01:06:26,740 --> 01:06:27,560
+ como les pareció
+
+2268
+01:06:27,560 --> 01:06:29,460
+ o como les ha parecido
+
+2269
+01:06:29,460 --> 01:06:39,780
+ cristian
+
+2270
+01:06:39,780 --> 01:06:40,760
+ el mercado
+
+2271
+01:06:40,760 --> 01:06:41,640
+ el mercado
+
+2272
+01:06:41,640 --> 01:06:43,380
+ normalmente se comporta
+
+2273
+01:06:43,380 --> 01:06:43,600
+ así
+
+2274
+01:06:43,600 --> 01:06:44,480
+ o eso
+
+2275
+01:06:44,480 --> 01:06:46,780
+ digamos que también
+
+2276
+01:06:46,780 --> 01:06:47,360
+ tiene que ver
+
+2277
+01:06:47,360 --> 01:06:48,360
+ con algo de suerte
+
+2278
+01:06:48,360 --> 01:06:50,780
+ no
+
+2279
+01:06:50,780 --> 01:06:51,300
+ eso no
+
+2280
+01:06:51,300 --> 01:06:51,680
+ nunca
+
+2281
+01:06:51,680 --> 01:06:52,740
+ o sea
+
+2282
+01:06:52,740 --> 01:06:53,680
+ usted acá
+
+2283
+01:06:53,680 --> 01:06:55,720
+ usted tiene que
+
+2284
+01:06:55,720 --> 01:06:56,600
+ olvidar de la suerte
+
+2285
+01:06:56,600 --> 01:07:00,540
+ usted acá va a sacar
+
+2286
+01:07:00,540 --> 01:07:01,260
+ un análisis
+
+2287
+01:07:01,260 --> 01:07:02,020
+ va a sacar
+
+2288
+01:07:02,020 --> 01:07:03,680
+ una estrategia
+
+2289
+01:07:03,680 --> 01:07:05,720
+ nosotros le vamos a enseñar
+
+2290
+01:07:05,720 --> 01:07:06,680
+ diferentes maneras
+
+2291
+01:07:06,680 --> 01:07:08,000
+ de operar
+
+2292
+01:07:08,000 --> 01:07:10,180
+ y usted va a colocar
+
+2293
+01:07:10,180 --> 01:07:10,800
+ su posición
+
+2294
+01:07:10,800 --> 01:07:12,260
+ porque muy probablemente
+
+2295
+01:07:12,260 --> 01:07:12,540
+ acá
+
+2296
+01:07:12,540 --> 01:07:13,580
+ nos hubiera
+
+2297
+01:07:13,580 --> 01:07:14,000
+ podido sacar
+
+2298
+01:07:14,000 --> 01:07:14,640
+ por stock
+
+2299
+01:07:14,640 --> 01:07:17,360
+ donde no hubiera
+
+2300
+01:07:17,360 --> 01:07:18,000
+ respetado
+
+2301
+01:07:18,000 --> 01:07:19,080
+ esa resistencia
+
+2302
+01:07:19,080 --> 01:07:20,560
+ que teníamos
+
+2303
+01:07:20,560 --> 01:07:21,420
+ en alta temporalidad
+
+2304
+01:07:21,420 --> 01:07:21,880
+ y se devuelve
+
+2305
+01:07:21,880 --> 01:07:22,360
+ al mercado
+
+2306
+01:07:22,360 --> 01:07:26,200
+ y ahí no tiene que ver
+
+2307
+01:07:26,200 --> 01:07:27,020
+ absolutamente
+
+2308
+01:07:27,020 --> 01:07:27,820
+ nada
+
+2309
+01:07:27,820 --> 01:07:28,360
+ la suerte
+
+2310
+01:07:28,360 --> 01:07:32,300
+ ¿por qué?
+
+2311
+01:07:32,400 --> 01:07:32,720
+ porque
+
+2312
+01:07:32,720 --> 01:07:34,740
+ ustedes tienen que entender
+
+2313
+01:07:34,740 --> 01:07:35,300
+ de una vez
+
+2314
+01:07:35,300 --> 01:07:36,100
+ que un profit
+
+2315
+01:07:36,100 --> 01:07:37,120
+ o un stop
+
+2316
+01:07:37,120 --> 01:07:38,300
+ para un trader
+
+2317
+01:07:38,300 --> 01:07:39,140
+ profesional
+
+2318
+01:07:39,140 --> 01:07:40,360
+ que es en lo que
+
+2319
+01:07:40,360 --> 01:07:41,080
+ ustedes tienen que
+
+2320
+01:07:41,080 --> 01:07:41,680
+ convertirse
+
+2321
+01:07:41,680 --> 01:07:43,200
+ no significa
+
+2322
+01:07:43,200 --> 01:07:44,200
+ absolutamente
+
+2323
+01:07:44,200 --> 01:07:44,700
+ nada
+
+2324
+01:07:44,700 --> 01:07:47,060
+ no es como si
+
+2325
+01:07:47,060 --> 01:07:48,180
+ perdieran un dedo
+
+2326
+01:07:48,180 --> 01:07:49,060
+ o como si
+
+2327
+01:07:49,060 --> 01:07:49,980
+ perdieran un familiar
+
+2328
+01:07:49,980 --> 01:07:51,200
+ o como si
+
+2329
+01:07:51,200 --> 01:07:51,520
+ perdieran
+
+2330
+01:07:51,520 --> 01:07:51,800
+ no
+
+2331
+01:07:51,800 --> 01:07:52,760
+ acá estamos
+
+2332
+01:07:52,760 --> 01:07:53,140
+ perdiendo
+
+2333
+01:07:53,140 --> 01:07:53,580
+ dinero
+
+2334
+01:07:53,580 --> 01:07:54,980
+ pero como lo perdemos
+
+2335
+01:07:54,980 --> 01:07:56,340
+ no lo podemos ganar
+
+2336
+01:07:56,340 --> 01:07:58,120
+ entonces no se trata
+
+2337
+01:07:58,120 --> 01:07:58,520
+ de suerte
+
+2338
+01:07:58,520 --> 01:07:59,420
+ se trata de sacar
+
+2339
+01:07:59,420 --> 01:08:00,880
+ un análisis
+
+2340
+01:08:00,880 --> 01:08:01,860
+ una estrategia
+
+2341
+01:08:01,860 --> 01:08:03,120
+ perfeccionarla
+
+2342
+01:08:03,120 --> 01:08:03,980
+ a su gusto
+
+2343
+01:08:03,980 --> 01:08:05,960
+ y ejecutarla
+
+2344
+01:08:05,960 --> 01:08:08,880
+ ahora
+
+2345
+01:08:08,880 --> 01:08:09,560
+ si nos vamos
+
+2346
+01:08:09,560 --> 01:08:10,160
+ a enloquecer
+
+2347
+01:08:10,160 --> 01:08:10,540
+ a entrar
+
+2348
+01:08:10,540 --> 01:08:10,920
+ y a salir
+
+2349
+01:08:10,920 --> 01:08:11,360
+ las veces
+
+2350
+01:08:11,360 --> 01:08:12,300
+ que nosotros
+
+2351
+01:08:12,300 --> 01:08:12,780
+ queramos
+
+2352
+01:08:12,780 --> 01:08:13,200
+ pues a
+
+2353
+01:08:13,200 --> 01:08:14,060
+ descapitalizar
+
+2354
+01:08:14,060 --> 01:08:15,320
+ una cuenta
+
+2355
+01:08:15,320 --> 01:08:15,880
+ obviamente
+
+2356
+01:08:15,880 --> 01:08:16,240
+ pues
+
+2357
+01:08:16,240 --> 01:08:17,560
+ si salió positivo
+
+2358
+01:08:17,560 --> 01:08:17,920
+ eso sí
+
+2359
+01:08:17,920 --> 01:08:18,440
+ tiene que ser
+
+2360
+01:08:18,440 --> 01:08:19,340
+ algo muy de bueno
+
+2361
+01:08:19,340 --> 01:08:20,960
+ pero si usted
+
+2362
+01:08:20,960 --> 01:08:21,240
+ lo hace
+
+2363
+01:08:21,240 --> 01:08:22,300
+ conscientemente
+
+2364
+01:08:22,300 --> 01:08:24,020
+ correctamente
+
+2365
+01:08:24,020 --> 01:08:26,020
+ profesionalmente
+
+2366
+01:08:26,020 --> 01:08:26,340
+ usted
+
+2367
+01:08:26,340 --> 01:08:27,640
+ deja que el mercado
+
+2368
+01:08:27,640 --> 01:08:28,140
+ fluya
+
+2369
+01:08:28,140 --> 01:08:31,440
+ y que el mercado
+
+2370
+01:08:31,440 --> 01:08:32,320
+ cumpla lo suyo
+
+2371
+01:08:32,320 --> 01:08:33,320
+ miren que ahí
+
+2372
+01:08:33,320 --> 01:08:34,360
+ salimos por profit
+
+2373
+01:08:34,360 --> 01:08:35,200
+ pero hubiéramos
+
+2374
+01:08:35,200 --> 01:08:35,580
+ podido salir
+
+2375
+01:08:35,580 --> 01:08:36,420
+ también por stop
+
+2376
+01:08:36,420 --> 01:08:37,280
+ no pasa nada
+
+2377
+01:08:37,280 --> 01:08:38,120
+ es un análisis
+
+2378
+01:08:38,120 --> 01:08:38,760
+ que sacamos
+
+2379
+01:08:38,760 --> 01:08:39,960
+ que sacamos
+
+2380
+01:08:39,960 --> 01:08:41,180
+ sobre un
+
+2381
+01:08:41,180 --> 01:08:42,140
+ techo
+
+2382
+01:08:42,140 --> 01:08:42,740
+ que se convirtió
+
+2383
+01:08:42,740 --> 01:08:43,220
+ en piso
+
+2384
+01:08:43,220 --> 01:08:43,600
+ y acá
+
+2385
+01:08:43,600 --> 01:08:44,120
+ nos estaba
+
+2386
+01:08:44,120 --> 01:08:44,840
+ confirmando
+
+2387
+01:08:44,840 --> 01:08:45,960
+ y nos dio
+
+2388
+01:08:45,960 --> 01:08:46,500
+ el profit
+
+2389
+01:08:46,500 --> 01:08:47,320
+ pero si se hubiera
+
+2390
+01:08:47,320 --> 01:08:47,820
+ devuelto
+
+2391
+01:08:47,820 --> 01:08:48,760
+ esa posición
+
+2392
+01:08:48,760 --> 01:08:49,280
+ que yo hubiera
+
+2393
+01:08:49,280 --> 01:08:49,960
+ colocado ahí
+
+2394
+01:08:49,960 --> 01:08:51,280
+ con ese valor
+
+2395
+01:08:51,280 --> 01:08:52,960
+ era muy válida
+
+2396
+01:08:52,960 --> 01:08:53,680
+ para mi
+
+2397
+01:08:53,680 --> 01:08:55,720
+ para mi plan
+
+2398
+01:08:55,720 --> 01:08:56,360
+ perderla
+
+2399
+01:08:56,360 --> 01:08:58,040
+ hace parte
+
+2400
+01:08:58,040 --> 01:08:59,160
+ de ese plan
+
+2401
+01:08:59,160 --> 01:08:59,720
+ perderla
+
+2402
+01:08:59,720 --> 01:09:00,840
+ una cosa muy
+
+2403
+01:09:00,840 --> 01:09:01,140
+ diferente
+
+2404
+01:09:01,140 --> 01:09:02,080
+ es que yo me
+
+2405
+01:09:02,080 --> 01:09:03,340
+ sobreapalanqué
+
+2406
+01:09:03,340 --> 01:09:04,060
+ tan fuerte
+
+2407
+01:09:04,060 --> 01:09:06,000
+ que quiera
+
+2408
+01:09:06,000 --> 01:09:06,620
+ ganar mucho
+
+2409
+01:09:06,620 --> 01:09:07,060
+ y a la final
+
+2410
+01:09:07,060 --> 01:09:07,920
+ salgo perdiendo
+
+2411
+01:09:07,920 --> 01:09:09,780
+ listo
+
+2412
+01:09:09,780 --> 01:09:10,080
+ entonces
+
+2413
+01:09:10,080 --> 01:09:11,000
+ no se trata
+
+2414
+01:09:11,000 --> 01:09:11,440
+ de suerte
+
+2415
+01:09:11,440 --> 01:09:12,740
+ se trata
+
+2416
+01:09:12,740 --> 01:09:13,140
+ de
+
+2417
+01:09:13,140 --> 01:09:16,000
+ una pregunta
+
+2418
+01:09:16,000 --> 01:09:17,980
+ o sea
+
+2419
+01:09:17,980 --> 01:09:18,780
+ que la decisión
+
+2420
+01:09:18,780 --> 01:09:19,100
+ de entrar
+
+2421
+01:09:19,100 --> 01:09:19,760
+ en compra
+
+2422
+01:09:19,760 --> 01:09:21,240
+ es por el análisis
+
+2423
+01:09:21,240 --> 01:09:22,680
+ de las resistencias
+
+2424
+01:09:22,680 --> 01:09:24,480
+ que se hicieron
+
+2425
+01:09:24,480 --> 01:09:25,980
+ en el mercado
+
+2426
+01:09:25,980 --> 01:09:28,000
+ exactamente
+
+2427
+01:09:28,000 --> 01:09:29,940
+ esa fue
+
+2428
+01:09:29,940 --> 01:09:30,540
+ una de las entradas
+
+2429
+01:09:30,540 --> 01:09:31,380
+ que nosotros hicimos
+
+2430
+01:09:31,380 --> 01:09:32,420
+ también
+
+2431
+01:09:32,420 --> 01:09:33,520
+ en el
+
+2432
+01:09:33,520 --> 01:09:34,440
+ en el grupo
+
+2433
+01:09:34,440 --> 01:09:34,900
+ que yo tengo
+
+2434
+01:09:34,900 --> 01:09:35,600
+ de avanzados
+
+2435
+01:09:35,600 --> 01:09:36,860
+ donde
+
+2436
+01:09:36,860 --> 01:09:37,880
+ esa entrada
+
+2437
+01:09:37,880 --> 01:09:38,500
+ la hicimos
+
+2438
+01:09:38,500 --> 01:09:39,700
+ y nos tocó
+
+2439
+01:09:39,700 --> 01:09:40,740
+ esperar mucho
+
+2440
+01:09:40,740 --> 01:09:41,520
+ mucho
+
+2441
+01:09:41,520 --> 01:09:41,960
+ desde las
+
+2442
+01:09:41,960 --> 01:09:43,120
+ desde las once
+
+2443
+01:09:43,120 --> 01:09:43,480
+ de la mañana
+
+2444
+01:09:43,480 --> 01:09:44,000
+ prácticamente
+
+2445
+01:09:44,000 --> 01:09:44,620
+ hasta la
+
+2446
+01:09:44,620 --> 01:09:45,120
+ una y media
+
+2447
+01:09:45,120 --> 01:09:45,760
+ que salimos
+
+2448
+01:09:45,760 --> 01:09:53,700
+ pero porque
+
+2449
+01:09:53,700 --> 01:09:54,300
+ ya habíamos
+
+2450
+01:09:54,300 --> 01:09:54,780
+ colocado
+
+2451
+01:09:54,780 --> 01:09:55,380
+ la posición
+
+2452
+01:09:55,380 --> 01:10:01,220
+ listo
+
+2453
+01:10:01,220 --> 01:10:02,580
+ muchachos
+
+2454
+01:10:02,580 --> 01:10:03,020
+ como están
+
+2455
+01:10:03,020 --> 01:10:03,680
+ haciendo ustedes
+
+2456
+01:10:03,680 --> 01:10:04,520
+ la dinámica
+
+2457
+01:10:04,520 --> 01:10:04,800
+ o sea
+
+2458
+01:10:04,800 --> 01:10:05,640
+ el curso
+
+2459
+01:10:05,640 --> 01:10:06,440
+ está diseñado
+
+2460
+01:10:06,440 --> 01:10:07,940
+ para que ustedes
+
+2461
+01:10:07,940 --> 01:10:09,320
+ en el grupo
+
+2462
+01:10:09,320 --> 01:10:09,940
+ que se creó
+
+2463
+01:10:09,940 --> 01:10:10,480
+ de whatsapp
+
+2464
+01:10:10,480 --> 01:10:11,440
+ coloquen
+
+2465
+01:10:11,440 --> 01:10:13,420
+ la posición
+
+2466
+01:10:13,420 --> 01:10:15,460
+ manden la foto
+
+2467
+01:10:15,460 --> 01:10:16,160
+ y expliquen
+
+2468
+01:10:16,160 --> 01:10:16,860
+ por qué entran
+
+2469
+01:10:16,860 --> 01:10:17,380
+ ya sea que
+
+2470
+01:10:17,380 --> 01:10:17,860
+ salgan por
+
+2471
+01:10:17,860 --> 01:10:18,520
+ stop
+
+2472
+01:10:18,520 --> 01:10:19,260
+ o por profit
+
+2473
+01:10:19,260 --> 01:10:20,500
+ si lo están
+
+2474
+01:10:20,500 --> 01:10:20,760
+ haciendo
+
+2475
+01:10:20,760 --> 01:10:21,040
+ lo hicieron
+
+2476
+01:10:21,040 --> 01:10:21,560
+ con Daniel
+
+2477
+01:10:21,560 --> 01:10:23,580
+ si
+
+2478
+01:10:23,580 --> 01:10:24,500
+ si nos explicó
+
+2479
+01:10:24,500 --> 01:10:24,920
+ la verdad
+
+2480
+01:10:24,920 --> 01:10:25,320
+ cristian
+
+2481
+01:10:25,320 --> 01:10:26,060
+ yo no lo he hecho
+
+2482
+01:10:26,060 --> 01:10:27,180
+ porque he tenido
+
+2483
+01:10:27,180 --> 01:10:28,040
+ muy poco tiempo
+
+2484
+01:10:28,040 --> 01:10:28,540
+ mis actividades
+
+2485
+01:10:28,540 --> 01:10:29,020
+ laborales
+
+2486
+01:10:29,020 --> 01:10:29,860
+ no me han dejado
+
+2487
+01:10:29,860 --> 01:10:30,920
+ pero él
+
+2488
+01:10:30,920 --> 01:10:32,080
+ si nos explicó
+
+2489
+01:10:32,080 --> 01:10:33,800
+ listo
+
+2490
+01:10:33,800 --> 01:10:34,180
+ entonces
+
+2491
+01:10:34,180 --> 01:10:35,100
+ para los que puedan
+
+2492
+01:10:35,100 --> 01:10:35,440
+ entonces
+
+2493
+01:10:35,440 --> 01:10:36,060
+ los que puedan
+
+2494
+01:10:36,060 --> 01:10:36,540
+ lo hacen
+
+2495
+01:10:36,540 --> 01:10:37,160
+ y nosotros
+
+2496
+01:10:37,160 --> 01:10:37,740
+ le hacemos
+
+2497
+01:10:37,740 --> 01:10:39,240
+ la retroalimentación
+
+2498
+01:10:39,240 --> 01:10:39,860
+ del mercado
+
+2499
+01:10:39,860 --> 01:10:41,260
+ todos los días
+
+2500
+01:10:41,260 --> 01:10:41,880
+ yo se la hago
+
+2501
+01:10:41,880 --> 01:10:42,480
+ toda la semana
+
+2502
+01:10:42,480 --> 01:10:46,440
+ listo
+
+2503
+01:10:46,440 --> 01:10:47,380
+ mañana
+
+2504
+01:10:47,380 --> 01:10:48,380
+ lo vamos a ver
+
+2505
+01:10:48,380 --> 01:10:49,220
+ paso por paso
+
+2506
+01:10:49,220 --> 01:10:49,840
+ hoy vimos
+
+2507
+01:10:49,840 --> 01:10:50,660
+ cómo entrar
+
+2508
+01:10:50,660 --> 01:10:51,440
+ en la estructura
+
+2509
+01:10:51,440 --> 01:10:51,880
+ de cista
+
+2510
+01:10:51,880 --> 01:10:53,280
+ mañana vamos a ver
+
+2511
+01:10:53,280 --> 01:10:54,100
+ cómo vamos a entrar
+
+2512
+01:10:54,100 --> 01:10:54,700
+ en la estructura
+
+2513
+01:10:54,700 --> 01:10:55,300
+ bajista
+
+2514
+01:10:55,300 --> 01:10:56,260
+ pero también
+
+2515
+01:10:56,260 --> 01:10:57,060
+ vamos a ver
+
+2516
+01:10:57,060 --> 01:10:58,400
+ cómo lo vamos a hacer
+
+2517
+01:10:58,400 --> 01:11:00,360
+ cuando hay un cambio
+
+2518
+01:11:00,360 --> 01:11:01,080
+ de tendencia
+
+2519
+01:11:01,080 --> 01:11:01,980
+ que es muy importante
+
+2520
+01:11:01,980 --> 01:11:02,900
+ también que lo vean
+
+2521
+01:11:02,900 --> 01:11:05,700
+ listo
+
+2522
+01:11:05,700 --> 01:11:06,820
+ no se preocupen
+
+2523
+01:11:06,820 --> 01:11:07,480
+ que yo sé
+
+2524
+01:11:07,480 --> 01:11:08,220
+ que es la primera
+
+2525
+01:11:08,220 --> 01:11:09,240
+ clase
+
+2526
+01:11:09,240 --> 01:11:09,960
+ esa primera clase
+
+2527
+01:11:09,960 --> 01:11:10,800
+ todos quedan
+
+2528
+01:11:10,800 --> 01:11:11,740
+ como embombados
+
+2529
+01:11:11,740 --> 01:11:12,480
+ porque es mucho
+
+2530
+01:11:12,480 --> 01:11:13,620
+ mucha cosa
+
+2531
+01:11:13,620 --> 01:11:14,500
+ pero a medida
+
+2532
+01:11:14,500 --> 01:11:15,240
+ que ustedes vayan
+
+2533
+01:11:15,240 --> 01:11:17,780
+ viendo los días
+
+2534
+01:11:17,780 --> 01:11:18,780
+ y siendo muy justos
+
+2535
+01:11:18,780 --> 01:11:19,260
+ van a entender
+
+2536
+01:11:19,260 --> 01:11:19,960
+ mucho más
+
+2537
+01:11:19,960 --> 01:11:20,900
+ conmigo
+
+2538
+01:11:20,900 --> 01:11:21,520
+ y la otra semana
+
+2539
+01:11:21,520 --> 01:11:22,060
+ con Marco
+
+2540
+01:11:22,060 --> 01:11:26,800
+ listos
+
+2541
+01:11:26,800 --> 01:11:29,100
+ listo
+
+2542
+01:11:29,100 --> 01:11:29,460
+ cristian
+
+2543
+01:11:29,460 --> 01:11:30,340
+ muchísimas gracias
+
+2544
+01:11:30,340 --> 01:11:31,500
+ muchachos
+
+2545
+01:11:31,500 --> 01:11:31,960
+ hablamos
+
+2546
+01:11:31,960 --> 01:11:32,640
+ mañana
+
+2547
+01:11:32,640 --> 01:11:33,520
+ a la misma
+
+2548
+01:11:33,520 --> 01:11:33,780
+ hora
+
+2549
+01:11:33,780 --> 01:11:34,340
+ siete y media
+
+2550
+01:11:34,340 --> 01:11:35,420
+ listo
+
+2551
+01:11:35,420 --> 01:11:35,700
+ ok
+
+2552
+01:11:35,700 --> 01:11:37,860
+ mañana nos vemos
+
+2553
+01:11:37,860 --> 01:11:38,700
+ muchas gracias
+
+2554
+01:11:38,700 --> 01:11:42,700
+ muchas gracias
+
+2555
+01:11:42,700 --> 01:11:45,460
+ muchas gracias
+
