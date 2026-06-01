@@ -21,13 +21,17 @@ Write-Host "==> Actualizando pip..." -ForegroundColor Cyan
 Write-Host "==> Instalando dependencias (requirements-bot.txt)..." -ForegroundColor Cyan
 & $py -m pip install -r (Join-Path $root "requirements-bot.txt")
 
-Write-Host "==> Sembrando estado de paper trading (histórico V1/V2B)..." -ForegroundColor Cyan
+Write-Host "==> Preparando carpetas de estado..." -ForegroundColor Cyan
 New-Item -ItemType Directory -Force -Path (Join-Path $root "data\paper_trading") | Out-Null
 New-Item -ItemType Directory -Force -Path (Join-Path $root "data\paper_trading_v2b") | Out-Null
+# Sembrado opcional: solo si existe una semilla en vps/seed/ (por defecto NO hay,
+# así los bots arrancan de cero en $100).
 $v1State = Join-Path $root "data\paper_trading\state.json"
 $v2State = Join-Path $root "data\paper_trading_v2b\state.json"
-if (-not (Test-Path $v1State)) { Copy-Item (Join-Path $PSScriptRoot "seed\state_v1.json") $v1State }
-if (-not (Test-Path $v2State)) { Copy-Item (Join-Path $PSScriptRoot "seed\state_v2b.json") $v2State }
+$v1Seed = Join-Path $PSScriptRoot "seed\state_v1.json"
+$v2Seed = Join-Path $PSScriptRoot "seed\state_v2b.json"
+if ((Test-Path $v1Seed) -and -not (Test-Path $v1State)) { Copy-Item $v1Seed $v1State }
+if ((Test-Path $v2Seed) -and -not (Test-Path $v2State)) { Copy-Item $v2Seed $v2State }
 
 Write-Host ""
 Write-Host "OK - Entorno listo." -ForegroundColor Green
