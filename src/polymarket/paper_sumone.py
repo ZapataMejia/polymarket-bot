@@ -102,6 +102,7 @@ class SumOneState:
     bankroll: float
     started_at_utc: str
     last_summary_date: str | None = None
+    last_telegram_update_id: int = 0
     open_positions: dict[str, ArbPosition] = field(default_factory=dict)
     closed_positions: list[ArbPosition] = field(default_factory=list)
     seen_markets: set[str] = field(default_factory=set)
@@ -113,6 +114,7 @@ class SumOneState:
             "bankroll": self.bankroll,
             "started_at_utc": self.started_at_utc,
             "last_summary_date": self.last_summary_date,
+            "last_telegram_update_id": self.last_telegram_update_id,
             "open_positions": {k: asdict(v) for k, v in self.open_positions.items()},
             "closed_positions": [asdict(p) for p in self.closed_positions],
             "seen_markets": sorted(self.seen_markets),
@@ -127,6 +129,7 @@ class SumOneState:
             started_at_utc=data.get("started_at_utc",
                                     datetime.now(timezone.utc).isoformat()),
             last_summary_date=data.get("last_summary_date"),
+            last_telegram_update_id=int(data.get("last_telegram_update_id", 0)),
             open_positions={
                 k: ArbPosition(**v) for k, v in data.get("open_positions", {}).items()
             },
@@ -200,6 +203,8 @@ class SumOneTrader:
             ("status",    "Estado general"),
             ("balance",   "Bankroll actual"),
             ("posiciones", "Arbs abiertos"),
+            ("pnl",       "PnL acumulado"),
+            ("historia",  "Últimos arbs cerrados"),
             ("stats",     "Stats globales"),
             ("config",    "Configuración"),
         ])
@@ -211,13 +216,254 @@ class SumOneTrader:
         async with aiohttp.ClientSession(connector=connector, timeout=timeout) as session:
             gamma = GammaClient(session=session)
             clob = ClobClient(session=session)
-            while not self._stop:
+            await asyncio.gather(
+                self._trading_loop(gamma, clob),
+                self._command_loop(),
+            )
+
+    async def _trading_loop(self, gamma: GammaClient, clob: ClobClient) -> None:
+        while not self._stop:
+            try:
+                await self._tick(gamma, clob)
+            except Exception as exc:
+                logger.exception("[%s] tick failed: %s",
+                                 self.cfg.instance_label, exc)
+            await asyncio.sleep(self.cfg.poll_interval_sec)
+
+    async def _command_loop(self) -> None:
+        """Escucha comandos de Telegram y responde con estado."""
+        while not self._stop:
+            updates = await self.notify.get_updates(
+                offset=self.state.last_telegram_update_id + 1,
+                timeout=25,
+            )
+            for upd in updates:
+                self.state.last_telegram_update_id = max(
+                    self.state.last_telegram_update_id,
+                    int(upd.get("update_id", 0)),
+                )
+                msg = upd.get("message") or {}
+                text = (msg.get("text") or "").strip()
+                chat = msg.get("chat") or {}
+                if str(chat.get("id")) != self.notify.chat_id:
+                    continue
+                if not text.startswith("/"):
+                    continue
+                cmd = text.split()[0].split("@")[0].lstrip("/").lower()
                 try:
-                    await self._tick(gamma, clob)
+                    reply = self._dispatch_command(cmd)
                 except Exception as exc:
-                    logger.exception("[%s] tick failed: %s",
-                                     self.cfg.instance_label, exc)
-                await asyncio.sleep(self.cfg.poll_interval_sec)
+                    logger.exception("[%s] command failed: %s",
+                                     self.cfg.instance_label, cmd)
+                    reply = f"⚠️ Error procesando /{cmd}: {exc}"
+                if reply:
+                    await self.notify.send(reply)
+            if updates:
+                _save_state(Path(self.cfg.state_path), self.state)
+            await asyncio.sleep(0.5)
+
+    # ---- Command handlers --------------------------------------------------
+
+    def _dispatch_command(self, cmd: str) -> str:
+        handlers = {
+            "start":      self._cmd_start,
+            "help":       self._cmd_help,
+            "status":     self._cmd_status,
+            "balance":    self._cmd_balance,
+            "posiciones": self._cmd_positions,
+            "positions":  self._cmd_positions,
+            "open":       self._cmd_positions,
+            "pnl":        self._cmd_pnl,
+            "profit":     self._cmd_pnl,
+            "historia":   self._cmd_history,
+            "history":    self._cmd_history,
+            "trades":     self._cmd_history,
+            "stats":      self._cmd_stats,
+            "config":     self._cmd_config,
+        }
+        h = handlers.get(cmd)
+        if not h:
+            return f"🤔 No conozco /{cmd}. Probá /help"
+        return h()
+
+    def _cmd_start(self) -> str:
+        return (
+            "👋 <b>Hola!</b> Soy el bot V3 SumOne.\n\n"
+            f"Bankroll actual: <code>${self.state.bankroll:.2f}</code>\n"
+            "Mi trabajo: detectar cuando UP + DOWN suman menos de $1 y "
+            "comprar ambos para garantizar profit.\n\n"
+            "Tocá el menú azul abajo a la izquierda 📋 o mandame /help."
+        )
+
+    def _cmd_help(self) -> str:
+        return (
+            "📋 <b>Comandos disponibles (V3 SumOne)</b>\n\n"
+            "🔹 /status — estado general\n"
+            "🔹 /balance — solo el bankroll\n"
+            "🔹 /posiciones — arbs abiertos ahora\n"
+            "🔹 /pnl — PnL total acumulado\n"
+            "🔹 /historia — últimos 10 arbs cerrados\n"
+            "🔹 /stats — estadísticas globales\n"
+            "🔹 /config — cómo está configurado"
+        )
+
+    def _cmd_status(self) -> str:
+        closed = self.state.closed_positions
+        wins = sum(1 for p in closed if (p.realized_profit or 0) > 0)
+        total_pnl = self.state.bankroll - self.cfg.initial_bankroll_usd
+        roi = total_pnl / self.cfg.initial_bankroll_usd * 100
+        emoji = "📈" if total_pnl >= 0 else "📉"
+        wr_str = f"{wins/len(closed)*100:.0f}%" if closed else "—"
+        return (
+            f"{emoji} <b>Estado V3 SumOne</b>\n"
+            f"━━━━━━━━━━━━━━━━━━━━\n"
+            f"💰 Bankroll: <code>${self.state.bankroll:.2f}</code> "
+            f"(<b>{roi:+.1f}%</b>)\n"
+            f"📊 PnL: <code>${total_pnl:+.4f}</code>\n"
+            f"🔓 Arbs abiertos: <code>{len(self.state.open_positions)}</code>\n"
+            f"🔒 Cerrados: <code>{len(closed)}</code> (WR {wr_str})\n"
+            f"👀 Oportunidades vistas: <code>{self.state.opportunities_seen}</code>\n"
+            f"🎯 Tomadas: <code>{self.state.opportunities_taken}</code>\n"
+            f"🕒 Activo desde: <code>{self.state.started_at_utc[:16].replace('T',' ')} UTC</code>"
+        )
+
+    def _cmd_balance(self) -> str:
+        total_pnl = self.state.bankroll - self.cfg.initial_bankroll_usd
+        roi = total_pnl / self.cfg.initial_bankroll_usd * 100
+        emoji = "📈" if total_pnl >= 0 else "📉"
+        return (
+            f"💰 <b>Bankroll V3</b>\n"
+            f"━━━━━━━━━━━━━━━━━━━━\n"
+            f"Actual: <code>${self.state.bankroll:.2f}</code>\n"
+            f"Inicial: <code>${self.cfg.initial_bankroll_usd:.2f}</code>\n"
+            f"PnL: {emoji} <code>${total_pnl:+.4f}</code> "
+            f"(<b>{roi:+.2f}%</b>)"
+        )
+
+    def _cmd_positions(self) -> str:
+        if not self.state.open_positions:
+            return "🪹 <b>Sin arbs abiertos</b>\nEsperando próxima oportunidad."
+        lines = ["🎯 <b>Arbs abiertos V3</b>", "━━━━━━━━━━━━━━━━━━━━"]
+        now = _now_utc()
+        for p in sorted(
+            self.state.open_positions.values(),
+            key=lambda x: x.window_end_utc,
+        ):
+            end = datetime.fromisoformat(p.window_end_utc.replace("Z", "+00:00"))
+            mins_left = max(0, int((end - now).total_seconds() // 60))
+            gap_cents = (1 - p.sum_at_entry) * 100
+            lines.append(
+                f"💎 <b>{p.asset.upper()}</b>\n"
+                f"   Sum entrada: <code>${p.sum_at_entry:.4f}</code> "
+                f"(gap {gap_cents:.2f}¢)\n"
+                f"   Contracts: <code>{p.contracts:.2f}</code>  "
+                f"Stake: <code>${p.position_usd:.2f}</code>\n"
+                f"   Profit esperado: <code>${p.expected_profit_total:+.4f}</code>\n"
+                f"   ⏱ Cierra en <b>{mins_left}m</b>"
+            )
+        total_stake = sum(p.position_usd for p in self.state.open_positions.values())
+        total_exp = sum(p.expected_profit_total for p in self.state.open_positions.values())
+        lines.append("━━━━━━━━━━━━━━━━━━━━")
+        lines.append(
+            f"💵 Capital comprometido: <code>${total_stake:.2f}</code>\n"
+            f"🎁 Profit esperado total: <code>${total_exp:+.4f}</code>"
+        )
+        return "\n".join(lines)
+
+    def _cmd_pnl(self) -> str:
+        total_pnl = self.state.bankroll - self.cfg.initial_bankroll_usd
+        roi = total_pnl / self.cfg.initial_bankroll_usd * 100
+        closed = self.state.closed_positions
+        if not closed:
+            return (
+                f"📊 <b>PnL V3</b>\n"
+                f"━━━━━━━━━━━━━━━━━━━━\n"
+                f"Total: <code>${total_pnl:+.4f}</code> ({roi:+.2f}%)\n"
+                f"<i>Aún sin arbs cerrados.</i>"
+            )
+        wins = [p for p in closed if (p.realized_profit or 0) > 0]
+        avg_pnl = sum(p.realized_profit or 0 for p in closed) / len(closed)
+        best = max((p.realized_profit or 0) for p in closed)
+        worst = min((p.realized_profit or 0) for p in closed)
+        return (
+            f"📊 <b>PnL V3 SumOne</b>\n"
+            f"━━━━━━━━━━━━━━━━━━━━\n"
+            f"Total: <code>${total_pnl:+.4f}</code> ({roi:+.2f}%)\n"
+            f"Arbs cerrados: <code>{len(closed)}</code>\n"
+            f"Ganados: <code>{len(wins)}</code> "
+            f"({len(wins)/len(closed)*100:.0f}%)\n"
+            f"Promedio: <code>${avg_pnl:+.4f}</code>\n"
+            f"Mejor: <code>${best:+.4f}</code>\n"
+            f"Peor: <code>${worst:+.4f}</code>"
+        )
+
+    def _cmd_history(self) -> str:
+        closed = self.state.closed_positions
+        if not closed:
+            return "🪹 <b>Sin arbs cerrados</b> aún."
+        recent = closed[-10:][::-1]
+        lines = [f"🗂 <b>Últimos {len(recent)} arbs</b>", "━━━━━━━━━━━━━━━━━━━━"]
+        for p in recent:
+            icon = "✅" if (p.realized_profit or 0) > 0 else "❌"
+            gap_cents = (1 - p.sum_at_entry) * 100
+            settled = (p.settled_at_utc or "")[:16].replace("T", " ")
+            lines.append(
+                f"{icon} <code>{p.asset.upper()}</code>  "
+                f"gap <code>{gap_cents:.2f}¢</code>  "
+                f"PnL <code>${p.realized_profit or 0:+.4f}</code>\n"
+                f"   <i>{settled} UTC</i>"
+            )
+        return "\n".join(lines)
+
+    def _cmd_stats(self) -> str:
+        closed = self.state.closed_positions
+        if not closed:
+            return (
+                "📊 <b>Stats V3</b>\n"
+                f"Oportunidades vistas: <code>{self.state.opportunities_seen}</code>\n"
+                f"Oportunidades tomadas: <code>{self.state.opportunities_taken}</code>\n"
+                f"<i>Aún sin arbs cerrados.</i>"
+            )
+        wins = sum(1 for p in closed if (p.realized_profit or 0) > 0)
+        wr = wins / len(closed) * 100
+        total_profit = sum(p.realized_profit or 0 for p in closed)
+        total_stake = sum(p.position_usd for p in closed)
+        roi_per_dollar = (total_profit / total_stake * 100) if total_stake else 0
+        avg_gap = sum((1 - p.sum_at_entry) * 100 for p in closed) / len(closed)
+        take_rate = (
+            self.state.opportunities_taken / self.state.opportunities_seen * 100
+            if self.state.opportunities_seen else 0
+        )
+        return (
+            f"📊 <b>Stats V3 SumOne</b>\n"
+            f"━━━━━━━━━━━━━━━━━━━━\n"
+            f"Arbs cerrados: <code>{len(closed)}</code>\n"
+            f"WR: <b>{wr:.1f}%</b>\n"
+            f"Profit total: <code>${total_profit:+.4f}</code>\n"
+            f"ROI sobre stake: <b>{roi_per_dollar:.2f}%</b>\n"
+            f"Gap promedio de entrada: <code>{avg_gap:.2f}¢</code>\n"
+            f"━━━━━━━━━━━━━━━━━━━━\n"
+            f"Oportunidades vistas: <code>{self.state.opportunities_seen}</code>\n"
+            f"Tomadas: <code>{self.state.opportunities_taken}</code> "
+            f"({take_rate:.0f}%)"
+        )
+
+    def _cmd_config(self) -> str:
+        return (
+            f"⚙️ <b>Config V3 SumOne</b>\n"
+            f"━━━━━━━━━━━━━━━━━━━━\n"
+            f"Bankroll inicial: <code>${self.cfg.initial_bankroll_usd:.2f}</code>\n"
+            f"Margen mínimo: <code>{self.cfg.margin_required*100:.2f}¢</code>\n"
+            f"Max % por arb: <code>{self.cfg.max_pct_per_arb*100:.0f}%</code>\n"
+            f"Tope absoluto: <code>${self.cfg.max_position_usd:.0f}</code>\n"
+            f"Bankroll floor: <code>${self.cfg.bankroll_floor_usd:.2f}</code>\n"
+            f"Max concurrentes: <code>{self.cfg.max_concurrent_positions}</code>\n"
+            f"Poll: <code>{self.cfg.poll_interval_sec}s</code>\n"
+            f"Costos: <code>{self.cfg.half_spread_cents}¢ spread + "
+            f"{self.cfg.flat_fee_cents}¢ flat + "
+            f"{self.cfg.fee_rate_pct}% prop fee</code>\n"
+            f"Assets: <code>{', '.join(s.split('-')[0].upper() for s in self.cfg.series_slugs)}</code>"
+        )
 
     async def _send_welcome(self) -> None:
         msg = (
