@@ -88,6 +88,8 @@ async def amain() -> None:
                     help="Override TELEGRAM_BOT_TOKEN from config (use a separate bot for V2)")
     ap.add_argument("--telegram-chat-id", default=None,
                     help="Override TELEGRAM_CHAT_ID from config")
+    ap.add_argument("--disable-telegram", action="store_true",
+                    help="Run without Telegram (only file log). Used by V4B when no token is set.")
     ap.add_argument("--log-file", default="logs/paper_trader.log")
     args = ap.parse_args()
 
@@ -118,8 +120,13 @@ async def amain() -> None:
         instance_label=args.instance_label,
     )
 
-    telegram_token = args.telegram_token or cfg.telegram_token
-    telegram_chat_id = args.telegram_chat_id or cfg.telegram_chat_id
+    if args.disable_telegram:
+        telegram_token = None
+        telegram_chat_id = None
+        log.info("[%s] Telegram disabled (running with file log only)", args.instance_label)
+    else:
+        telegram_token = args.telegram_token or cfg.telegram_token
+        telegram_chat_id = args.telegram_chat_id or cfg.telegram_chat_id
 
     client = ExchangeClient(cfg.exchange)
     cache = BinanceKlineCache(client, cache_dir="data/poly_klines_live")
