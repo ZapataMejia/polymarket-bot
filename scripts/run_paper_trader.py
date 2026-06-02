@@ -53,6 +53,10 @@ async def amain() -> None:
     ap.add_argument("--bankroll-floor", type=float, default=30.0,
                     help="Si el bankroll cae por debajo, pausa entradas")
     ap.add_argument("--threshold", type=float, default=0.05)
+    ap.add_argument("--min-seconds-to-resolution", type=int, default=60,
+                    help="Ignora mercados con menos de N segundos para cerrar")
+    ap.add_argument("--max-seconds-to-resolution", type=int, default=3300,
+                    help="Ignora mercados con mas de N segundos para cerrar (V4 Endgame usa 300)")
     ap.add_argument("--half-spread-cents", type=float, default=1.5)
     ap.add_argument("--fee-rate-pct", type=float, default=2.0)
     ap.add_argument("--poll-sec", type=int, default=30)
@@ -101,6 +105,8 @@ async def amain() -> None:
         max_concurrent_positions=args.max_concurrent,
         bankroll_floor_usd=args.bankroll_floor,
         entry_threshold=args.threshold,
+        min_seconds_to_resolution=args.min_seconds_to_resolution,
+        max_seconds_to_resolution=args.max_seconds_to_resolution,
         half_spread_cents=args.half_spread_cents,
         fee_rate_pct=args.fee_rate_pct,
         poll_interval_sec=args.poll_sec,
