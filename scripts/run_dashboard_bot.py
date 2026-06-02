@@ -12,7 +12,7 @@ from pathlib import Path
 
 # Permitir importar desde src/
 ROOT = Path(__file__).resolve().parent.parent
-sys.path.insert(0, str(ROOT / "src"))
+sys.path.insert(0, str(ROOT))
 
 # Intentar cargar .env si existe (sin pip install python-dotenv)
 def _load_dotenv(path: Path) -> None:
@@ -28,7 +28,7 @@ def _load_dotenv(path: Path) -> None:
 
 _load_dotenv(ROOT / ".env")
 
-from polymarket.dashboard_bot import run  # noqa: E402
+from src.polymarket.dashboard_bot import run  # noqa: E402
 
 
 def main() -> int:
