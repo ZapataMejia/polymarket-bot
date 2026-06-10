@@ -21,7 +21,7 @@ while ($true) {
     Write-Host "[V4] Arrancando paper trader (Endgame)..." -ForegroundColor Cyan
     if ([string]::IsNullOrWhiteSpace($tokenV4)) {
         & $py scripts/run_paper_trader.py `
-            --bankroll 95.98 --bankroll-floor 67 --threshold 0.30 `
+            --bankroll 95.98 --bankroll-floor 0 --threshold 0.30 `
             --max-seconds-to-resolution 300 `
             --min-seconds-to-resolution 90 `
             --kelly-fraction 0.50 --max-pct-per-trade 0.20 `
@@ -30,7 +30,7 @@ while ($true) {
             --log-file logs/paper_v4.log
     } else {
         & $py scripts/run_paper_trader.py `
-            --bankroll 95.98 --bankroll-floor 67 --threshold 0.30 `
+            --bankroll 95.98 --bankroll-floor 0 --threshold 0.30 `
             --max-seconds-to-resolution 300 `
             --min-seconds-to-resolution 90 `
             --kelly-fraction 0.50 --max-pct-per-trade 0.20 `

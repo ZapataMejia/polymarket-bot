@@ -24,7 +24,7 @@ if ([string]::IsNullOrWhiteSpace($tokenV4B)) {
 while ($true) {
     Write-Host "[V4B-DEMO] Paper 40pp -> Telegram V4B (bankroll `$95.98)..." -ForegroundColor Cyan
     & $py scripts/run_paper_trader.py `
-        --bankroll 95.98 --bankroll-floor 67 `
+        --bankroll 95.98 --bankroll-floor 0 `
         --threshold 0.40 `
         --max-seconds-to-resolution 300 `
         --min-seconds-to-resolution 90 `
