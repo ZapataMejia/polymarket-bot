@@ -248,15 +248,26 @@ class GammaClient:
 
     async def _get(self, path: str, params: dict[str, Any]) -> Any:
         url = f"{GAMMA_BASE}{path}"
+        last_exc: Exception | None = None
         for attempt in range(4):
-            async with self._session.get(url, params=params) as resp:
-                if resp.status == 200:
-                    return await resp.json()
-                if resp.status >= 500 and attempt < 3:
+            try:
+                async with self._session.get(url, params=params) as resp:
+                    if resp.status == 200:
+                        return await resp.json()
+                    if resp.status >= 500 and attempt < 3:
+                        await asyncio.sleep(0.5 * (2 ** attempt))
+                        continue
+                    text = await resp.text()
+                    raise RuntimeError(f"Gamma GET {url} -> {resp.status}: {text[:200]}")
+            except (asyncio.TimeoutError, aiohttp.ClientError) as exc:
+                last_exc = exc
+                if attempt < 3:
+                    logger.warning("Gamma GET retry %d/3 %s: %s", attempt + 1, path, exc)
                     await asyncio.sleep(0.5 * (2 ** attempt))
                     continue
-                text = await resp.text()
-                raise RuntimeError(f"Gamma GET {url} -> {resp.status}: {text[:200]}")
+                raise
+        if last_exc:
+            raise last_exc
         return None
 
     async def list_events_by_series(
