@@ -278,6 +278,8 @@ class PaperTrader:
         self._gamma_session: aiohttp.ClientSession | None = None
         self._clob_session: aiohttp.ClientSession | None = None
         self._stop = False
+        self._last_tick_error_msg = ""
+        self._last_tick_error_at: float = 0.0
         self.live = None
         if config.live_mode:
             from src.polymarket.live_clob import LiveClobExecutor, load_live_config
@@ -365,9 +367,23 @@ class PaperTrader:
         while not self._stop:
             try:
                 await self._tick()
-            except Exception:
+            except Exception as exc:
                 logger.exception("Tick failed")
-                await self.notifier.send("⚠️ Bot: error en tick, ver logs")
+                msg = f"{type(exc).__name__}: {exc}"
+                now_mono = asyncio.get_event_loop().time()
+                if (
+                    msg != self._last_tick_error_msg
+                    or now_mono - self._last_tick_error_at > 300
+                ):
+                    self._last_tick_error_msg = msg
+                    self._last_tick_error_at = now_mono
+                    err_body = (
+                        "⚠️ <b>Error en tick</b> (el bot sigue; reintenta en 30s)\n"
+                        f"<code>{msg[:250]}</code>"
+                    )
+                    if self.cfg.live_mode:
+                        err_body += "\nLog: <code>logs/live_v4b.log</code>"
+                    await self.notifier.send(err_body)
             await asyncio.sleep(self.cfg.poll_interval_sec)
 
     async def _command_loop(self) -> None:
@@ -437,7 +453,10 @@ class PaperTrader:
                     continue
                 if mkt.market_id in self.state.skipped_markets:
                     continue
-                await self._maybe_open(mkt, clob, now)
+                try:
+                    await self._maybe_open(mkt, clob, now)
+                except Exception:
+                    logger.exception("maybe_open failed %s", mkt.slug)
 
             # 3) Settle any position whose window has expired.
             await self._settle_expired(now)
