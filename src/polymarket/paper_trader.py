@@ -389,7 +389,7 @@ class PaperTrader:
                     continue
                 cmd = text.split()[0].split("@")[0].lstrip("/").lower()
                 try:
-                    reply = self._dispatch_command(cmd)
+                    reply = await self._dispatch_command(cmd)
                 except Exception as exc:
                     logger.exception("command failed: %s", cmd)
                     reply = f"⚠️ Error procesando /{cmd}: {exc}"
@@ -400,6 +400,17 @@ class PaperTrader:
             await asyncio.sleep(0.5)
 
     # --- internals ----------------------------------------------------------
+    async def _sync_live_bankroll(self) -> None:
+        """Refresh bankroll from Polymarket API (LIVE only)."""
+        if not self.cfg.live_mode or not self.live:
+            return
+        try:
+            bal = await self.live.get_usdc_balance()
+            if bal >= 1.0:
+                self.state.bankroll = bal
+        except Exception as exc:
+            logger.warning("live balance sync (command): %s", exc)
+
     async def _tick(self) -> None:
         now = _now_utc()
         if self.cfg.live_mode and self.live:
@@ -733,7 +744,9 @@ class PaperTrader:
                         pos.slug, pos.direction, outcome, pnl, self.state.bankroll)
 
     # --- command handlers ---------------------------------------------------
-    def _dispatch_command(self, cmd: str) -> str:
+    async def _dispatch_command(self, cmd: str) -> str:
+        if cmd in ("balance", "status", "pnl", "start", "stats", "dia", "today", "daily"):
+            await self._sync_live_bankroll()
         handlers = {
             "start": self._cmd_start,
             "help": self._cmd_help,
