@@ -9,9 +9,12 @@ from __future__ import annotations
 
 import asyncio
 import json
+import ssl
 import sys
 import urllib.request
 from pathlib import Path
+
+import certifi
 
 _REPO = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(_REPO))
@@ -28,6 +31,10 @@ POLYGON_RPC = "https://polygon-rpc.com"
 DATA_API = "https://data-api.polymarket.com/value"
 
 
+def _ssl_ctx() -> ssl.SSLContext:
+    return ssl.create_default_context(cafile=certifi.where())
+
+
 def _rpc_usdc_balance(address: str, token: str, label: str) -> float:
     addr = address.lower().replace("0x", "").zfill(64)
     data = "0x70a08231" + addr
@@ -41,7 +48,7 @@ def _rpc_usdc_balance(address: str, token: str, label: str) -> float:
         POLYGON_RPC, data=payload, headers={"Content-Type": "application/json"},
     )
     try:
-        with urllib.request.urlopen(req, timeout=15) as resp:
+        with urllib.request.urlopen(req, timeout=15, context=_ssl_ctx()) as resp:
             result = json.loads(resp.read().decode())
         if "error" in result:
             print(f"  {label}: RPC error {result['error']}")
@@ -56,7 +63,7 @@ def _rpc_usdc_balance(address: str, token: str, label: str) -> float:
 def _data_api_value(address: str) -> float:
     url = f"{DATA_API}?user={address}"
     try:
-        with urllib.request.urlopen(url, timeout=15) as resp:
+        with urllib.request.urlopen(url, timeout=15, context=_ssl_ctx()) as resp:
             data = json.loads(resp.read().decode())
         if isinstance(data, list) and data:
             return float(data[0].get("value", 0))
@@ -133,8 +140,9 @@ async def main() -> None:
 
     if best[0] >= 1:
         print(f"✅ Usá POLYMARKET_SIGNATURE_TYPE={best[1]}")
-        if best[1] in (1, 2):
-            print(f"   POLYMARKET_FUNDER_ADDRESS={cfg.funder_address}")
+        print(f"   POLYMARKET_FUNDER_ADDRESS={cfg.funder_address}")
+        if best[1] == 3:
+            print("   (cuenta Google nueva — Perfil → Dirección, no el nombre de usuario)")
     else:
         print("❌ Ninguna combinación devolvió balance > $0.")
         print()

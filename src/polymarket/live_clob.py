@@ -30,7 +30,7 @@ CLOB_HOST = "https://clob.polymarket.com"
 class LiveClobConfig:
     private_key: str
     funder_address: str
-    signature_type: int = 1
+    signature_type: int = 3  # 3=deposit wallet (cuentas Google nuevas); 1=Magic proxy viejo
     chain_id: int = 137
     max_slippage_cents: float = 5.0
 
@@ -56,7 +56,7 @@ def load_live_config() -> LiveClobConfig:
         raise RuntimeError(
             "POLYMARKET_PRIVATE_KEY and POLYMARKET_FUNDER_ADDRESS must be set in .env"
         )
-    sig = int(os.getenv("POLYMARKET_SIGNATURE_TYPE", "1"))
+    sig = int(os.getenv("POLYMARKET_SIGNATURE_TYPE", "3"))
     chain = int(os.getenv("POLYMARKET_CHAIN_ID", "137"))
     slip = float(os.getenv("POLYMARKET_MAX_SLIPPAGE_CENTS", "5"))
     return LiveClobConfig(
@@ -95,7 +95,10 @@ class LiveClobExecutor:
         """Refresh collateral allowance (safe to call on startup)."""
         def _go() -> None:
             client = self._client_sync()
-            params = BalanceAllowanceParams(asset_type=AssetType.COLLATERAL)
+            params = BalanceAllowanceParams(
+                asset_type=AssetType.COLLATERAL,
+                signature_type=self.cfg.signature_type,
+            )
             client.update_balance_allowance(params)
 
         await self._run(_go)

@@ -5,7 +5,7 @@
 # Config = igual paper V4B: Kelly 50%, cap 20%, 40pp endgame, stop $67.
 # Requiere en .env:
 #   POLYMARKET_PRIVATE_KEY, POLYMARKET_FUNDER_ADDRESS,
-#   POLYMARKET_SIGNATURE_TYPE=1, TELEGRAM_BOT_TOKEN_V4B, TELEGRAM_CHAT_ID
+#   POLYMARKET_SIGNATURE_TYPE=3 (cuenta Google nueva), TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID
 $ErrorActionPreference = "Continue"
 $root = Split-Path $PSScriptRoot -Parent
 Set-Location $root

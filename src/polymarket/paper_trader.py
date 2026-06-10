@@ -315,7 +315,8 @@ class PaperTrader:
                         "⚠️ <b>LIVE: balance $0 en API</b>\n"
                         "Tu USDC en Polymarket <b>no se perdió</b> — el bot no pudo leerlo.\n"
                         f"Respuesta API: <code>{str(raw)[:200]}</code>\n"
-                        "Revisá POLYMARKET_FUNDER_ADDRESS y SIGNATURE_TYPE=1.\n"
+                        "Revisá POLYMARKET_FUNDER_ADDRESS y SIGNATURE_TYPE "
+                        "(cuentas Google nuevas = 3).\n"
                         "Corré: <code>python scripts/test_live_clob.py</code>"
                     )
                     logger.warning("live balance read $0, raw=%s", raw)
