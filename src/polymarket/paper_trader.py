@@ -334,7 +334,9 @@ class PaperTrader:
             f"Assets: <code>{assets}</code>\n"
             f"Costos asumidos: {self.cfg.half_spread_cents}¢ + {self.cfg.fee_rate_pct}% fee\n"
             + (f"Stop loss: pausa bajo <code>${self.cfg.bankroll_floor_usd:.0f}</code>\n"
-               if self.cfg.live_mode else "")
+               if self.cfg.live_mode and self.cfg.bankroll_floor_usd > 0 else "")
+            + ("Sin floor de bankroll — opera hasta que quede margen mínimo.\n"
+               if self.cfg.live_mode and self.cfg.bankroll_floor_usd <= 0 else "")
             + "\nUsá /help para ver comandos disponibles."
         )
         ctx = ssl.create_default_context(cafile=certifi.where())
@@ -571,7 +573,7 @@ class PaperTrader:
             return
 
         # ---- RISK CONTROLS ------------------------------------------------
-        if self.state.bankroll < self.cfg.bankroll_floor_usd:
+        if self.cfg.bankroll_floor_usd > 0 and self.state.bankroll < self.cfg.bankroll_floor_usd:
             logger.warning(
                 "Bankroll $%.2f below floor $%.2f — pausing entries",
                 self.state.bankroll, self.cfg.bankroll_floor_usd,
@@ -994,7 +996,7 @@ class PaperTrader:
             f"Bankroll inicial: <code>${self.cfg.initial_bankroll_usd:.2f}</code>\n"
             f"Sizing: <code>{sizing}</code>\n"
             f"Threshold edge: <code>{self.cfg.entry_threshold*100:.0f}pp</code>\n"
-            f"Floor (pausa): <code>${self.cfg.bankroll_floor_usd:.2f}</code>\n"
+            f"Floor (pausa): <code>{'sin floor' if self.cfg.bankroll_floor_usd <= 0 else f'${self.cfg.bankroll_floor_usd:.2f}'}</code>\n"
             f"Max abiertas a la vez: <code>{self.cfg.max_concurrent_positions}</code>\n"
             f"Assets monitoreados: <code>{assets}</code>\n"
             f"Polling cada: <code>{self.cfg.poll_interval_sec}s</code>\n"

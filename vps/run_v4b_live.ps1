@@ -41,7 +41,7 @@ while ($true) {
     Write-Host "[V4B-LIVE] Arrancando trader LIVE (40pp, Kelly 50%K cap 20%)..." -ForegroundColor Green
     & $py scripts/run_paper_trader.py `
         --live `
-        --bankroll 95.98 --bankroll-floor 67 `
+        --bankroll 95.98 --bankroll-floor 0 `
         --sizing-mode kelly `
         --kelly-fraction 0.50 --max-pct-per-trade 0.20 `
         --max-position-usd 50 `
