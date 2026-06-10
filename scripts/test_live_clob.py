@@ -27,7 +27,8 @@ async def main() -> None:
     print(f"Funder: {cfg.funder_address[:10]}...{cfg.funder_address[-6:]}")
     print(f"Signature type: {cfg.signature_type}")
     if bal < 1:
-        print("WARNING: balance very low — deposit USDC before going live.")
+        print("WARNING: balance very low — credentials or funder address may be wrong.")
+        print("Run: python scripts/diagnose_live_clob.py")
     else:
         print("OK — credentials work.")
 

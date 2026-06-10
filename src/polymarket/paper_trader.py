@@ -619,7 +619,11 @@ class PaperTrader:
             cost_paid = result.cost_paid
             live_order_id = result.order_id or None
             try:
-                self.state.bankroll = await self.live.get_usdc_balance()
+                bal = await self.live.get_usdc_balance()
+                if bal >= 1.0:
+                    self.state.bankroll = bal
+                else:
+                    self.state.bankroll -= cost_paid
             except Exception:
                 self.state.bankroll -= cost_paid
         else:
@@ -697,7 +701,11 @@ class PaperTrader:
             if self.cfg.live_mode and self.live:
                 try:
                     await asyncio.sleep(3)
-                    self.state.bankroll = await self.live.get_usdc_balance()
+                    bal = await self.live.get_usdc_balance()
+                    if bal >= 1.0:
+                        self.state.bankroll = bal
+                    else:
+                        self.state.bankroll += payoff
                 except Exception as exc:
                     logger.warning("live balance sync after settle: %s", exc)
                     self.state.bankroll += payoff
