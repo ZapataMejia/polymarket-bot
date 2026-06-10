@@ -114,7 +114,8 @@ async def main() -> None:
     tests = [
         (0, None, "EOA directo (type 0, sin funder)"),
         (1, cfg.funder_address, "Magic/Google proxy (type 1)"),
-        (2, cfg.funder_address, "Browser wallet proxy (type 2)"),
+        (2, cfg.funder_address, "Browser wallet Safe (type 2)"),
+        (3, cfg.funder_address, "Deposit wallet API (type 3) — Perfil → Dirección"),
     ]
     best = (0.0, -1, "")
     for sig, funder, label in tests:
@@ -137,16 +138,20 @@ async def main() -> None:
     else:
         print("❌ Ninguna combinación devolvió balance > $0.")
         print()
+        print("Tu Perfil muestra 'Dirección ... solo para uso de API' → cuenta NUEVA")
+        print("(deposit wallet, signature_type=3). El USDC de la web puede estar en")
+        print("otra wallet distinta a la del Perfil.")
+        print()
         print("Checklist:")
-        print("1. En polymarket.com → avatar → copiá la wallet del perfil")
-        print("   Esa dirección va en POLYMARKET_FUNDER_ADDRESS")
-        print("2. Settings → Export Private Key → POLYMARKET_PRIVATE_KEY")
-        print("   (debe ser la key exportada DE Polymarket, no otra wallet)")
-        print("3. Cuenta Google/email (Magic) → SIGNATURE_TYPE=1")
-        print("   MetaMask/Coinbase conectado → SIGNATURE_TYPE=2")
-        print("4. Verificá en polymarket.com que el balance muestre ~$95 USDC")
-        print("5. Si todo coincide y sigue $0, re-derivá credenciales:")
-        print("   borrá state.json y reiniciá después de corregir .env")
+        print("1. polymarket.com → avatar ARRIBA A LA DERECHA → copiar wallet")
+        print("   Compará con Perfil → Dirección. Si son DISTINTAS, probá la del avatar")
+        print("   como POLYMARKET_FUNDER_ADDRESS con SIGNATURE_TYPE=1")
+        print("2. Settings → Export Private Key (de Polymarket, no otra wallet)")
+        print("3. Si UI muestra ~$95 pero TODO da $0 aquí:")
+        print("   → Cuenta post-migración CLOB V2; py-clob-client v1 no opera LIVE.")
+        print("   → Opciones: retirar USDC y re-depositar con MetaMask (cuenta vieja),")
+        print("     o esperar fix de Polymarket SDK para signature_type=3.")
+        print("4. Corré: python scripts/diagnose_live_clob.py (este script)")
 
 
 if __name__ == "__main__":
