@@ -1,10 +1,10 @@
-"""Dashboard Telegram bot — agregador de los 5 bots de Polymarket.
+"""Dashboard Telegram bot — agregador de bots Polymarket (modo foco V4).
 
 Vive en el mismo VPS donde corren los bots y lee directamente los state.json
 de cada uno. NO se conecta a internet salvo para Telegram.
 
 Comandos:
-    /all      → resumen de los 5 bots (bankroll, PnL, posiciones)
+    /all      → resumen de bots activos (bankroll, PnL, posiciones)
     /today    → PnL del día por bot + total
     /week     → PnL semanal + ranking
     /month    → PnL mensual
@@ -43,44 +43,28 @@ class BotInfo:
 
 BOTS: list[BotInfo] = [
     BotInfo(
-        label="V1",
-        name="Alerts",
-        emoji="🎯",
-        state_path=Path("data/paper_trading/state.json"),
-        threshold_pp=5,
-        description="edge ≥ 5pp, todos los assets, cualquier minuto",
-    ),
-    BotInfo(
-        label="V2B",
-        name="Selective",
-        emoji="🛡",
-        state_path=Path("data/paper_trading_v2b/state.json"),
-        threshold_pp=10,
-        description="edge ≥ 10pp, skip 21/23 UTC + sáb, vol ≥ $5k",
-    ),
-    BotInfo(
         label="V4A",
-        name="Endgame 30pp",
+        name="Endgame 30pp (demo)",
         emoji="⏱",
         state_path=Path("data/paper_trading_v4/state.json"),
         threshold_pp=30,
-        description="edge ≥ 30pp, últimos 5 min, todos los assets",
+        description="edge ≥ 30pp, últimos 5 min — paper",
     ),
     BotInfo(
-        label="V4B",
-        name="Endgame 40pp",
-        emoji="🎯",
+        label="DEMO",
+        name="V4B demo",
+        emoji="📝",
         state_path=Path("data/paper_trading_v4b/state.json"),
         threshold_pp=40,
-        description="edge ≥ 40pp, últimos 5 min, version tight",
+        description="edge ≥ 40pp, últimos 5 min — paper",
     ),
     BotInfo(
-        label="V4C",
-        name="SOL-only",
-        emoji="◎",
-        state_path=Path("data/paper_trading_v4c/state.json"),
-        threshold_pp=30,
-        description="edge ≥ 30pp, últimos 5 min, solo SOL",
+        label="LIVE",
+        name="V4B Live",
+        emoji="🟢",
+        state_path=Path("data/live_trading_v4b/state.json"),
+        threshold_pp=40,
+        description="edge ≥ 40pp, últimos 5 min — USDC real",
     ),
 ]
 
@@ -298,7 +282,8 @@ def format_all(metrics: list[BotMetrics]) -> str:
             f"🔓 {m.open_positions}"
         )
 
-    total_pct = (total_bankroll - 500.0) / 500.0 * 100 if total_bankroll > 0 else 0.0
+    initial_total = sum(m.initial_bankroll for m in metrics) or 1.0
+    total_pct = (total_bankroll - initial_total) / initial_total * 100
     lines.append("─" * 32)
     lines.append(
         f"<b>TOTAL</b>     <code>${total_bankroll:>7.2f}</code>  "

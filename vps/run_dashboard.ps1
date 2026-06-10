@@ -1,6 +1,6 @@
 # Corre el bot Dashboard de Telegram con auto-reinicio.
 # Este bot vive en el mismo VPS que los demas bots y lee directamente los
-# state.json para mostrar resumen consolidado de los 5 bots (V1, V2B, V4A, V4B, V4C).
+# state.json para resumen V4A demo + V4B demo + V4B LIVE.
 #
 # Usa TELEGRAM_BOT_TOKEN_DASHBOARD del .env (token del bot Telegram dedicado).
 # Si no esta seteado, el script se detiene con error.

@@ -91,12 +91,17 @@ async def amain() -> None:
     ap.add_argument("--disable-telegram", action="store_true",
                     help="Run without Telegram (only file log). Used by V4B when no token is set.")
     ap.add_argument("--log-file", default="logs/paper_trader.log")
+    ap.add_argument("--live", action="store_true",
+                    help="Place real Polymarket orders (requires POLYMARKET_* in .env)")
+    ap.add_argument("--max-position-usd", type=float, default=25.0,
+                    help="Hard cap per live order in USD")
     args = ap.parse_args()
 
     cfg = Config.from_yaml(args.config)
     setup_logger("trading", cfg.log_level, args.log_file)
     log = logging.getLogger("trading.polymarket.paper")
-    log.info("[%s] starting paper trader, bankroll=$%.2f", args.instance_label, args.bankroll)
+    mode = "LIVE" if args.live else "PAPER"
+    log.info("[%s] starting %s trader, bankroll=$%.2f", args.instance_label, mode, args.bankroll)
 
     paper_cfg = PaperConfig(
         initial_bankroll_usd=args.bankroll,
@@ -118,6 +123,8 @@ async def amain() -> None:
         skip_weekdays=tuple(args.skip_weekdays),
         min_volume_usd=args.min_volume,
         instance_label=args.instance_label,
+        live_mode=args.live,
+        max_position_usd=args.max_position_usd,
     )
 
     if args.disable_telegram:

@@ -21,20 +21,20 @@ while ($true) {
     Write-Host "[V4] Arrancando paper trader (Endgame)..." -ForegroundColor Cyan
     if ([string]::IsNullOrWhiteSpace($tokenV4)) {
         & $py scripts/run_paper_trader.py `
-            --bankroll 100 --threshold 0.30 `
+            --bankroll 95.98 --bankroll-floor 67 --threshold 0.30 `
             --max-seconds-to-resolution 300 `
             --min-seconds-to-resolution 90 `
             --kelly-fraction 0.50 --max-pct-per-trade 0.20 `
-            --instance-label V4 `
+            --instance-label "V4A-DEMO" `
             --state-path data/paper_trading_v4/state.json `
             --log-file logs/paper_v4.log
     } else {
         & $py scripts/run_paper_trader.py `
-            --bankroll 100 --threshold 0.30 `
+            --bankroll 95.98 --bankroll-floor 67 --threshold 0.30 `
             --max-seconds-to-resolution 300 `
             --min-seconds-to-resolution 90 `
             --kelly-fraction 0.50 --max-pct-per-trade 0.20 `
-            --instance-label V4 `
+            --instance-label "V4A-DEMO" `
             --state-path data/paper_trading_v4/state.json `
             --telegram-token $tokenV4 `
             --log-file logs/paper_v4.log

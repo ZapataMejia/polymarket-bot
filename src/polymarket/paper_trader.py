@@ -73,6 +73,9 @@ class PaperConfig:
     min_volume_usd: float = 0.0
     # Optional human-readable label for logs / Telegram messages.
     instance_label: str = "V1"
+    # Live trading: place real CLOB orders (requires POLYMARKET_* in .env).
+    live_mode: bool = False
+    max_position_usd: float = 25.0  # hard cap per order (liquidity / safety)
 
     @property
     def half_spread(self) -> float:
@@ -111,6 +114,7 @@ class PaperPosition:
     correct: bool | None = None
     payoff: float | None = None
     pnl: float | None = None
+    live_order_id: str | None = None
 
 
 @dataclass
@@ -274,6 +278,10 @@ class PaperTrader:
         self._gamma_session: aiohttp.ClientSession | None = None
         self._clob_session: aiohttp.ClientSession | None = None
         self._stop = False
+        self.live = None
+        if config.live_mode:
+            from src.polymarket.live_clob import LiveClobExecutor, load_live_config
+            self.live = LiveClobExecutor(load_live_config())
 
     # --- public API ---------------------------------------------------------
     async def run(self) -> None:
@@ -296,14 +304,25 @@ class PaperTrader:
             f"cap {self.cfg.max_pct_per_trade*100:.0f}%"
         ) if self.cfg.sizing_mode == "kelly" else f"Fijo ${self.cfg.position_size_usd:.0f}/trade"
         assets = ", ".join(s.split("-")[0].upper() for s in self.cfg.series_slugs)
+        mode_str = "🟢 <b>LIVE</b> (órdenes reales)" if self.cfg.live_mode else "📝 Paper"
+        if self.live:
+            try:
+                await self.live.ensure_allowance()
+                self.state.bankroll = await self.live.get_usdc_balance()
+                _save_state(Path(self.cfg.state_path), self.state)
+            except Exception as exc:
+                logger.exception("live startup balance sync failed")
+                await self.notifier.send(f"⚠️ LIVE: no pude leer balance: {exc}")
         await self.notifier.send(
-            "🤖 <b>Bot encendido</b>\n"
+            f"🤖 <b>Bot encendido</b> — {mode_str}\n"
             f"Bankroll: <code>${self.state.bankroll:.2f}</code>\n"
             f"Sizing: <code>{sizing_str}</code>\n"
             f"Threshold edge: <code>{self.cfg.entry_threshold*100:.0f}pp</code>\n"
             f"Assets: <code>{assets}</code>\n"
             f"Costos asumidos: {self.cfg.half_spread_cents}¢ + {self.cfg.fee_rate_pct}% fee\n"
-            "\nUsá /help para ver comandos disponibles."
+            + (f"Stop loss: pausa bajo <code>${self.cfg.bankroll_floor_usd:.0f}</code>\n"
+               if self.cfg.live_mode else "")
+            + "\nUsá /help para ver comandos disponibles."
         )
         ctx = ssl.create_default_context(cafile=certifi.where())
         self._gamma_session = aiohttp.ClientSession(
@@ -370,6 +389,11 @@ class PaperTrader:
     # --- internals ----------------------------------------------------------
     async def _tick(self) -> None:
         now = _now_utc()
+        if self.cfg.live_mode and self.live:
+            try:
+                self.state.bankroll = await self.live.get_usdc_balance()
+            except Exception as exc:
+                logger.warning("live balance sync: %s", exc)
         async with GammaClient(session=self._gamma_session) as gamma, ClobClient(session=self._clob_session) as clob:
             # 1) Discover open markets (next 0..max_seconds_to_resolution).
             open_markets = await self._discover_open_markets(gamma, now)
@@ -551,6 +575,8 @@ class PaperTrader:
             position_usd = self.cfg.position_size_usd
 
         position_usd = min(position_usd, self.state.bankroll * 0.95)
+        if self.cfg.live_mode:
+            position_usd = min(position_usd, self.cfg.max_position_usd)
         if position_usd < self.cfg.min_position_usd:
             logger.info("Position size $%.2f below min, skipping %s", position_usd, mkt.slug)
             return
@@ -561,7 +587,30 @@ class PaperTrader:
         if cost_paid > self.state.bankroll:
             return
 
-        self.state.bankroll -= cost_paid
+        live_order_id: str | None = None
+        if self.cfg.live_mode and self.live:
+            token_id = mkt.token_id_up if direction == "UP" else mkt.token_id_down
+            max_price = min(0.99, fill + self.live.cfg.max_slippage_cents / 100.0)
+            result = await self.live.buy_fok(token_id, position_usd, max_price=max_price)
+            if not result.ok:
+                await self.notifier.send(
+                    f"🔴 <b>LIVE orden falló</b> — {mkt.asset.upper()} {direction}\n"
+                    f"<i>{mkt.question}</i>\n"
+                    f"Error: <code>{result.error[:200]}</code>"
+                )
+                logger.warning("live order failed %s: %s", mkt.slug, result.error)
+                return
+            fill = result.fill_price
+            contracts = result.contracts
+            cost_paid = result.cost_paid
+            live_order_id = result.order_id or None
+            try:
+                self.state.bankroll = await self.live.get_usdc_balance()
+            except Exception:
+                self.state.bankroll -= cost_paid
+        else:
+            self.state.bankroll -= cost_paid
+
         pos = PaperPosition(
             market_id=mkt.market_id,
             slug=mkt.slug,
@@ -579,19 +628,26 @@ class PaperTrader:
             contracts=contracts,
             cost_paid=cost_paid,
             opened_at_utc=_iso(now),
+            live_order_id=live_order_id,
         )
         self.state.open_positions[mkt.market_id] = pos
         _save_state(Path(self.cfg.state_path), self.state)
 
         secs_left = int(seconds_remaining)
+        if self.cfg.live_mode:
+            mode_tag = "🟢 LIVE"
+        elif "DEMO" in self.cfg.instance_label.upper() or self.cfg.instance_label.upper().startswith("V4A"):
+            mode_tag = "📝 DEMO"
+        else:
+            mode_tag = "🎯"
         await self.notifier.send(
-            f"🎯 <b>SEÑAL {direction}</b> — {mkt.asset.upper()}\n"
+            f"{mode_tag} <b>SEÑAL {direction}</b> — {mkt.asset.upper()}\n"
             f"<i>{mkt.question}</i>\n"
             f"Strike: <code>{strike:,.2f}</code> | Spot: <code>{s_now:,.2f}</code>\n"
             f"p_poly={p_poly_up*100:.1f}% · p_fair={p_fair_up*100:.1f}% · "
             f"<b>edge={edge*100:+.1f}pp</b>\n"
             f"Fill: <code>{fill*100:.1f}¢</code> | Contratos: <code>{contracts:.2f}</code>\n"
-            f"Apostado: <code>${cost_paid:.2f}</code> de bankroll <code>${self.state.bankroll+cost_paid:.2f}</code>\n"
+            f"Apostado: <code>${cost_paid:.2f}</code> de bankroll <code>${self.state.bankroll:.2f}</code>\n"
             f"Resolución en {secs_left//60}m{secs_left%60:02d}s"
         )
         logger.info(
@@ -624,7 +680,15 @@ class PaperTrader:
             correct = (outcome == pos.direction)
             payoff = pos.contracts if correct else 0.0
             pnl = payoff - pos.cost_paid
-            self.state.bankroll += payoff
+            if self.cfg.live_mode and self.live:
+                try:
+                    await asyncio.sleep(3)
+                    self.state.bankroll = await self.live.get_usdc_balance()
+                except Exception as exc:
+                    logger.warning("live balance sync after settle: %s", exc)
+                    self.state.bankroll += payoff
+            else:
+                self.state.bankroll += payoff
             pos.settled_at_utc = _iso(now)
             pos.outcome = outcome
             pos.correct = correct
