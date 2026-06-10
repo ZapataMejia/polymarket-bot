@@ -11,10 +11,12 @@ Get-CimInstance Win32_Process -Filter "Name='python.exe'" | ForEach-Object {
     }
 }
 
-# Tambien cerrar loops PowerShell de los scripts run_*.ps1
+# Cerrar loops PowerShell de bots (NO matar start_bots_focused.ps1 — el regex
+# anterior coincidia con "start_bots" dentro de "start_bots_focused").
 Get-CimInstance Win32_Process -Filter "Name='powershell.exe'" | ForEach-Object {
     $cmd = $_.CommandLine
-    if ($cmd -match "run_v1|run_v2b|run_v4|run_v4b|run_v4c|run_dashboard|start_bots") {
+    if ($cmd -match "start_bots_focused") { return }
+    if ($cmd -match "run_v1\.ps1|run_v2b\.ps1|run_v4c\.ps1|run_v4\.ps1|run_v4b_demo\.ps1|run_v4b_live\.ps1|run_v4b\.ps1|run_dashboard\.ps1|start_bots\.ps1") {
         Stop-Process -Id $_.ProcessId -Force -ErrorAction SilentlyContinue
         Write-Host "  killed ps $($_.ProcessId): $($cmd.Substring(0, [Math]::Min(60, $cmd.Length)))..." -ForegroundColor Gray
     }

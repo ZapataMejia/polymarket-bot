@@ -13,8 +13,9 @@ New-Item -ItemType Directory -Force -Path (Join-Path $root "data\live_trading_v4
 
 Write-Host "=== Setup FOCO: V4A demo + V4B demo + V4B LIVE + Dashboard ===" -ForegroundColor Cyan
 Write-Host "Deteniendo bots viejos primero..." -ForegroundColor Yellow
-& (Join-Path $PSScriptRoot "stop_all_bots.ps1")
-Start-Sleep -Seconds 3
+& powershell -ExecutionPolicy Bypass -File (Join-Path $PSScriptRoot "stop_all_bots.ps1")
+Start-Sleep -Seconds 2
+Write-Host "Arrancando bots nuevos..." -ForegroundColor Green
 
 Start-Process powershell -WindowStyle Minimized -ArgumentList `
     "-ExecutionPolicy","Bypass","-File",(Join-Path $PSScriptRoot "run_v4.ps1")
