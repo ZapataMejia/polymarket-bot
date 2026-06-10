@@ -104,13 +104,27 @@ class LiveClobExecutor:
     async def get_usdc_balance(self) -> float:
         def _go() -> float:
             client = self._client_sync()
-            params = BalanceAllowanceParams(asset_type=AssetType.COLLATERAL)
+            params = BalanceAllowanceParams(
+                asset_type=AssetType.COLLATERAL,
+                signature_type=self.cfg.signature_type,
+            )
             data = client.get_balance_allowance(params)
-            if not isinstance(data, dict):
-                return 0.0
-            # balance is in micro-USDC (6 decimals)
-            raw = data.get("balance") or "0"
-            return int(raw) / 1_000_000.0
+            bal = _parse_usdc_balance(data)
+            logger.info("live USDC balance raw=%s parsed=%.2f", data, bal)
+            return bal
+
+        return await self._run(_go)
+
+    async def get_balance_raw(self) -> dict:
+        """Debug: respuesta cruda de Polymarket."""
+        def _go() -> dict:
+            client = self._client_sync()
+            params = BalanceAllowanceParams(
+                asset_type=AssetType.COLLATERAL,
+                signature_type=self.cfg.signature_type,
+            )
+            data = client.get_balance_allowance(params)
+            return data if isinstance(data, dict) else {"raw": str(data)}
 
         return await self._run(_go)
 
@@ -211,3 +225,21 @@ def _f(val: Any) -> float:
         return float(val)
     except (TypeError, ValueError):
         return 0.0
+
+
+def _parse_usdc_balance(data: Any) -> float:
+    """Parse CLOB balance-allowance response (micro-USDC or decimal string)."""
+    if not isinstance(data, dict):
+        return 0.0
+    raw = data.get("balance") or data.get("available") or data.get("collateral") or "0"
+    try:
+        val = float(raw)
+    except (TypeError, ValueError):
+        return 0.0
+    # Values > 1_000_000 are almost certainly micro-USDC (6 decimals).
+    if val >= 1_000_000:
+        return val / 1_000_000.0
+    # Already in dollars (e.g. 95.98) or micro range (95980000 → handled above).
+    if val > 1_000 and val < 1_000_000:
+        return val / 1_000_000.0
+    return val

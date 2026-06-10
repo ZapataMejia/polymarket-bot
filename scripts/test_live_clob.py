@@ -20,6 +20,8 @@ async def main() -> None:
     live = LiveClobExecutor(cfg)
     print("Updating allowance...")
     await live.ensure_allowance()
+    raw = await live.get_balance_raw()
+    print(f"API raw: {raw}")
     bal = await live.get_usdc_balance()
     print(f"USDC balance: ${bal:.2f}")
     print(f"Funder: {cfg.funder_address[:10]}...{cfg.funder_address[-6:]}")

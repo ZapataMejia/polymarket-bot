@@ -308,8 +308,20 @@ class PaperTrader:
         if self.live:
             try:
                 await self.live.ensure_allowance()
-                self.state.bankroll = await self.live.get_usdc_balance()
-                _save_state(Path(self.cfg.state_path), self.state)
+                bal = await self.live.get_usdc_balance()
+                if bal < 1.0:
+                    raw = await self.live.get_balance_raw()
+                    await self.notifier.send(
+                        "⚠️ <b>LIVE: balance $0 en API</b>\n"
+                        "Tu USDC en Polymarket <b>no se perdió</b> — el bot no pudo leerlo.\n"
+                        f"Respuesta API: <code>{str(raw)[:200]}</code>\n"
+                        "Revisá POLYMARKET_FUNDER_ADDRESS y SIGNATURE_TYPE=1.\n"
+                        "Corré: <code>python scripts/test_live_clob.py</code>"
+                    )
+                    logger.warning("live balance read $0, raw=%s", raw)
+                else:
+                    self.state.bankroll = bal
+                    _save_state(Path(self.cfg.state_path), self.state)
             except Exception as exc:
                 logger.exception("live startup balance sync failed")
                 await self.notifier.send(f"⚠️ LIVE: no pude leer balance: {exc}")
@@ -391,7 +403,9 @@ class PaperTrader:
         now = _now_utc()
         if self.cfg.live_mode and self.live:
             try:
-                self.state.bankroll = await self.live.get_usdc_balance()
+                bal = await self.live.get_usdc_balance()
+                if bal >= 1.0:
+                    self.state.bankroll = bal
             except Exception as exc:
                 logger.warning("live balance sync: %s", exc)
         async with GammaClient(session=self._gamma_session) as gamma, ClobClient(session=self._clob_session) as clob:
