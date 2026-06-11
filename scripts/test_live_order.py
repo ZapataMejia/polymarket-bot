@@ -27,6 +27,14 @@ from src.polymarket.live_clob import LiveClobExecutor, load_live_config
 
 CLOB = "https://clob.polymarket.com"
 
+# Mismos slugs que run_paper_trader.py (no "bitcoin-", sino "btc-").
+ASSET_TO_SERIES = {
+    "bitcoin": "btc-up-or-down-hourly",
+    "ethereum": "eth-up-or-down-hourly",
+    "solana": "solana-up-or-down-hourly",
+    "xrp": "xrp-up-or-down-hourly",
+}
+
 
 async def _midpoint(session: aiohttp.ClientSession, token_id: str) -> float:
     async with session.get(f"{CLOB}/midpoint", params={"token_id": token_id}) as resp:
@@ -41,8 +49,8 @@ async def _find_test_market(
 ) -> tuple[str, str, float]:
     """Return (token_id, question, midpoint) for an open hourly market."""
     now = datetime.now(timezone.utc)
-    max_end = now + timedelta(minutes=55)
-    slug = f"{asset}-up-or-down-hourly"
+    max_end = now + timedelta(seconds=3600)
+    slug = ASSET_TO_SERIES.get(asset, f"{asset}-up-or-down-hourly")
     params = {
         "limit": 20,
         "closed": "false",
