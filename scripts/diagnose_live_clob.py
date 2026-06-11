@@ -20,8 +20,8 @@ _REPO = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(_REPO))
 
 from eth_account import Account
-from py_clob_client.client import ClobClient
-from py_clob_client.clob_types import AssetType, BalanceAllowanceParams
+from py_clob_client_v2 import ClobClient
+from py_clob_client_v2.clob_types import AssetType, BalanceAllowanceParams
 
 from src.polymarket.live_clob import CLOB_HOST, _parse_usdc_balance, load_live_config
 
@@ -78,7 +78,7 @@ def _clob_balance(key: str, funder: str | None, sig_type: int) -> tuple[float, d
         kwargs["funder"] = funder
         kwargs["signature_type"] = sig_type
     client = ClobClient(CLOB_HOST, **kwargs)
-    client.set_api_creds(client.create_or_derive_api_creds())
+    client.set_api_creds(client.create_or_derive_api_key())
     params = BalanceAllowanceParams(
         asset_type=AssetType.COLLATERAL,
         signature_type=sig_type if funder else 0,

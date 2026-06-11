@@ -1,7 +1,6 @@
 """Polymarket CLOB live order execution (real USDC).
 
-Wraps the synchronous ``py-clob-client`` SDK for use inside the async
-``PaperTrader`` loop. Credentials come from environment variables only.
+Uses ``py-clob-client-v2`` (CLOB V2 / signature_type=3 deposit wallets).
 """
 from __future__ import annotations
 
@@ -12,14 +11,9 @@ from dataclasses import dataclass
 from typing import Any
 
 from dotenv import load_dotenv
-from py_clob_client.client import ClobClient
-from py_clob_client.clob_types import (
-    AssetType,
-    BalanceAllowanceParams,
-    MarketOrderArgs,
-    OrderType,
-)
-from py_clob_client.order_builder.constants import BUY
+from py_clob_client_v2 import ClobClient, MarketOrderArgs, OrderType, PartialCreateOrderOptions
+from py_clob_client_v2.clob_types import AssetType, BalanceAllowanceParams
+from py_clob_client_v2.order_builder.constants import BUY
 
 logger = logging.getLogger("trading.polymarket.live_clob")
 
@@ -69,7 +63,7 @@ def load_live_config() -> LiveClobConfig:
 
 
 class LiveClobExecutor:
-    """Places FOK market buys on Polymarket CLOB."""
+    """Places FOK market buys on Polymarket CLOB (V2 SDK)."""
 
     def __init__(self, config: LiveClobConfig):
         self.cfg = config
@@ -84,22 +78,24 @@ class LiveClobExecutor:
                 signature_type=self.cfg.signature_type,
                 funder=self.cfg.funder_address,
             )
-            client.set_api_creds(client.create_or_derive_api_creds())
+            client.set_api_creds(client.create_or_derive_api_key())
             self._client = client
         return self._client
 
     async def _run(self, fn, *args, **kwargs):
         return await asyncio.to_thread(fn, *args, **kwargs)
 
+    def _balance_params(self) -> BalanceAllowanceParams:
+        return BalanceAllowanceParams(
+            asset_type=AssetType.COLLATERAL,
+            signature_type=self.cfg.signature_type,
+        )
+
     async def ensure_allowance(self) -> None:
         """Refresh collateral allowance (safe to call on startup)."""
         def _go() -> None:
             client = self._client_sync()
-            params = BalanceAllowanceParams(
-                asset_type=AssetType.COLLATERAL,
-                signature_type=self.cfg.signature_type,
-            )
-            client.update_balance_allowance(params)
+            client.update_balance_allowance(self._balance_params())
 
         await self._run(_go)
         logger.info("collateral allowance updated")
@@ -107,11 +103,7 @@ class LiveClobExecutor:
     async def get_usdc_balance(self) -> float:
         def _go() -> float:
             client = self._client_sync()
-            params = BalanceAllowanceParams(
-                asset_type=AssetType.COLLATERAL,
-                signature_type=self.cfg.signature_type,
-            )
-            data = client.get_balance_allowance(params)
+            data = client.get_balance_allowance(self._balance_params())
             bal = _parse_usdc_balance(data)
             logger.info("live USDC balance raw=%s parsed=%.2f", data, bal)
             return bal
@@ -122,11 +114,7 @@ class LiveClobExecutor:
         """Debug: respuesta cruda de Polymarket."""
         def _go() -> dict:
             client = self._client_sync()
-            params = BalanceAllowanceParams(
-                asset_type=AssetType.COLLATERAL,
-                signature_type=self.cfg.signature_type,
-            )
-            data = client.get_balance_allowance(params)
+            data = client.get_balance_allowance(self._balance_params())
             return data if isinstance(data, dict) else {"raw": str(data)}
 
         return await self._run(_go)
@@ -142,19 +130,24 @@ class LiveClobExecutor:
         def _go() -> LiveOrderResult:
             client = self._client_sync()
             try:
+                tick = client.get_tick_size(token_id)
+                neg_risk = client.get_neg_risk(token_id)
+                price = max_price if max_price and max_price > 0 else 0.99
                 mo = MarketOrderArgs(
                     token_id=token_id,
                     amount=amount_usd,
                     side=BUY,
-                    order_type=OrderType.FOK,
+                    price=price,
                 )
-                if max_price and max_price > 0:
-                    mo.price = max_price
-                signed = client.create_market_order(mo)
+                options = PartialCreateOrderOptions(
+                    tick_size=tick,
+                    neg_risk=neg_risk,
+                )
+                signed = client.create_market_order(mo, options)
                 resp = client.post_order(signed, OrderType.FOK)
                 return _parse_order_response(token_id, amount_usd, resp)
             except Exception as exc:
-                logger.exception("live order failed")
+                logger.exception("live order failed token=%s amount=%.2f", token_id, amount_usd)
                 return LiveOrderResult(
                     ok=False,
                     token_id=token_id,
@@ -239,10 +232,8 @@ def _parse_usdc_balance(data: Any) -> float:
         val = float(raw)
     except (TypeError, ValueError):
         return 0.0
-    # Values > 1_000_000 are almost certainly micro-USDC (6 decimals).
     if val >= 1_000_000:
         return val / 1_000_000.0
-    # Already in dollars (e.g. 95.98) or micro range (95980000 → handled above).
     if val > 1_000 and val < 1_000_000:
         return val / 1_000_000.0
     return val
