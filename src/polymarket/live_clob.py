@@ -52,7 +52,7 @@ def load_live_config() -> LiveClobConfig:
         )
     sig = int(os.getenv("POLYMARKET_SIGNATURE_TYPE", "3"))
     chain = int(os.getenv("POLYMARKET_CHAIN_ID", "137"))
-    slip = float(os.getenv("POLYMARKET_MAX_SLIPPAGE_CENTS", "5"))
+    slip = float(os.getenv("POLYMARKET_MAX_SLIPPAGE_CENTS", "10"))
     return LiveClobConfig(
         private_key=key,
         funder_address=funder,
@@ -119,41 +119,95 @@ class LiveClobExecutor:
 
         return await self._run(_go)
 
+    def _fok_limit_price(
+        self,
+        client: ClobClient,
+        token_id: str,
+        amount_usd: float,
+        price_ceiling: float,
+    ) -> float:
+        """Best FOK limit: SDK walk-the-book price + slippage, capped at ceiling."""
+        slip = self.cfg.max_slippage_cents / 100.0
+        try:
+            calc = float(
+                client.calculate_market_price(
+                    token_id, BUY, amount_usd, OrderType.FOK,
+                )
+            )
+            if calc > 0:
+                return min(price_ceiling, calc + slip)
+        except Exception as exc:
+            logger.debug("calculate_market_price failed: %s", exc)
+        return price_ceiling
+
     async def buy_fok(
         self,
         token_id: str,
         amount_usd: float,
         max_price: float | None = None,
     ) -> LiveOrderResult:
-        """Market-buy ``amount_usd`` dollars of ``token_id`` (FOK)."""
+        """Market-buy ``amount_usd`` dollars of ``token_id`` (FOK).
+
+        Retries up to 4 times with a wider price ceiling — FOK kills the order
+        when the book cannot fill at the limit (common in endgame windows).
+        """
 
         def _go() -> LiveOrderResult:
             client = self._client_sync()
-            try:
-                tick = client.get_tick_size(token_id)
-                neg_risk = client.get_neg_risk(token_id)
-                price = max_price if max_price and max_price > 0 else 0.99
-                mo = MarketOrderArgs(
-                    token_id=token_id,
-                    amount=amount_usd,
-                    side=BUY,
-                    price=price,
+            tick = client.get_tick_size(token_id)
+            neg_risk = client.get_neg_risk(token_id)
+            options = PartialCreateOrderOptions(tick_size=tick, neg_risk=neg_risk)
+            base_ceiling = min(0.99, max_price if max_price and max_price > 0 else 0.99)
+            # Widen ceiling on each retry (+5¢ / +10¢ / +15¢).
+            ceiling_bumps = (0.0, 0.05, 0.10, 0.15)
+            last: LiveOrderResult | None = None
+
+            for attempt, bump in enumerate(ceiling_bumps):
+                ceiling = min(0.99, base_ceiling + bump)
+                price = self._fok_limit_price(client, token_id, amount_usd, ceiling)
+                logger.info(
+                    "FOK attempt %d token=%s amount=%.2f price=%.3f ceiling=%.3f",
+                    attempt + 1, token_id[:16], amount_usd, price, ceiling,
                 )
-                options = PartialCreateOrderOptions(
-                    tick_size=tick,
-                    neg_risk=neg_risk,
-                )
-                signed = client.create_market_order(mo, options)
-                resp = client.post_order(signed, OrderType.FOK)
-                return _parse_order_response(token_id, amount_usd, resp)
-            except Exception as exc:
-                logger.exception("live order failed token=%s amount=%.2f", token_id, amount_usd)
-                return LiveOrderResult(
-                    ok=False,
-                    token_id=token_id,
-                    amount_usd=amount_usd,
-                    error=str(exc),
-                )
+                try:
+                    mo = MarketOrderArgs(
+                        token_id=token_id,
+                        amount=amount_usd,
+                        side=BUY,
+                        price=price,
+                    )
+                    signed = client.create_market_order(mo, options)
+                    resp = client.post_order(signed, OrderType.FOK)
+                    result = _parse_order_response(token_id, amount_usd, resp)
+                    if result.ok:
+                        if attempt > 0:
+                            logger.info("FOK filled on retry %d", attempt + 1)
+                        return result
+                    last = result
+                    err = (result.error or "").lower()
+                    if "fully filled" not in err and "killed" not in err:
+                        return result
+                except Exception as exc:
+                    err_s = str(exc)
+                    logger.warning(
+                        "FOK attempt %d failed token=%s: %s",
+                        attempt + 1, token_id[:16], err_s[:200],
+                    )
+                    last = LiveOrderResult(
+                        ok=False,
+                        token_id=token_id,
+                        amount_usd=amount_usd,
+                        error=err_s,
+                    )
+                    if "fully filled" not in err_s.lower() and "killed" not in err_s.lower():
+                        return last
+
+            return last or LiveOrderResult(
+                ok=False,
+                token_id=token_id,
+                amount_usd=amount_usd,
+                error="FOK: no fill after retries",
+            )
 
         return await self._run(_go)
 

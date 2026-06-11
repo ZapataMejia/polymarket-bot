@@ -640,12 +640,23 @@ class PaperTrader:
             max_price = min(0.99, fill + self.live.cfg.max_slippage_cents / 100.0)
             result = await self.live.buy_fok(token_id, position_usd, max_price=max_price)
             if not result.ok:
+                err = result.error or ""
+                hint = ""
+                if "fully filled" in err.lower() or "killed" in err.lower():
+                    hint = (
+                        "\n<i>FOK sin liquidez al precio límite — "
+                        "subí POLYMARKET_MAX_SLIPPAGE_CENTS en .env (ej. 15)</i>"
+                    )
                 await self.notifier.send(
                     f"🔴 <b>LIVE orden falló</b> — {mkt.asset.upper()} {direction}\n"
                     f"<i>{mkt.question}</i>\n"
-                    f"Error: <code>{result.error[:200]}</code>"
+                    f"Stake: <code>${position_usd:.2f}</code>  max_price: <code>{max_price:.2f}</code>\n"
+                    f"Error: <code>{err[:200]}</code>{hint}"
                 )
-                logger.warning("live order failed %s: %s", mkt.slug, result.error)
+                logger.warning(
+                    "live order failed %s stake=%.2f max_price=%.3f: %s",
+                    mkt.slug, position_usd, max_price, err,
+                )
                 return
             fill = result.fill_price
             contracts = result.contracts
