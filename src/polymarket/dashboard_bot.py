@@ -60,11 +60,11 @@ BOTS: list[BotInfo] = [
     ),
     BotInfo(
         label="LIVE",
-        name="V4B Live",
+        name="V4A Live",
         emoji="🟢",
-        state_path=Path("data/live_trading_v4b/state.json"),
-        threshold_pp=40,
-        description="edge ≥ 40pp, últimos 5 min — USDC real",
+        state_path=Path("data/live_trading_v4a/state.json"),
+        threshold_pp=30,
+        description="edge ≥ 30pp, últimos 5 min — USDC real",
     ),
 ]
 
