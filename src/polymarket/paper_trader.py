@@ -642,10 +642,11 @@ class PaperTrader:
             if not result.ok:
                 err = result.error or ""
                 hint = ""
-                if "fully filled" in err.lower() or "killed" in err.lower():
+                low = err.lower()
+                if any(k in low for k in ("fully filled", "killed", "not enough", "no match", "liquidity")):
                     hint = (
-                        "\n<i>FOK sin liquidez al precio límite — "
-                        "subí POLYMARKET_MAX_SLIPPAGE_CENTS en .env (ej. 15)</i>"
+                        "\n<i>Libro sin liquidez en endgame (últimos 2 min). "
+                        "FAK no encontró contraparte.</i>"
                     )
                 await self.notifier.send(
                     f"🔴 <b>LIVE orden falló</b> — {mkt.asset.upper()} {direction}\n"

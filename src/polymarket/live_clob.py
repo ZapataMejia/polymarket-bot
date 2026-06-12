@@ -119,19 +119,19 @@ class LiveClobExecutor:
 
         return await self._run(_go)
 
-    def _fok_limit_price(
+    def _limit_price(
         self,
         client: ClobClient,
         token_id: str,
         amount_usd: float,
         price_ceiling: float,
     ) -> float:
-        """Best FOK limit: SDK walk-the-book price + slippage, capped at ceiling."""
+        """Best limit: SDK walk-the-book price + slippage, capped at ceiling."""
         slip = self.cfg.max_slippage_cents / 100.0
         try:
             calc = float(
                 client.calculate_market_price(
-                    token_id, BUY, amount_usd, OrderType.FOK,
+                    token_id, BUY, amount_usd, OrderType.FAK,
                 )
             )
             if calc > 0:
@@ -146,10 +146,12 @@ class LiveClobExecutor:
         amount_usd: float,
         max_price: float | None = None,
     ) -> LiveOrderResult:
-        """Market-buy ``amount_usd`` dollars of ``token_id`` (FOK).
+        """Market-buy up to ``amount_usd`` dollars of ``token_id``.
 
-        Retries up to 4 times with a wider price ceiling — FOK kills the order
-        when the book cannot fill at the limit (common in endgame windows).
+        Uses FAK (Fill-And-Kill): fills whatever the book offers at/under the
+        limit and cancels the rest. In endgame windows the book is thin, so a
+        strict FOK gets killed entirely — FAK lets us take a partial position
+        instead of missing the signal completely. Retries widen the ceiling.
         """
 
         def _go() -> LiveOrderResult:
@@ -158,15 +160,15 @@ class LiveClobExecutor:
             neg_risk = client.get_neg_risk(token_id)
             options = PartialCreateOrderOptions(tick_size=tick, neg_risk=neg_risk)
             base_ceiling = min(0.99, max_price if max_price and max_price > 0 else 0.99)
-            # Widen ceiling on each retry (+5¢ / +10¢ / +15¢).
+            # Widen ceiling on each retry (+0 / +5¢ / +10¢ / +15¢).
             ceiling_bumps = (0.0, 0.05, 0.10, 0.15)
             last: LiveOrderResult | None = None
 
             for attempt, bump in enumerate(ceiling_bumps):
                 ceiling = min(0.99, base_ceiling + bump)
-                price = self._fok_limit_price(client, token_id, amount_usd, ceiling)
+                price = self._limit_price(client, token_id, amount_usd, ceiling)
                 logger.info(
-                    "FOK attempt %d token=%s amount=%.2f price=%.3f ceiling=%.3f",
+                    "FAK attempt %d token=%s amount=%.2f price=%.3f ceiling=%.3f",
                     attempt + 1, token_id[:16], amount_usd, price, ceiling,
                 )
                 try:
@@ -177,20 +179,22 @@ class LiveClobExecutor:
                         price=price,
                     )
                     signed = client.create_market_order(mo, options)
-                    resp = client.post_order(signed, OrderType.FOK)
+                    resp = client.post_order(signed, OrderType.FAK)
                     result = _parse_order_response(token_id, amount_usd, resp)
-                    if result.ok:
+                    if result.ok and result.contracts > 0:
                         if attempt > 0:
-                            logger.info("FOK filled on retry %d", attempt + 1)
+                            logger.info("FAK filled on retry %d", attempt + 1)
                         return result
                     last = result
                     err = (result.error or "").lower()
-                    if "fully filled" not in err and "killed" not in err:
+                    # Only retry on "no liquidity" style kills; bail on real errors.
+                    if "fully filled" not in err and "killed" not in err \
+                            and "not enough" not in err and "no match" not in err:
                         return result
                 except Exception as exc:
                     err_s = str(exc)
                     logger.warning(
-                        "FOK attempt %d failed token=%s: %s",
+                        "FAK attempt %d failed token=%s: %s",
                         attempt + 1, token_id[:16], err_s[:200],
                     )
                     last = LiveOrderResult(
@@ -199,14 +203,16 @@ class LiveClobExecutor:
                         amount_usd=amount_usd,
                         error=err_s,
                     )
-                    if "fully filled" not in err_s.lower() and "killed" not in err_s.lower():
+                    low = err_s.lower()
+                    if "fully filled" not in low and "killed" not in low \
+                            and "not enough" not in low and "no match" not in low:
                         return last
 
             return last or LiveOrderResult(
                 ok=False,
                 token_id=token_id,
                 amount_usd=amount_usd,
-                error="FOK: no fill after retries",
+                error="FAK: no liquidity after retries",
             )
 
         return await self._run(_go)
