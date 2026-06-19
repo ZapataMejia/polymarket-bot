@@ -95,6 +95,12 @@ async def amain() -> None:
                     help="Place real Polymarket orders (requires POLYMARKET_* in .env)")
     ap.add_argument("--max-position-usd", type=float, default=25.0,
                     help="Hard cap per live order in USD")
+    ap.add_argument("--max-fill-price", type=float, default=0.99,
+                    help="Tope de precio de compra (0.99 = apagado; palanca opcional)")
+    ap.add_argument("--min-poly-price", type=float, default=0.05,
+                    help="No comprar longshots por debajo de este precio (modelo poco confiable)")
+    ap.add_argument("--max-settle-attempts", type=int, default=10,
+                    help="Reintentos esperando la resolución real de Polymarket antes de liquidar")
     args = ap.parse_args()
 
     cfg = Config.from_yaml(args.config)
@@ -125,6 +131,9 @@ async def amain() -> None:
         instance_label=args.instance_label,
         live_mode=args.live,
         max_position_usd=args.max_position_usd,
+        max_fill_price=args.max_fill_price,
+        min_poly_price=args.min_poly_price,
+        max_settle_attempts=args.max_settle_attempts,
     )
 
     if args.disable_telegram:

@@ -29,7 +29,7 @@ import pandas as pd
 
 from src.polymarket.binance_klines import BinanceKlineCache
 from src.polymarket.clob import ClobClient
-from src.polymarket.gamma import GammaClient, UpDownMarket, _parse_market
+from src.polymarket.gamma import GammaClient, UpDownMarket, _parse_market, _parse_outcome
 from src.polymarket.pricing import estimate_sigma_per_sec, fair_prob_up
 
 logger = logging.getLogger("trading.polymarket.paper")
@@ -76,6 +76,15 @@ class PaperConfig:
     # Live trading: place real CLOB orders (requires POLYMARKET_* in .env).
     live_mode: bool = False
     max_position_usd: float = 25.0  # hard cap per order (liquidity / safety)
+    # Tope de precio de compra. 0.99 = prácticamente apagado (NO capeamos
+    # favoritos: el backtest sobre trades reales mostró que capearlos empeora).
+    # Queda como palanca opcional por si se quiere endurecer vía CLI.
+    max_fill_price: float = 0.99
+    # No comprar longshots: si el lado que compramos cotiza por debajo de esto,
+    # el modelo es puro ruido (caso Solana 1¢ → "+$4950" falso). ESTE SÍ va.
+    min_poly_price: float = 0.05
+    # Reintentos esperando la resolución REAL de Polymarket antes de liquidar.
+    max_settle_attempts: int = 10
 
     @property
     def half_spread(self) -> float:
@@ -108,6 +117,7 @@ class PaperPosition:
     contracts: float
     cost_paid: float  # what we "spent": contracts*fill + contracts*propfee + flat_fee
     opened_at_utc: str
+    token_id: str = ""  # CLOB token actually bought (para resolver con Polymarket en LIVE)
     # filled later:
     settled_at_utc: str | None = None
     outcome: str | None = None  # 'UP' / 'DOWN'
@@ -115,6 +125,7 @@ class PaperPosition:
     payoff: float | None = None
     pnl: float | None = None
     live_order_id: str | None = None
+    settle_attempts: int = 0  # reintentos esperando resolución de Polymarket (LIVE)
 
 
 @dataclass
@@ -586,9 +597,25 @@ class PaperTrader:
             naive_fill = p_poly_up
         else:
             naive_fill = 1.0 - p_poly_up
-        fill = min(1.0, naive_fill + self.cfg.half_spread)
-        if fill >= 0.99:
+        # Longshot guard: el lado que compraríamos cotiza casi a cero → el modelo
+        # log-normal no es confiable en los últimos minutos. Evitamos comprar a 1¢.
+        if naive_fill < self.cfg.min_poly_price:
             self.state.skipped_markets.add(mkt.market_id)
+            logger.info(
+                "skip longshot %s %s naive_fill=%.3f < %.3f",
+                mkt.slug, direction, naive_fill, self.cfg.min_poly_price,
+            )
+            return
+        fill = min(1.0, naive_fill + self.cfg.half_spread)
+        # Tope opcional de precio (apagado por defecto, max_fill_price=0.99).
+        # No capeamos favoritos: el test sobre trades reales mostró que capear
+        # empeora el resultado. Queda como palanca por si se quiere endurecer.
+        if fill > self.cfg.max_fill_price:
+            self.state.skipped_markets.add(mkt.market_id)
+            logger.info(
+                "skip expensive %s %s fill=%.3f > max_fill=%.3f",
+                mkt.slug, direction, fill, self.cfg.max_fill_price,
+            )
             return
 
         # ---- RISK CONTROLS ------------------------------------------------
@@ -635,8 +662,8 @@ class PaperTrader:
             return
 
         live_order_id: str | None = None
+        token_id = mkt.token_id_up if direction == "UP" else mkt.token_id_down
         if self.cfg.live_mode and self.live:
-            token_id = mkt.token_id_up if direction == "UP" else mkt.token_id_down
             max_price = min(0.99, fill + self.live.cfg.max_slippage_cents / 100.0)
             result = await self.live.buy_fok(token_id, position_usd, max_price=max_price)
             if not result.ok:
@@ -691,6 +718,7 @@ class PaperTrader:
             contracts=contracts,
             cost_paid=cost_paid,
             opened_at_utc=_iso(now),
+            token_id=token_id,
             live_order_id=live_order_id,
         )
         self.state.open_positions[mkt.market_id] = pos
@@ -741,6 +769,32 @@ class PaperTrader:
             end_price = float(bdf.loc[floored_end, "open"])
             outcome = "UP" if end_price >= pos.strike else "DOWN"
             correct = (outcome == pos.direction)
+            resolution_src = "Binance"
+
+            # En LIVE: la verdad la dice Polymarket, no Binance. En empates
+            # (close == strike) o por oráculo distinto difieren — fue lo que
+            # cantó un "+$4950 WIN" falso sobre una pérdida real.
+            if self.cfg.live_mode and self.live:
+                poly_correct = await self._resolve_live_outcome(pos)
+                if poly_correct is None:
+                    # Polymarket todavía no resolvió: esperar y reintentar.
+                    pos.settle_attempts += 1
+                    if pos.settle_attempts < self.cfg.max_settle_attempts:
+                        _save_state(Path(self.cfg.state_path), self.state)
+                        logger.info(
+                            "settle wait %s (attempt %d/%d): Polymarket sin resolver",
+                            pos.slug, pos.settle_attempts, self.cfg.max_settle_attempts,
+                        )
+                        continue
+                    logger.warning(
+                        "settle %s: Polymarket no resolvió tras %d intentos; uso Binance",
+                        pos.slug, pos.settle_attempts,
+                    )
+                else:
+                    correct = poly_correct
+                    outcome = pos.direction if correct else ("DOWN" if pos.direction == "UP" else "UP")
+                    resolution_src = "Polymarket"
+
             payoff = pos.contracts if correct else 0.0
             pnl = payoff - pos.cost_paid
             if self.cfg.live_mode and self.live:
@@ -766,15 +820,42 @@ class PaperTrader:
             _save_state(Path(self.cfg.state_path), self.state)
 
             emoji = "✅" if correct else "❌"
+            src_note = (
+                f"\n<i>Resuelto por {resolution_src}</i>"
+                if (self.cfg.live_mode and self.live)
+                else ""
+            )
             await self.notifier.send(
                 f"{emoji} <b>{'WIN' if correct else 'LOSS'}</b> — {pos.asset.upper()} {pos.direction}\n"
                 f"Strike: <code>{pos.strike:,.2f}</code> → Close: <code>{end_price:,.2f}</code> ({outcome})\n"
                 f"Costo: <code>${pos.cost_paid:.2f}</code> | Cobro: <code>${payoff:.2f}</code>\n"
                 f"<b>PnL: ${pnl:+.2f}</b>\n"
-                f"Bankroll: <code>${self.state.bankroll:.2f}</code>"
+                f"Bankroll: <code>${self.state.bankroll:.2f}</code>{src_note}"
             )
-            logger.info("SETTLE %s %s → %s pnl=%+.2f bankroll=%.2f",
-                        pos.slug, pos.direction, outcome, pnl, self.state.bankroll)
+            logger.info("SETTLE %s %s → %s (%s) pnl=%+.2f bankroll=%.2f",
+                        pos.slug, pos.direction, outcome, resolution_src, pnl, self.state.bankroll)
+
+    async def _resolve_live_outcome(self, pos: PaperPosition) -> bool | None:
+        """Resuelve ganó/perdió con la resolución REAL de Polymarket (Gamma).
+
+        Devuelve True (ganó), False (perdió) o None si Polymarket todavía no
+        resolvió el mercado (hay que reintentar más tarde).
+        """
+        if self._gamma_session is None:
+            return None
+        try:
+            gamma = GammaClient(session=self._gamma_session)
+            data = await gamma._get(f"/markets/{pos.market_id}", {})  # noqa: SLF001
+        except Exception as exc:
+            logger.warning("resolve live outcome %s falló: %s", pos.slug, exc)
+            return None
+        market = data[0] if isinstance(data, list) and data else data
+        if not isinstance(market, dict):
+            return None
+        outcome = _parse_outcome(market.get("outcomePrices"))
+        if outcome not in ("UP", "DOWN"):
+            return None  # aún no resuelto en Polymarket
+        return outcome == pos.direction
 
     # --- command handlers ---------------------------------------------------
     async def _dispatch_command(self, cmd: str) -> str:
