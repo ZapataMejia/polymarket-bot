@@ -1,41 +1,32 @@
-# Setup foco: V4A demo + V4B demo + V4A LIVE + Dashboard.
-# Comparacion demo vs live en Telegram (2 bots distintos, mismo chat opcional).
+# Setup LIVE-ONLY: arranca SOLO el bot V4A LIVE (USDC real, 30pp).
 #
-#   V4A demo  - paper 30pp   -> bot V4A  (TELEGRAM_BOT_TOKEN_V4)  $95.98
-#   V4B demo  - paper 40pp   -> bot V4B  (TELEGRAM_BOT_TOKEN_V4B)  $95.98
-#   V4A LIVE  - USDC real 30pp-> bot V1  (TELEGRAM_BOT_TOKEN_LIVE) ~$95.98
-#   Dashboard -> /week /all
+#   V4A LIVE  - USDC real 30pp -> bot Telegram LIVE (~$95.98 inicial)
 #
-# Nota: solo UN bot LIVE a la vez. V4A LIVE (30pp) dispara antes => mas liquidez.
+# Las demos (V4A/V4B paper) y el dashboard quedan APAGADOS a propósito.
+# El propio bot LIVE responde /status /balance /dia /posiciones en Telegram.
+#
+# Candado de instancia unica: si ya hay un LIVE corriendo con el mismo
+# state-path, el segundo aborta solo (no se duplican ordenes reales).
 # Reset limpio: powershell -File vps\reset_v4b_comparison.ps1
 $root = Split-Path $PSScriptRoot -Parent
 New-Item -ItemType Directory -Force -Path (Join-Path $root "logs") | Out-Null
-New-Item -ItemType Directory -Force -Path (Join-Path $root "data\live_trading_v4b") | Out-Null
+New-Item -ItemType Directory -Force -Path (Join-Path $root "data\live_trading_v4a") | Out-Null
 
-Write-Host "=== Setup FOCO: V4A demo + V4B demo + V4B LIVE + Dashboard ===" -ForegroundColor Cyan
+Write-Host "=== Setup LIVE-ONLY: solo V4A LIVE ===" -ForegroundColor Cyan
 Write-Host "Deteniendo bots viejos primero..." -ForegroundColor Yellow
 & powershell -ExecutionPolicy Bypass -File (Join-Path $PSScriptRoot "stop_all_bots.ps1")
 Start-Sleep -Seconds 2
-Write-Host "Arrancando bots nuevos..." -ForegroundColor Green
-
-Start-Process powershell -WindowStyle Minimized -ArgumentList `
-    "-ExecutionPolicy","Bypass","-File",(Join-Path $PSScriptRoot "run_v4.ps1")
-
-Start-Process powershell -WindowStyle Minimized -ArgumentList `
-    "-ExecutionPolicy","Bypass","-File",(Join-Path $PSScriptRoot "run_v4b_demo.ps1")
+Write-Host "Arrancando UNICAMENTE el bot LIVE..." -ForegroundColor Green
 
 Start-Process powershell -WindowStyle Minimized -ArgumentList `
     "-ExecutionPolicy","Bypass","-File",(Join-Path $PSScriptRoot "run_v4a_live.ps1")
 
-Start-Process powershell -WindowStyle Minimized -ArgumentList `
-    "-ExecutionPolicy","Bypass","-File",(Join-Path $PSScriptRoot "run_dashboard.ps1")
-
 Write-Host ""
-Write-Host "Bots activos:" -ForegroundColor Green
-Write-Host "  [V4A-DEMO] paper 30pp   - bot Telegram V4A  (desde `$95.98)" -ForegroundColor White
-Write-Host "  [V4B-DEMO] paper 40pp   - bot Telegram V4B  (desde `$95.98)" -ForegroundColor White
-Write-Host "  [V4A-LIVE] USDC real 30pp- bot V1 reutilizado (~`$95.98)" -ForegroundColor Green
-Write-Host "  [Dashboard] /week /all - demo vs live" -ForegroundColor Cyan
+Write-Host "Bot activo:" -ForegroundColor Green
+Write-Host "  [V4A-LIVE] USDC real 30pp - bot Telegram LIVE (~`$95.98)" -ForegroundColor Green
 Write-Host ""
-Write-Host "APAGADOS: V1, V2B, V4C, V4B-LIVE" -ForegroundColor Yellow
-Write-Host "Logs: paper_v4.log, paper_v4b.log, live_v4a.log, dashboard_bot.log" -ForegroundColor Gray
+Write-Host "APAGADOS: V4A-DEMO, V4B-DEMO, Dashboard, V1, V2B, V4C, V4B-LIVE" -ForegroundColor Yellow
+Write-Host "Log: live_v4a.log" -ForegroundColor Gray
+Write-Host ""
+Write-Host "Para volver a prender el dashboard (opcional):" -ForegroundColor DarkGray
+Write-Host "  Start-Process powershell -ArgumentList '-File','vps\run_dashboard.ps1'" -ForegroundColor DarkGray
