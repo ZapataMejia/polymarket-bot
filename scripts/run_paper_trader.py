@@ -30,11 +30,43 @@ from aiohttp.resolver import ThreadedResolver as _ThreadedResolver
 _aiohttp_connector.DefaultResolver = _ThreadedResolver
 # -------------------------------------------------------------------------
 
+import socket as _socket
+import zlib as _zlib
+
 from src.core.config import Config
 from src.core.logger import setup_logger
 from src.data.exchange import ExchangeClient
 from src.polymarket.binance_klines import BinanceKlineCache
 from src.polymarket.paper_trader import PaperConfig, PaperTrader
+
+# Mantiene vivo el socket-candado durante toda la vida del proceso.
+_LOCK_SOCK: "_socket.socket | None" = None
+
+
+def _acquire_single_instance_lock(state_path: str, label: str, log: logging.Logger) -> bool:
+    """Candado de instancia única por state-path.
+
+    Evita que arranquen DOS bots con el mismo archivo de estado (que en LIVE
+    significa doble orden real con la misma billetera). Usa un socket local
+    exclusivo: si ya hay otra instancia con el mismo state-path, el bind falla.
+    """
+    global _LOCK_SOCK
+    key = (state_path or label).encode("utf-8")
+    port = 49152 + (_zlib.crc32(key) % 15000)  # rango efímero, estable entre procesos
+    sock = _socket.socket(_socket.AF_INET, _socket.SOCK_STREAM)
+    try:
+        sock.bind(("127.0.0.1", port))
+        sock.listen(1)
+    except OSError:
+        sock.close()
+        log.error(
+            "[%s] YA HAY OTRA INSTANCIA corriendo con state-path=%s (lock puerto %d). "
+            "Abortando para no duplicar ordenes.", label, state_path, port,
+        )
+        return False
+    _LOCK_SOCK = sock
+    log.info("[%s] lock de instancia unica OK (puerto %d)", label, port)
+    return True
 
 
 async def amain() -> None:
@@ -108,6 +140,9 @@ async def amain() -> None:
     log = logging.getLogger("trading.polymarket.paper")
     mode = "LIVE" if args.live else "PAPER"
     log.info("[%s] starting %s trader, bankroll=$%.2f", args.instance_label, mode, args.bankroll)
+
+    if not _acquire_single_instance_lock(args.state_path, args.instance_label, log):
+        sys.exit(1)
 
     paper_cfg = PaperConfig(
         initial_bankroll_usd=args.bankroll,
