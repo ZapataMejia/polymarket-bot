@@ -3,6 +3,11 @@
 # (mas segundos antes del cierre) => mas liquidez en el libro => llena mejor,
 # y ~7 senales/dia vs ~2.7 de V4B. Win rate mas bajo (~54%).
 #
+# REGLA DE PRECIO (aprendida de 2 semanas en vivo, 12-26 jun):
+#   El precio de compra == win rate de equilibrio. Con ~57% de aciertos,
+#   pagar >55c es -EV. Los trades caros (74c-87c) nos costaron la plata;
+#   los baratos (34c-48c) la generaron. Por eso: --max-fill-price 0.55.
+#
 # IMPORTANTE: correr UN SOLO bot LIVE a la vez. No arrancar V4B LIVE junto.
 # Requiere en .env: POLYMARKET_PRIVATE_KEY, POLYMARKET_FUNDER_ADDRESS,
 #   POLYMARKET_SIGNATURE_TYPE=3, POLYMARKET_MAX_SLIPPAGE_CENTS, TELEGRAM_*.
@@ -41,11 +46,15 @@ while ($true) {
         --live `
         --bankroll 95.98 --bankroll-floor 0 `
         --sizing-mode kelly `
-        --kelly-fraction 0.50 --max-pct-per-trade 0.20 `
-        --max-position-usd 50 `
+        --kelly-fraction 0.50 --max-pct-per-trade 0.10 `
+        --max-position-usd 25 `
         --threshold 0.30 `
-        --max-seconds-to-resolution 300 `
-        --min-seconds-to-resolution 90 `
+        --max-fill-price 0.55 `
+        --min-poly-price 0.05 `
+        --max-seconds-to-resolution 480 `
+        --min-seconds-to-resolution 120 `
+        --poll-sec 20 `
+        --series btc-up-or-down-hourly eth-up-or-down-hourly `
         --max-concurrent 2 `
         --instance-label "V4A-LIVE" `
         --state-path data/live_trading_v4a/state.json `

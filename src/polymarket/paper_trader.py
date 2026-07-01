@@ -607,9 +607,11 @@ class PaperTrader:
             )
             return
         fill = min(1.0, naive_fill + self.cfg.half_spread)
-        # Tope opcional de precio (apagado por defecto, max_fill_price=0.99).
-        # No capeamos favoritos: el test sobre trades reales mostró que capear
-        # empeora el resultado. Queda como palanca por si se quiere endurecer.
+        # Tope de precio de compra. El precio == win rate de equilibrio:
+        # comprar a 0.74 exige ganar 74% para empatar, y solo ganamos ~57%.
+        # 2 semanas en vivo (12-26 jun) confirmaron que los fills caros (>0.70)
+        # dieron neto NEGATIVO pese a 71% de aciertos, y los baratos (<0.50)
+        # neto positivo. El bot LIVE corre con --max-fill-price 0.55.
         if fill > self.cfg.max_fill_price:
             self.state.skipped_markets.add(mkt.market_id)
             logger.info(
@@ -664,16 +666,23 @@ class PaperTrader:
         live_order_id: str | None = None
         token_id = mkt.token_id_up if direction == "UP" else mkt.token_id_down
         if self.cfg.live_mode and self.live:
-            max_price = min(0.99, fill + self.live.cfg.max_slippage_cents / 100.0)
+            slip = self.live.cfg.max_slippage_cents / 100.0
+            # Libro fino: dar margen extra vs fill teórico (mín +15% relativo o slippage).
+            max_price = min(0.99, max(fill + slip, fill * 1.15))
             result = await self.live.buy_fok(token_id, position_usd, max_price=max_price)
             if not result.ok:
                 err = result.error or ""
                 hint = ""
                 low = err.lower()
-                if any(k in low for k in ("fully filled", "killed", "not enough", "no match", "liquidity")):
+                if any(k in low for k in (
+                    "fully filled", "killed", "not enough", "no match",
+                    "no orders found", "liquidity",
+                )):
                     hint = (
-                        "\n<i>Libro sin liquidez en endgame (últimos 2 min). "
-                        "FAK no encontró contraparte.</i>"
+                        "\n<i>Libro vacío en endgame — reintentó stake más chico "
+                        "y techo de precio más alto. Si sigue fallando: subí "
+                        "POLYMARKET_MAX_SLIPPAGE_CENTS o entrá más temprano "
+                        "(min-seconds-to-resolution).</i>"
                     )
                 await self.notifier.send(
                     f"🔴 <b>LIVE orden falló</b> — {mkt.asset.upper()} {direction}\n"

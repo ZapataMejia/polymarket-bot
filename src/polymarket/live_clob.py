@@ -140,6 +140,20 @@ class LiveClobExecutor:
             logger.debug("calculate_market_price failed: %s", exc)
         return price_ceiling
 
+    def _liquidity_error(self, err: str) -> bool:
+        low = err.lower()
+        return any(
+            k in low
+            for k in (
+                "fully filled",
+                "killed",
+                "not enough",
+                "no match",
+                "no orders found",
+                "liquidity",
+            )
+        )
+
     async def buy_fok(
         self,
         token_id: str,
@@ -151,68 +165,96 @@ class LiveClobExecutor:
         Uses FAK (Fill-And-Kill): fills whatever the book offers at/under the
         limit and cancels the rest. In endgame windows the book is thin, so a
         strict FOK gets killed entirely — FAK lets us take a partial position
-        instead of missing the signal completely. Retries widen the ceiling.
+        instead of missing the signal completely.
+
+        Retries: (1) widen price ceiling, (2) shrink stake — thin books often
+        fill $5 but reject $18 (observed live Jun 28–30).
         """
 
-        def _go() -> LiveOrderResult:
+        def _try_amount(amt: float) -> LiveOrderResult:
             client = self._client_sync()
             tick = client.get_tick_size(token_id)
             neg_risk = client.get_neg_risk(token_id)
             options = PartialCreateOrderOptions(tick_size=tick, neg_risk=neg_risk)
             base_ceiling = min(0.99, max_price if max_price and max_price > 0 else 0.99)
-            # Widen ceiling on each retry (+0 / +5¢ / +10¢ / +15¢).
-            ceiling_bumps = (0.0, 0.05, 0.10, 0.15)
+            # Widen ceiling on each retry (+0 … +25¢).
+            ceiling_bumps = (0.0, 0.05, 0.10, 0.15, 0.20, 0.25)
             last: LiveOrderResult | None = None
 
             for attempt, bump in enumerate(ceiling_bumps):
                 ceiling = min(0.99, base_ceiling + bump)
-                price = self._limit_price(client, token_id, amount_usd, ceiling)
+                price = self._limit_price(client, token_id, amt, ceiling)
                 logger.info(
                     "FAK attempt %d token=%s amount=%.2f price=%.3f ceiling=%.3f",
-                    attempt + 1, token_id[:16], amount_usd, price, ceiling,
+                    attempt + 1, token_id[:16], amt, price, ceiling,
                 )
                 try:
                     mo = MarketOrderArgs(
                         token_id=token_id,
-                        amount=amount_usd,
+                        amount=amt,
                         side=BUY,
                         price=price,
                     )
                     signed = client.create_market_order(mo, options)
                     resp = client.post_order(signed, OrderType.FAK)
-                    result = _parse_order_response(token_id, amount_usd, resp)
+                    result = _parse_order_response(token_id, amt, resp)
                     if result.ok and result.contracts > 0:
                         if attempt > 0:
-                            logger.info("FAK filled on retry %d", attempt + 1)
+                            logger.info("FAK filled on retry %d (amount=%.2f)", attempt + 1, amt)
                         return result
                     last = result
-                    err = (result.error or "").lower()
-                    # Only retry on "no liquidity" style kills; bail on real errors.
-                    if "fully filled" not in err and "killed" not in err \
-                            and "not enough" not in err and "no match" not in err:
+                    err = result.error or ""
+                    if not self._liquidity_error(err):
                         return result
                 except Exception as exc:
                     err_s = str(exc)
                     logger.warning(
-                        "FAK attempt %d failed token=%s: %s",
-                        attempt + 1, token_id[:16], err_s[:200],
+                        "FAK attempt %d failed token=%s amount=%.2f: %s",
+                        attempt + 1, token_id[:16], amt, err_s[:200],
                     )
                     last = LiveOrderResult(
                         ok=False,
                         token_id=token_id,
-                        amount_usd=amount_usd,
+                        amount_usd=amt,
                         error=err_s,
                     )
-                    low = err_s.lower()
-                    if "fully filled" not in low and "killed" not in low \
-                            and "not enough" not in low and "no match" not in low:
+                    if not self._liquidity_error(err_s):
                         return last
 
             return last or LiveOrderResult(
                 ok=False,
                 token_id=token_id,
+                amount_usd=amt,
+                error="FAK: no liquidity after price retries",
+            )
+
+        def _go() -> LiveOrderResult:
+            # Shrink stake on liquidity failures: full → 50% → 33% → min $5.
+            min_stake = 5.0
+            amounts: list[float] = []
+            for frac in (1.0, 0.5, 0.33, 0.25):
+                a = max(min_stake, round(amount_usd * frac, 2))
+                if not amounts or a < amounts[-1] - 0.01:
+                    amounts.append(a)
+
+            last: LiveOrderResult | None = None
+            for amt in amounts:
+                result = _try_amount(amt)
+                if result.ok and result.contracts > 0:
+                    if amt < amount_usd - 0.01:
+                        logger.info(
+                            "FAK filled reduced stake %.2f → %.2f", amount_usd, amt,
+                        )
+                    return result
+                last = result
+                if not self._liquidity_error(result.error or ""):
+                    return result
+
+            return last or LiveOrderResult(
+                ok=False,
+                token_id=token_id,
                 amount_usd=amount_usd,
-                error="FAK: no liquidity after retries",
+                error="FAK: no liquidity after size + price retries",
             )
 
         return await self._run(_go)
