@@ -667,9 +667,26 @@ class PaperTrader:
         token_id = mkt.token_id_up if direction == "UP" else mkt.token_id_down
         if self.cfg.live_mode and self.live:
             slip = self.live.cfg.max_slippage_cents / 100.0
-            # Libro fino: dar margen extra vs fill teórico (mín +15% relativo o slippage).
-            max_price = min(0.99, max(fill + slip, fill * 1.15))
-            result = await self.live.buy_fok(token_id, position_usd, max_price=max_price)
+            # Tope duro LIVE: nunca pagar más que max_fill_price (55¢).
+            # Antes el techo subía con reintentos hasta ~84¢ → ganabas $2 pagando $10.
+            max_price = min(
+                self.cfg.max_fill_price,
+                fill + slip,
+            )
+            result = await self.live.buy_fok(
+                token_id, position_usd, max_price=max_price, hard_ceiling=max_price,
+            )
+            if result.ok and result.fill_price > self.cfg.max_fill_price + 1e-6:
+                await self.notifier.send(
+                    f"⚠️ <b>LIVE pagó caro</b> — {mkt.asset.upper()} {direction}\n"
+                    f"Fill real: <code>{result.fill_price*100:.1f}¢</code> "
+                    f"(tope objetivo: <code>{self.cfg.max_fill_price*100:.0f}¢</code>).\n"
+                    f"PnL será bajo aunque gane — revisar liquidez del libro."
+                )
+                logger.warning(
+                    "live fill expensive %.3f > max %.3f",
+                    result.fill_price, self.cfg.max_fill_price,
+                )
             if not result.ok:
                 err = result.error or ""
                 hint = ""

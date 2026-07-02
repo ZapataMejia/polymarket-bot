@@ -159,6 +159,7 @@ class LiveClobExecutor:
         token_id: str,
         amount_usd: float,
         max_price: float | None = None,
+        hard_ceiling: float | None = None,
     ) -> LiveOrderResult:
         """Market-buy up to ``amount_usd`` dollars of ``token_id``.
 
@@ -177,12 +178,16 @@ class LiveClobExecutor:
             neg_risk = client.get_neg_risk(token_id)
             options = PartialCreateOrderOptions(tick_size=tick, neg_risk=neg_risk)
             base_ceiling = min(0.99, max_price if max_price and max_price > 0 else 0.99)
-            # Widen ceiling on each retry (+0 … +25¢).
-            ceiling_bumps = (0.0, 0.05, 0.10, 0.15, 0.20, 0.25)
+            absolute_cap = min(
+                0.99,
+                hard_ceiling if hard_ceiling and hard_ceiling > 0 else base_ceiling,
+            )
+            # Reintentos pequeños (+0 … +3¢) sin romper el tope duro (max_fill_price).
+            ceiling_bumps = (0.0, 0.01, 0.02, 0.03)
             last: LiveOrderResult | None = None
 
             for attempt, bump in enumerate(ceiling_bumps):
-                ceiling = min(0.99, base_ceiling + bump)
+                ceiling = min(absolute_cap, base_ceiling + bump)
                 price = self._limit_price(client, token_id, amt, ceiling)
                 logger.info(
                     "FAK attempt %d token=%s amount=%.2f price=%.3f ceiling=%.3f",
